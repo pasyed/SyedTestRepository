@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Refund_001</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d43f6237-9555-45e1-b682-edac979d63b9</testCaseGuid>
+   <variable>
+      <defaultValue>'550'</defaultValue>
+      <description></description>
+      <id>598e624f-29e5-4e84-bea9-383e765ba22f</id>
+      <masked>false</masked>
+      <name>amountInput</name>
+   </variable>
+   <variable>
+      <defaultValue>'Refund'</defaultValue>
+      <description></description>
+      <id>7eba8de4-6758-43a5-8d03-34ca82ae9ffa</id>
+      <masked>false</masked>
+      <name>tabName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Manually Keyed'</defaultValue>
+      <description></description>
+      <id>df213bce-85f7-46f6-b4db-dd2666dadc37</id>
+      <masked>false</masked>
+      <name>entryModeCheckBox</name>
+   </variable>
+   <variable>
+      <defaultValue>'Card Present'</defaultValue>
+      <description></description>
+      <id>603ded61-f012-44ba-b8cc-b5694b23c67e</id>
+      <masked>false</masked>
+      <name>cardInformationCheckBox</name>
+   </variable>
+   <variable>
+      <defaultValue>'September'</defaultValue>
+      <description></description>
+      <id>2bc3ca5e-9721-4aad-ab7a-fc2d88c13a90</id>
+      <masked>false</masked>
+      <name>cardMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'2032'</defaultValue>
+      <description></description>
+      <id>568bbdce-b62c-430a-928d-b9b493d960ed</id>
+      <masked>false</masked>
+      <name>cardYear</name>
+   </variable>
+</TestCaseEntity>

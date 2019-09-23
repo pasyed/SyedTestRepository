@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>GlobalVariables_VPOS</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>URL of VPOS application</description>
+      <initValue>'http://172.25.48.28/secure/VPOS/VPOS/Vpos'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Page Loading Time</description>
+      <initValue>60</initValue>
+      <name>PageLoadTime</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>6</initValue>
+      <name>delayForElement</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ranjanatest2 - 888814981372/001 Account Type: Retail'</initValue>
+      <name>RetailAccountOption</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>3</initValue>
+      <name>delayBetweenTestSteps</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'4111111111111111'</initValue>
+      <name>visaCardNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Venkatasai.Annam@zenq.com'</initValue>
+      <name>emailAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'true'</initValue>
+      <name>HighLightElements</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Sales_006</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4dd8039c-a644-4681-8857-e7e82ba4f56a</testCaseGuid>
+   <variable>
+      <defaultValue>'Manually Keyed'</defaultValue>
+      <description></description>
+      <id>f2d95c7e-4cc1-4775-8dea-5d8281aaa40a</id>
+      <masked>false</masked>
+      <name>entryModeCheckBox</name>
+   </variable>
+</TestCaseEntity>

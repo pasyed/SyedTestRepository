@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Testing</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>738be719-c1b0-4777-a4e3-b0c6f359b2b8</testCaseGuid>
+   <variable>
+      <defaultValue>'550'</defaultValue>
+      <description></description>
+      <id>bddb2ddb-9276-4f38-bea9-ebda808603dc</id>
+      <masked>false</masked>
+      <name>amountInput</name>
+   </variable>
+   <variable>
+      <defaultValue>'Sale'</defaultValue>
+      <description></description>
+      <id>6ef3b82d-ea81-4dd1-9a60-7769b728eb1b</id>
+      <masked>false</masked>
+      <name>tabName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Card Not Present'</defaultValue>
+      <description></description>
+      <id>f58c93b3-2a9f-4a25-b7bd-d5f975ffade8</id>
+      <masked>false</masked>
+      <name>cardInformationCheckBox</name>
+   </variable>
+   <variable>
+      <defaultValue>'Manually Keyed'</defaultValue>
+      <description></description>
+      <id>9212c3a2-f387-4751-8de2-cacf33070b31</id>
+      <masked>false</masked>
+      <name>entryModeCheckBox</name>
+   </variable>
+   <variable>
+      <defaultValue>'September'</defaultValue>
+      <description></description>
+      <id>621733cc-b07e-4a0e-9216-3caab342dd26</id>
+      <masked>false</masked>
+      <name>cardMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'2022'</defaultValue>
+      <description></description>
+      <id>cade12b0-874f-4286-9439-5d4da700109e</id>
+      <masked>false</masked>
+      <name>cardYear</name>
+   </variable>
+</TestCaseEntity>

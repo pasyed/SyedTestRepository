@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_1st_Pay_Vault_009</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9f5c0a02-0a3d-4cb3-94a7-7e660a942c4e</testCaseGuid>
+   <variable>
+      <defaultValue>'September'</defaultValue>
+      <description></description>
+      <id>0cdaff34-3548-409e-9223-43f203784e8d</id>
+      <masked>false</masked>
+      <name>cardMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'2019'</defaultValue>
+      <description></description>
+      <id>ab3940db-98ba-491b-84bb-598071157871</id>
+      <masked>false</masked>
+      <name>cardYear</name>
+   </variable>
+   <variable>
+      <defaultValue>20</defaultValue>
+      <description></description>
+      <id>1f2c29d6-4e5d-42a6-b83e-855e14f286e1</id>
+      <masked>false</masked>
+      <name>start_date_Value</name>
+   </variable>
+   <variable>
+      <defaultValue>20</defaultValue>
+      <description></description>
+      <id>d3ac6547-142d-4009-9fec-e631cd44b0c6</id>
+      <masked>false</masked>
+      <name>end_date_Value</name>
+   </variable>
+</TestCaseEntity>

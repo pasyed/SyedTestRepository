@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_1st_Pay_Vault_004</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>57b3dab1-f71b-4660-b205-9e9d6d32b361</testCaseGuid>
+   <variable>
+      <defaultValue>'Venkata Sai'</defaultValue>
+      <description></description>
+      <id>aeb64fa2-dcf3-46ea-a6d1-16a42c2f7b92</id>
+      <masked>false</masked>
+      <name>customerName</name>
+   </variable>
+   <variable>
+      <defaultValue>'September'</defaultValue>
+      <description></description>
+      <id>731ef66c-6e62-4823-aa20-bcd0efcb0218</id>
+      <masked>false</masked>
+      <name>cardMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'2032'</defaultValue>
+      <description></description>
+      <id>bc449e2e-1c44-4e1b-9bd7-43c2924b81c8</id>
+      <masked>false</masked>
+      <name>cardYear</name>
+   </variable>
+</TestCaseEntity>

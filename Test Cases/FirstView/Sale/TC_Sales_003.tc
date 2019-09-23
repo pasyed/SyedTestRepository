@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Sales_003</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>97374bbe-ed5d-4f58-b632-f74ffa464005</testCaseGuid>
+   <variable>
+      <defaultValue>6</defaultValue>
+      <description></description>
+      <id>d8f7d4f8-98f2-4365-9515-ae355f040894</id>
+      <masked>false</masked>
+      <name>delayForPageLoad</name>
+   </variable>
+   <variable>
+      <defaultValue>'ranjanatest2 - 888814981372/001 Account Type: Retail'</defaultValue>
+      <description></description>
+      <id>2a3921ad-0125-421d-93ee-347d41db8e1b</id>
+      <masked>false</masked>
+      <name>accountType</name>
+   </variable>
+</TestCaseEntity>

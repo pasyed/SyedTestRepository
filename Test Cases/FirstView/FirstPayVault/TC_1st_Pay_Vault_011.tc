@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_1st_Pay_Vault_011</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9052b408-99bd-4a6c-b7bc-47615144ba54</testCaseGuid>
+   <variable>
+      <defaultValue>'4111111111111111'</defaultValue>
+      <description></description>
+      <id>b6cf477a-d678-4862-a561-7068d4b2e64b</id>
+      <masked>false</masked>
+      <name>cardNumber</name>
+   </variable>
+</TestCaseEntity>

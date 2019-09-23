@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_1st_Pay_Vault_007</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>276f7b99-ba90-412e-a3ae-17e99a7ebed2</testCaseGuid>
+   <variable>
+      <defaultValue>'Venkata Sai'</defaultValue>
+      <description></description>
+      <id>889effec-de0d-41ae-a5aa-b1fb9f646fc6</id>
+      <masked>false</masked>
+      <name>customerName</name>
+   </variable>
+   <variable>
+      <defaultValue>'September'</defaultValue>
+      <description></description>
+      <id>192dfc90-65ac-4448-89a9-4b59f243b81c</id>
+      <masked>false</masked>
+      <name>cardMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'2032'</defaultValue>
+      <description></description>
+      <id>8f968e7c-6548-4a28-bc86-f6efc63461fe</id>
+      <masked>false</masked>
+      <name>cardYear</name>
+   </variable>
+   <variable>
+      <defaultValue>22</defaultValue>
+      <description></description>
+      <id>d3da2a44-ce43-4c1a-b506-f14d5dc616db</id>
+      <masked>false</masked>
+      <name>start_date_Value</name>
+   </variable>
+   <variable>
+      <defaultValue>25</defaultValue>
+      <description></description>
+      <id>70fc74d8-2cb5-4be2-92cd-f250a72e3266</id>
+      <masked>false</masked>
+      <name>end_date_Value</name>
+   </variable>
+   <variable>
+      <defaultValue>'Card Not Present'</defaultValue>
+      <description></description>
+      <id>ee2733b1-3d91-423d-9851-603b4b31480b</id>
+      <masked>false</masked>
+      <name>cardInformationCheckBox</name>
+   </variable>
+   <variable>
+      <defaultValue>'Manually Keyed'</defaultValue>
+      <description></description>
+      <id>b29faa2e-2ba5-4cd5-b44e-bc0396b01531</id>
+      <masked>false</masked>
+      <name>entryModeCheckBox</name>
+   </variable>
+</TestCaseEntity>
