@@ -101,7 +101,7 @@ WebUI.scrollToElement(findTestObject('Pages/FirstPayVault/input_CreditCardNumber
 cardNumber = CustomKeywords.'utilities.SafeActions.getAttribute'(findTestObject('Pages/FirstPayVault/input_CreditCardNumberForVerification'), 
     '1st Pay Vault')
 
-CustomKeywords.'pages.FirstPayVault.verifycardNumber'(cardNumber, GlobalVariable.visaCardNumber)
+CustomKeywords.'pages.FirstPayVault.verifyCardNumber'(cardNumber, GlobalVariable.visaCardNumber)
 
 /*expirationMonth = CustomKeywords.'utilities.SafeActions.getAttribute'(findTestObject('Pages/FirstPayVault/dropDownExpirationMonthForVerification'), 
     '1st Pay Vault')

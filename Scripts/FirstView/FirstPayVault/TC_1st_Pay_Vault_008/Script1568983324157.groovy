@@ -101,7 +101,7 @@ WebUI.scrollToElement(findTestObject('Pages/FirstPayVault/input_CreditCardNumber
 cardNumber = CustomKeywords.'utilities.SafeActions.getAttribute'(findTestObject('Pages/FirstPayVault/input_CreditCardNumberForVerification'), 
     '1st Pay Vault')
 
-CustomKeywords.'pages.FirstPayVault.verifycardNumber'(cardNumber, GlobalVariable.visaCardNumber)
+CustomKeywords.'pages.FirstPayVault.verifyCardNumber'(cardNumber, GlobalVariable.visaCardNumber)
 
 /*expirationMonth = CustomKeywords.'utilities.SafeActions.getAttribute'(findTestObject('Pages/FirstPayVault/dropDownExpirationMonthForVerification'), 
     '1st Pay Vault')
@@ -163,9 +163,9 @@ WebUI.scrollToElement(findTestObject('Pages/FirstPayVault/input_Amount'), Global
 CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/FirstPayVault/input_Amount'), '450', 'Enter Amount', 
         (([10]) as int[]))
 
-WebUI.scrollToElement(findTestObject('Pages/FirstPayVault/checkBox_SetUpRecurringPayment'), GlobalVariable.delayBetweenTestSteps)
+WebUI.scrollToElement(findTestObject('Pages/FirstPayVault/checkBox_SetAsFuturePayment'), GlobalVariable.delayBetweenTestSteps)
 
-CustomKeywords.'utilities.SafeActions.safeCheckForElement'(findTestObject('Pages/FirstPayVault/checkBox_SetUpRecurringPayment'), 
+CustomKeywords.'utilities.SafeActions.safeCheckForElement'(findTestObject('Pages/FirstPayVault/checkBox_SetAsFuturePayment'), 
     GlobalVariable.delayBetweenTestSteps)
 
 CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/FirstPayVault/button_Checkout'), 'Click on Checkout', 

@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+schedulingTask,Firefox 68.0,,,2019-09-25 05:02:27,2019-09-25 05:03:45,1m - 18.495s,INCOMPLETE
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_001,Firefox 68.0,,,2019-09-25 05:02:28,2019-09-25 05:03:45,1m - 17.885s,ERROR
+Start listener action : sampleBeforeTestCase,Firefox 68.0,,,2019-09-25 05:02:28,2019-09-25 05:02:28,0.071s,PASSED
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-25 05:02:29,2019-09-25 05:02:37,7.952s,PASSED
+delay(delayForElement),Firefox 68.0,,,2019-09-25 05:02:37,2019-09-25 05:02:43,6.039s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), RetailAccountOption, ""Select by Value"", [25])",Firefox 68.0,,,2019-09-25 05:02:43,2019-09-25 05:03:08,25.805s,ERROR
+delay(delayBetweenTestSteps),Firefox 68.0,,,2019-09-25 05:03:08,2019-09-25 05:03:11,3.009s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(tabName, entryModeCheckBox, delayBetweenTestSteps)",Firefox 68.0,,,2019-09-25 05:03:11,2019-09-25 05:03:45,33.824s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-25 05:03:45,2019-09-25 05:03:45,0.239s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-25 05:03:45,2019-09-25 05:03:45,0.003s,PASSED

@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+schedulingTask,,,,2019-09-25 04:25:38,2019-09-25 04:25:41,2.542s,INCOMPLETE
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_001,,,,2019-09-25 04:25:38,2019-09-25 04:25:41,2.079s,ERROR
+Start listener action : sampleBeforeTestCase,,,,2019-09-25 04:25:39,2019-09-25 04:25:39,0.118s,PASSED
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",,,,2019-09-25 04:25:40,2019-09-25 04:25:40,0.122s,PASSED
+Start listener action : sampleAfterTestCase,,,,2019-09-25 04:25:40,2019-09-25 04:25:40,0.652s,ERROR
+Start listener action : sampleAfterTestCase,,,,2019-09-25 04:25:40,2019-09-25 04:25:40,0.093s,PASSED

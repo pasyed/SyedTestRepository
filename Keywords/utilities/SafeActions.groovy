@@ -25,12 +25,14 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 
 import internal.GlobalVariable as GlobalVariable
 
 public class SafeActions {
 
 	Sync syncObj = new Sync()
+	String reportsFolderPath = RunConfiguration.getReportFolder()
 
 	@Keyword
 	def openBrowser(String url,int... optionWaitTime){
@@ -73,7 +75,7 @@ public class SafeActions {
 			KeywordUtil.markError("unable to enter"+ text +" in "+friendlyWebElementName+" in time -"+waitTime+"seconds")
 		}
 	}
-	
+
 	@Keyword
 	def safeType1(TestObject testObj,int text,String friendlyWebElementName,int... optionWaitTime){
 		int waitTime=0;
@@ -189,6 +191,7 @@ public class SafeActions {
 			}
 		}
 		catch(Exception e){
+			//WebUI.takeScreenshot(reportsFolderPath+"/safeClickwithScroll.png")
 			KeywordUtil.markError(friendlyWebElementName+" was not found on the webpage")
 		}
 	}
@@ -224,6 +227,7 @@ public class SafeActions {
 			}
 		}
 		catch(Exception e){
+			//WebUI.takeScreenshot(reportsFolderPath+"/safeGetText.png")
 			KeywordUtil.markError("Unable to element in time - "+waitTime)
 		}
 		println sValue
@@ -242,6 +246,7 @@ public class SafeActions {
 			}
 		}
 		catch(Exception e){
+			WebUI.takeScreenshot(reportsFolderPath+"/safeCheckForElement.png")
 			KeywordUtil.markError("Cannot check for Checkbox")
 		}
 	}
@@ -253,18 +258,24 @@ public class SafeActions {
 
 	@Keyword
 	def verifyPopupMessage(String expectedMessage,String popupMessage){
-		println expectedMessage
-		println popupMessage
 		boolean flag=false
-		if(expectedMessage.trim().equalsIgnoreCase(popupMessage.trim())){
-			println "Matched"
-			flag=true
-			KeywordUtil.markPassed("Popup Message : ${popupMessage} matched with expected message : ${expectedMessage}")
+		try{
+			println expectedMessage
+			println popupMessage
+			if(expectedMessage.trim().equalsIgnoreCase(popupMessage.trim())){
+				println "Matched"
+				flag=true
+				KeywordUtil.markPassed("Popup Message : ${popupMessage} matched with expected message : ${expectedMessage}")
+			}
+			else{
+				flag=false
+				println "Not Matched"
+				KeywordUtil.markFailed("Popup Message : ${popupMessage} didnot match with expected message : ${expectedMessage}")
+			}
 		}
-		else{
-			flag=false
-			println "Not Matched"
-			KeywordUtil.markFailed("Popup Message : ${popupMessage} didnot match with expected message : ${expectedMessage}")
+		catch(Exception e){
+			//WebUI.takeScreenshot(reportsFolderPath+"/verifyPopupMessage.png")
+			KeywordUtil.markError("Verification of ExpectedMessage and Popup Message Failed")
 		}
 		return flag
 	}
@@ -272,22 +283,34 @@ public class SafeActions {
 
 	@Keyword
 	def getAttributeValue(TestObject testObject,String tabName){
-		String attributeValue=WebUI.getAttribute(testObject, "class")
-		println attributeValue
-		if(attributeValue.contains("active_tab")){
+		try{
+			String attributeValue=WebUI.getAttribute(testObject, "class")
+			println attributeValue
+			if(attributeValue.contains("active_tab")){
 
-			KeywordUtil.markPassed("The screen is ${tabName} screen")
+				KeywordUtil.markPassed("The screen is ${tabName} screen")
+			}
+			else{
+				KeywordUtil.markFailed("The screen is not ${tabName} screen")
+			}
 		}
-		else{
-			KeywordUtil.markFailed("The screen is not ${tabName} screen")
+		catch(Exception e){
+			//WebUI.takeScreenshot(reportsFolderPath+"/getAttributeValue.png")
+			KeywordUtil.markError("Expection while getting Class Attribute")
 		}
 		return attributeValue
 	}
 
 	@Keyword
 	def getAttribute(TestObject testObject,String tabName){
-		String attributeValue=WebUI.getAttribute(testObject, "value")
-		println attributeValue
+		try{
+			String attributeValue=WebUI.getAttribute(testObject, "value")
+			println attributeValue
+		}
+		catch(Exception e){
+			//WebUI.takeScreenshot(reportsFolderPath+"/getAttribute.png")
+			KeywordUtil.markError("Expection while getting Value Attribute")
+		}
 		/*if(attributeValue.contains("active_tab")){
 		 KeywordUtil.markPassed("The screen is ${tabName} screen")
 		 }
@@ -299,45 +322,57 @@ public class SafeActions {
 
 	@Keyword
 	def highLightElement(TestObject testObject,int timeOut){
-		if(GlobalVariable.HighLightElements.equalsIgnoreCase("true")){
-			println "in highlight method"
-			String attributeValue="border:2px solid blue";
-			WebDriver driver = DriverFactory.getWebDriver()
-			JavascriptExecutor je=(JavascriptExecutor)driver
-			WebElement ele=WebUiCommonHelper.findWebElement(testObject, timeOut)
-			String getAttribute=ele.getAttribute("style")
-			je.executeScript("arguments[0].setAttribute('style',arguments[1]);", ele,attributeValue)
-			//WebUI.executeJavaScript('arguments[0].setAttribute("style",attributeValue);', ele)
-			try{
-				Thread.sleep(500)
+		try{
+			if(GlobalVariable.HighLightElements.equalsIgnoreCase("true")){
+				println "in highlight method"
+				String attributeValue="border:2px solid blue";
+				WebDriver driver = DriverFactory.getWebDriver()
+				JavascriptExecutor je=(JavascriptExecutor)driver
+				WebElement ele=WebUiCommonHelper.findWebElement(testObject, timeOut)
+				String getAttribute=ele.getAttribute("style")
+				je.executeScript("arguments[0].setAttribute('style',arguments[1]);", ele,attributeValue)
+				//WebUI.executeJavaScript('arguments[0].setAttribute("style",attributeValue);', ele)
+				try{
+					Thread.sleep(500)
+				}
+				catch(InterruptedException e){
+					KeywordUtil.markError(syncObj.getTestCaseName()+"Sleep Interrupted - ")
+				}
+				//WebUI.executeJavaScript('arguments[0].setAttribute("style",getAttribute);', ele)
+				je.executeScript("arguments[0].setAttribute('style',arguments[1]);", ele,getAttribute)
 			}
-			catch(InterruptedException e){
-				KeywordUtil.markError(syncObj.getTestCaseName()+"Sleep Interrupted - ")
-			}
-			//WebUI.executeJavaScript('arguments[0].setAttribute("style",getAttribute);', ele)
-			je.executeScript("arguments[0].setAttribute('style',arguments[1]);", ele,getAttribute)
+		}
+		catch(Exception e){
+			//WebUI.takeScreenshot(reportsFolderPath+"/highLightObject.png")
+			KeywordUtil.markError("Expection while highlighting Test Object")
 		}
 	}
 
 	@Keyword
 	def highLightElement(WebElement element,int timeOut){
-		if(GlobalVariable.HighLightElements.equalsIgnoreCase("true")){
-			println "in highlight method"
-			String attributeValue="border:2px solid blue";
-			WebDriver driver = DriverFactory.getWebDriver()
-			JavascriptExecutor je=(JavascriptExecutor)driver
-			//WebElement ele=WebUiCommonHelper.findWebElement(testObject, timeOut)
-			String getAttribute=element.getAttribute("style")
-			je.executeScript("arguments[0].setAttribute('style',arguments[1]);", element,attributeValue)
-			//WebUI.executeJavaScript('arguments[0].setAttribute("style",attributeValue);', ele)
-			try{
-				Thread.sleep(500)
+		try{
+			if(GlobalVariable.HighLightElements.equalsIgnoreCase("true")){
+				println "in highlight method"
+				String attributeValue="border:2px solid blue";
+				WebDriver driver = DriverFactory.getWebDriver()
+				JavascriptExecutor je=(JavascriptExecutor)driver
+				//WebElement ele=WebUiCommonHelper.findWebElement(testObject, timeOut)
+				String getAttribute=element.getAttribute("style")
+				je.executeScript("arguments[0].setAttribute('style',arguments[1]);", element,attributeValue)
+				//WebUI.executeJavaScript('arguments[0].setAttribute("style",attributeValue);', ele)
+				try{
+					Thread.sleep(500)
+				}
+				catch(InterruptedException e){
+					KeywordUtil.markError(syncObj.getTestCaseName()+"Sleep Interrupted - ")
+				}
+				//WebUI.executeJavaScript('arguments[0].setAttribute("style",getAttribute);', ele)
+				je.executeScript("arguments[0].setAttribute('style',arguments[1]);", element,getAttribute)
 			}
-			catch(InterruptedException e){
-				KeywordUtil.markError(syncObj.getTestCaseName()+"Sleep Interrupted - ")
-			}
-			//WebUI.executeJavaScript('arguments[0].setAttribute("style",getAttribute);', ele)
-			je.executeScript("arguments[0].setAttribute('style',arguments[1]);", element,getAttribute)
+		}
+		catch(Exception e){
+			//WebUI.takeScreenshot(reportsFolderPath+"/highLightElement.png")
+			KeywordUtil.markError("Expection while highlighting Web Element")
 		}
 	}
 

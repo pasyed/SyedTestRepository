@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="schedulingTask" time="2" tests="0" failures="0" errors="1">
+    <testsuite name="schedulingTask" tests="0" failures="0" errors="1" time="2" timestamp="2019-09-25 04:25:38" hostname="venkata.annam - FW1-D-DTA-ZENQ1" id="Test Suites/FirstView/schedulingTask">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_042533\\FirstView\\schedulingTask\\20190925_042533"/>
+            <property name="logFiles" value="C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_042533\\FirstView\\schedulingTask\\20190925_042533\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="venkata.annam - FW1-D-DTA-ZENQ1"/>
+            <property name="hostAddress" value="172.25.52.168"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.3.2.4"/>
+        </properties>
+        <testcase name="Test Cases/FirstView/Sale/TC_Sales_001" classname="Test Cases/FirstView/Sale/TC_Sales_001" status="ERROR">
+            <error type="ERROR" message="Test Cases/FirstView/Sale/TC_Sales_001 FAILED.&#xA;Reason:&#xA;java.lang.NullPointerException&#xD;&#xA;&#x9;at TC_Sales_001.run(TC_Sales_001:19)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1569403533173.run(TempTestSuite1569403533173.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-09-25 04:25:38 - [TEST_CASE][ERROR] - Test Cases/FirstView/Sale/TC_Sales_001: Test Cases/FirstView/Sale/TC_Sales_001 FAILED.
+Reason:
+java.lang.NullPointerException&#xD;
+	at TC_Sales_001.run(TC_Sales_001:19)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569403533173.run(TempTestSuite1569403533173.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-09-25 04:25:39 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null&#xD;
+&#xD;
+2019-09-25 04:25:39 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-09-25 04:25:39 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null&#xD;
+&#xD;
+2019-09-25 04:25:40 - [TEST_STEP][PASSED] - utilities.SafeActions.openBrowser(URL, [PageLoadTime]): null&#xD;
+&#xD;
+2019-09-25 04:25:40 - [TEST_STEP][ERROR] - Start listener action : sampleAfterTestCase: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot&#xD;
+&#xD;
+2019-09-25 04:25:40 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-09-25 04:25:40 - [TEST_STEP][ERROR] - if (getTestCaseStatus().equalsIgnoreCase("error")): com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot&#xD;
+&#xD;
+2019-09-25 04:25:40 - [TEST_STEP][ERROR] - takeScreenshot(): com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot&#xD;
+&#xD;
+2019-09-25 04:25:40 - [MESSAGE][WARNING] - Cannot take screenshot&#xD;
+&#xD;
+2019-09-25 04:25:40 - [MESSAGE][FAILED] - Cannot take screenshot (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.takeScreenshot(TakeScreenshotKeyword.groovy:88)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword.execute(TakeScreenshotKeyword.groovy:68)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.takeScreenshot(WebUiBuiltInKeywords.groovy:2915)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$takeScreenshot.call(Unknown Source)&#xD;
+	at NewTestListener.sampleAfterTestCase(NewTestListener.groovy:44)&#xD;
+	at NewTestListener.invokeMethod(NewTestListener.groovy)&#xD;
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)&#xD;
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)&#xD;
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)&#xD;
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)&#xD;
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)&#xD;
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:249)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569403533173.run(TempTestSuite1569403533173.groovy:35)&#xD;
+Caused by: com.kms.katalon.core.webui.exception.BrowserNotOpenedException: Browser is not opened
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FW1-D-DTA-ZENQ1', ip: '172.25.52.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown&#xD;
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriverIsOpen(DriverFactory.java:714)&#xD;
+	at com.kms.katalon.core.webui.driver.DriverFactory.verifyWebDriver(DriverFactory.java:699)&#xD;
+	at com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(DriverFactory.java:685)&#xD;
+	at com.kms.katalon.core.webui.util.FileUtil.takesScreenshot(FileUtil.java:27)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.doCall(TakeScreenshotKeyword.groovy:89)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.TakeScreenshotKeyword$_takeScreenshot_closure1.call(TakeScreenshotKeyword.groovy)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xD;
+	... 20 more&#xD;
+)&#xD;
+&#xD;
+2019-09-25 04:25:40 - [MESSAGE][ERROR] - com.kms.katalon.core.exception.StepFailedException: Cannot take screenshot&#xD;
+&#xD;
+2019-09-25 04:25:40 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null</system-out>
+            <system-err>2019-09-25 04:25:38 - [TEST_CASE][ERROR] - Test Cases/FirstView/Sale/TC_Sales_001: Test Cases/FirstView/Sale/TC_Sales_001 FAILED.
+Reason:
+java.lang.NullPointerException&#xD;
+	at TC_Sales_001.run(TC_Sales_001:19)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569403533173.run(TempTestSuite1569403533173.groovy:35)</system-err>
+        </testcase>
+        <system-out>2019-09-25 04:25:38 - [TEST_SUITE][INCOMPLETE] - schedulingTask: null</system-out>
+        <system-err>2019-09-25 04:25:38 - [TEST_SUITE][INCOMPLETE] - schedulingTask: null</system-err>
+    </testsuite>
+</testsuites>

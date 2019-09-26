@@ -27,7 +27,7 @@ import utilities.DynamicLocators
 import utilities.SafeActions
 
 public class Sale {
-	//SafeActions safeObj=new SafeActions()
+	SafeActions safeObj=new SafeActions()
 	DynamicLocators dl=new DynamicLocators()
 	@Keyword
 	def verify1stPayVposPage(TestObject testObj){
@@ -44,7 +44,15 @@ public class Sale {
 	@Keyword
 	def verifyIfEntryModeIsChecked(String tabName,String checkboxValue,int timeOut){
 		TestObject checkboxObject = dl.createDynamicLocatorForCheckBox(tabName,checkboxValue)
-		boolean checkElementStatus = WebUI.verifyElementChecked(checkboxObject, timeOut)
+		boolean checkElementStatus
+		try{
+			checkElementStatus = WebUI.verifyElementChecked(checkboxObject, timeOut)
+		}
+		catch(Exception e){
+			//WebUI.click(checkboxObject)
+			//WebUI.takeScreenshot(safeObj.reportsFolderPath+"/verifyIfEntryModeIsChecked.png")
+			KeywordUtil.logInfo("This is the error from Catch block")
+		}
 		//boolean checkElementStatus = WebUI.verifyElementNotChecked(testObj, timeOut)
 		if(checkElementStatus){
 			KeywordUtil.logInfo("The specified checkbox is checked")
@@ -70,6 +78,7 @@ public class Sale {
 		}
 		catch(StepFailedException e){
 			//WebUI.click(checkboxObject)
+			//WebUI.takeScreenshot(safeObj.reportsFolderPath+"/verifyIfAdditionalPromptingIsChecked.png")
 			KeywordUtil.logInfo("This is the error from Catch block")
 		}
 		/*boolean checkElementStatus = WebUI.verifyElementChecked(checkboxObject, timeOut)
@@ -92,21 +101,24 @@ public class Sale {
 
 	@Keyword
 	def verifyTransactionCompletePage(TestObject testObj){
-		boolean headingDisplayed = WebUI.verifyElementPresent(testObj, 60)
-		if(headingDisplayed){
-			KeywordUtil.markPassed("The screen is Transaction Complete screen")
+		try{
+			boolean headingDisplayed = WebUI.verifyElementPresent(testObj, 60)
+			if(headingDisplayed){
+				KeywordUtil.markPassed("The screen is Transaction Complete screen")
 
+			}
+			else{
+				KeywordUtil.markFailed("The screen is not Transaction Complete screen")
+			}
 		}
-		else{
-			KeywordUtil.markFailed("The screen is not Transaction Complete screen")
+		catch(Exception e){
+			//WebUI.takeScreenshot(safeObj.reportsFolderPath+"/verifyTransactionCompletePage.png")
+			KeywordUtil.markFailed("unable to verify the Transaction Complete page")
 		}
 	}
 
 	@Keyword
 	def selectMonthYear(TestObject testObj,TestObject testObj1,String month,String yearToSelect){
-		//WebUI.click(testObj)
-		/*TestObject testObje=new TestObject()
-		 testObje.addProperty("xpath", ConditionType.EQUALS, "//div[@class='datepicker-days']//th[@class='next']")*/
 		int year=Integer.parseInt(yearToSelect)
 		String yearMonth_Value=WebUI.getText(testObj)
 		//String yearVal=Integer.toString(year)
@@ -115,21 +127,20 @@ public class Sale {
 		Calendar cal=Calendar.getInstance()
 		int currentYear = cal.get(Calendar.YEAR)
 		//String currentYear_Str=Integer.toString(currentYear)
-		if(year>=currentYear){
-			while(!yearMonth_Value.equalsIgnoreCase(monthYear)){
-				println yearMonth_Value
-				WebUI.click(testObj1)
-				yearMonth_Value=WebUI.getText(testObj)
+		try{
+			if(year>=currentYear){
+				while(!yearMonth_Value.equalsIgnoreCase(monthYear)){
+					println yearMonth_Value
+					WebUI.click(testObj1)
+					yearMonth_Value=WebUI.getText(testObj)
+				}
 			}
-			/*if(yearMonth_Value.equalsIgnoreCase(monthYear)){
-			 KeywordUtil.logInfo("Month and year matched")
-			 }
-			 else{
-			 WebUI.click(testObje)
-			 }*/
+			else{
+				KeywordUtil.markFailed("Year cannot be selected as the specified year is less than current year")
+			}
 		}
-		else{
-			KeywordUtil.markFailed("Year cannot be selected as the specified year is less than current year")
+		catch(Exception e){
+			KeywordUtil.markFailed("unable to select the specified Month and Year")
 		}
 		println currentYear
 	}
@@ -143,21 +154,14 @@ public class Sale {
 
 	@Keyword
 	def selectDate(int date){
-		//String dateLocator='//td[text()="%s" and @class="day"]'
-		String date_Str=Integer.toString(date)
-		/*WebElement dateSelector = WebUiCommonHelper.findWebElement(testObj, 10)
-		 String dateLocator_Str = getStringFromElement(dateSelector)*/
-		//dateLocator_Str.replace("10",Integer.toString(date))
-		//dateLocator_Str.replaceAll("10", "%d")
-		TestObject testObj=dl.createDynamicLocatorsForDate(date_Str)
-		//dateLocator = String.format(dateLocator, date_Str)
-		//println dateLocator
-		//TestObject testObj=new TestObject()
-		//testObj.addProperty("xpath", ConditionType.EQUALS, dateLocator)
-		WebUI.click(testObj)
-		//println testObj.getActiveXpaths()
-		/*WebElement dateSelector = WebUiCommonHelper.findWebElement(testObj, 10)
-		 dateSelector.*/
+		try{
+			String date_Str=Integer.toString(date)
+			TestObject testObj=dl.createDynamicLocatorsForDate(date_Str)
+			WebUI.click(testObj)
+		}
+		catch(Exception e){
+			KeywordUtil.markFailed("unable to select the Date")
+		}
 	}
 
 

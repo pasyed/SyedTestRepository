@@ -123,25 +123,15 @@ public class FirstPayVault {
 				if(cellVaultReference.equalsIgnoreCase(vaultRefNumber)){
 					KeywordUtil.markPassed("The Vault is found in page "+pages[1])
 					rowNumber=i
-					WebUI.delay(2)
-					//safeActions.highLightElement(cols.get(0), GlobalVariable.delayBetweenTestSteps)
-					//WebElement deleteEle=cols.get(0).click()
-					WebUI.delay(4)
-					//safeActions.highLightElement(deleteVaultButton, GlobalVariable.delayBetweenTestSteps)
-					//WebUI.click(deleteVaultButton)
-					//deleteEle.click()
+					WebUI.delay(6)
 					foundValue=true
 					lastpage=true
 					break
 				}
 
 			}
-			//if(!foundValue){
-			//String pagesCount=WebUI.getText(numberOfPages)
-			//String[] pages=pagesCount.split(" ")
 			if(pages[1].equalsIgnoreCase(pages[3])){
 				if(foundValue){
-					//KeywordUtil.markPassed()
 				}
 				else{
 					KeywordUtil.markFailed("The Vault is not found in all the pages")
@@ -232,7 +222,6 @@ public class FirstPayVault {
 		getInvoiceColumnCount("Vault Ref #")
 		boolean foundValue=false
 		boolean lastpage=false
-		//WebDriver driver=DriverFactory.getWebDriver()
 		WebElement table
 		while(!lastpage && !foundValue){
 			table= driver.findElement(By.xpath("//table[@id='transactionTable']/tbody"))
@@ -248,19 +237,15 @@ public class FirstPayVault {
 				if(cellVaultReference.equalsIgnoreCase(vaultRefNumber)){
 					KeywordUtil.markPassed("The Vault is found in page "+pages[1])
 					safeActions.highLightElement(cols.get(map_Tablecount['Vault Ref #']), GlobalVariable.delayBetweenTestSteps)
-					//safeActions.highLightElement(cols.get(map_Tablecount['Vault Ref #']), GlobalVariable.delayBetweenTestSteps)
 					foundValue=true
 					lastpage=true
 					break
 				}
 
 			}
-			//if(!foundValue){
-			//String pagesCount=WebUI.getText(numberOfPages)
-			//String[] pages=pagesCount.split(" ")
 			if(pages[1].equalsIgnoreCase(pages[3])){
 				if(foundValue){
-					//KeywordUtil.markPassed()
+
 				}
 				else{
 					KeywordUtil.markFailed("The Vault is not found in all the pages")
@@ -289,7 +274,6 @@ public class FirstPayVault {
 	def getCount(TestObject nextObj,TestObject numberOfPages,String vaultRefNumber){
 		boolean flag=true
 		boolean lastpage=false
-		//WebDriver driver=DriverFactory.getWebDriver()
 		String pagesCount=WebUI.getText(numberOfPages)
 		String[] pages=pagesCount.trim().split(" ")
 		int i = Integer.parseInt(pages[3])
@@ -303,7 +287,6 @@ public class FirstPayVault {
 		columnCount = columnCount + 1
 		int pagesCount = getCount(nextObj,numberOfPages,creditCardNumber)
 		boolean flag=true
-		//boolean lastpage=false
 		WebElement table = driver.findElement(By.xpath("//table[@id='transactionTable']/tbody"))
 		for(int i=1;i<=pagesCount;i++){
 			List<WebElement> rows=table.findElements(By.tagName('tr'))
@@ -337,58 +320,6 @@ public class FirstPayVault {
 		}
 	}
 
-	/*@Keyword
-	 def verifyFilteredRowsByCardNumber(TestObject nextObj,TestObject numberOfPages,String vaultRefNumber){
-	 getInvoiceColumnCount("Last 4")
-	 boolean flag=true
-	 boolean lastpage=false
-	 //WebDriver driver=DriverFactory.getWebDriver()
-	 String pagesCount=WebUI.getText(numberOfPages)
-	 String[] pages=pagesCount.trim().split(" ")
-	 WebElement table
-	 while(!lastpage && flag){
-	 table= driver.findElement(By.xpath("//table[@id='transactionTable']/tbody"))
-	 List<WebElement> rows=table.findElements(By.tagName('tr'))
-	 String pagesCount=WebUI.getText(numberOfPages)
-	 String[] pages=pagesCount.trim().split(" ")
-	 for(int i=0;i<rows.size();i++){
-	 println i
-	 List<WebElement> cols=rows.get(i).findElements(By.tagName('td'))
-	 String cellVaultReference = cols.get(map_Tablecount['Vault Ref #']).getText()
-	 println cellVaultReference
-	 if(cellVaultReference.equalsIgnoreCase(vaultRefNumber)){
-	 KeywordUtil.markPassed("The Vault is found in page "+pages[1])
-	 safeActions.highLightElement(cols.get(map_Tablecount['Vault Ref #']), GlobalVariable.delayBetweenTestSteps)
-	 foundValue=true
-	 lastpage=true
-	 break
-	 }
-	 }
-	 //if(!foundValue){
-	 //String pagesCount=WebUI.getText(numberOfPages)
-	 //String[] pages=pagesCount.split(" ")
-	 if(pages[1].equalsIgnoreCase(pages[3])){
-	 if(foundValue){
-	 //KeywordUtil.markPassed()
-	 }
-	 else{
-	 KeywordUtil.markFailed("The Vault is not found in all the pages")
-	 lastpage=true
-	 foundValue=true
-	 }
-	 }
-	 else{
-	 if(foundValue){
-	 }
-	 else{
-	 WebUI.delay(5)
-	 safeActions.highLightElement(nextObj, GlobalVariable.delayBetweenTestSteps)
-	 WebUI.click(nextObj)
-	 }
-	 }
-	 }
-	 //}
-	 }*/
 
 	@Keyword
 	def getInvoiceColumnCount(String columnName){
@@ -405,7 +336,6 @@ public class FirstPayVault {
 			}
 		}
 		println map_Tablecount
-		//return map_TableCount
 	}
 
 	@Keyword
@@ -433,7 +363,7 @@ public class FirstPayVault {
 	}
 
 	@Keyword
-	def verifycardNumber(String expectedMessage,String popupMessage){
+	def verifyCardNumber(String expectedMessage,String popupMessage){
 		println expectedMessage
 		println popupMessage
 		boolean flag=false

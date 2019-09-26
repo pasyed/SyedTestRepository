@@ -162,10 +162,10 @@ def static "pages.FirstPayVault.verifyStrings"(
          , 	popupMessage)
 }
 
-def static "pages.FirstPayVault.verifycardNumber"(
+def static "pages.FirstPayVault.verifyCardNumber"(
     	String expectedMessage	
      , 	String popupMessage	) {
-    (new pages.FirstPayVault()).verifycardNumber(
+    (new pages.FirstPayVault()).verifyCardNumber(
         	expectedMessage
          , 	popupMessage)
 }

@@ -1,0 +1,76 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+1stPayVault,Firefox 68.0,,,2019-09-23 07:02:49,2019-09-23 07:17:56,15m - 6.872s,INCOMPLETE
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_001,Firefox 68.0,,,2019-09-23 07:02:49,2019-09-23 07:05:12,2m - 23.043s,ERROR
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:02:50,2019-09-23 07:02:58,7.460s,PASSED
+delay(6),Firefox 68.0,,,2019-09-23 07:02:58,2019-09-23 07:03:04,6.034s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Firefox 68.0,,,2019-09-23 07:03:04,2019-09-23 07:03:30,25.985s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [5])",Firefox 68.0,,,2019-09-23 07:03:30,2019-09-23 07:04:06,36.172s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [5])",Firefox 68.0,,,2019-09-23 07:04:06,2019-09-23 07:04:42,36.181s,ERROR
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), 5)",Firefox 68.0,,,2019-09-23 07:04:42,2019-09-23 07:05:12,30.568s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:05:12,2019-09-23 07:05:12,0.008s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_002,Firefox 68.0,,,2019-09-23 07:05:12,2019-09-23 07:07:33,2m - 20.587s,ERROR
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:05:13,2019-09-23 07:05:19,6.081s,PASSED
+delay(6),Firefox 68.0,,,2019-09-23 07:05:19,2019-09-23 07:05:25,6.007s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Firefox 68.0,,,2019-09-23 07:05:25,2019-09-23 07:05:51,25.711s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [5])",Firefox 68.0,,,2019-09-23 07:05:51,2019-09-23 07:06:27,35.890s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [5])",Firefox 68.0,,,2019-09-23 07:06:27,2019-09-23 07:07:02,35.866s,ERROR
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), 5)",Firefox 68.0,,,2019-09-23 07:07:02,2019-09-23 07:07:33,30.602s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:07:33,2019-09-23 07:07:33,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_003,Firefox 68.0,,,2019-09-23 07:07:33,2019-09-23 07:09:53,2m - 20.107s,ERROR
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:07:33,2019-09-23 07:07:39,5.775s,PASSED
+delay(6),Firefox 68.0,,,2019-09-23 07:07:39,2019-09-23 07:07:45,6.005s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Firefox 68.0,,,2019-09-23 07:07:45,2019-09-23 07:08:11,25.720s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [5])",Firefox 68.0,,,2019-09-23 07:08:11,2019-09-23 07:08:47,35.876s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [5])",Firefox 68.0,,,2019-09-23 07:08:47,2019-09-23 07:09:23,35.844s,ERROR
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), 5)",Firefox 68.0,,,2019-09-23 07:09:23,2019-09-23 07:09:53,30.510s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:09:53,2019-09-23 07:09:53,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_004,Firefox 68.0,,,2019-09-23 07:09:53,2019-09-23 07:10:13,19.709s,FAILED
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:09:54,2019-09-23 07:09:59,5.859s,PASSED
+delay(6),Firefox 68.0,,,2019-09-23 07:09:59,2019-09-23 07:10:05,6.010s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Firefox 68.0,,,2019-09-23 07:10:05,2019-09-23 07:10:13,7.481s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:10:13,2019-09-23 07:10:13,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_005,Firefox 68.0,,,2019-09-23 07:10:13,2019-09-23 07:10:13,0.469s,FAILED
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:10:13,2019-09-23 07:10:13,0.094s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:10:13,2019-09-23 07:10:13,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_006,Firefox 68.0,,,2019-09-23 07:10:13,2019-09-23 07:10:46,32.898s,FAILED
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:10:14,2019-09-23 07:10:21,7.187s,PASSED
+delay(6),Firefox 68.0,,,2019-09-23 07:10:21,2019-09-23 07:10:27,6.000s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Firefox 68.0,,,2019-09-23 07:10:27,2019-09-23 07:10:46,19.265s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:10:46,2019-09-23 07:10:46,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_007,Firefox 68.0,,,2019-09-23 07:10:46,2019-09-23 07:10:47,0.508s,FAILED
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:10:47,2019-09-23 07:10:47,0.080s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:10:47,2019-09-23 07:10:47,0.002s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_009,Firefox 68.0,,,2019-09-23 07:10:47,2019-09-23 07:13:10,2m - 22.738s,ERROR
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:10:47,2019-09-23 07:10:55,7.579s,PASSED
+delay(6),Firefox 68.0,,,2019-09-23 07:10:55,2019-09-23 07:11:01,6.000s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Firefox 68.0,,,2019-09-23 07:11:01,2019-09-23 07:11:27,26.346s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [5])",Firefox 68.0,,,2019-09-23 07:11:27,2019-09-23 07:12:03,35.865s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [5])",Firefox 68.0,,,2019-09-23 07:12:03,2019-09-23 07:12:39,36.071s,ERROR
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), 5)",Firefox 68.0,,,2019-09-23 07:12:39,2019-09-23 07:13:10,30.536s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:13:10,2019-09-23 07:13:10,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_010,Firefox 68.0,,,2019-09-23 07:13:10,2019-09-23 07:15:33,2m - 23.739s,ERROR
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:13:10,2019-09-23 07:13:19,8.905s,PASSED
+delay(6),Firefox 68.0,,,2019-09-23 07:13:19,2019-09-23 07:13:25,6.005s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Firefox 68.0,,,2019-09-23 07:13:25,2019-09-23 07:13:51,25.822s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [5])",Firefox 68.0,,,2019-09-23 07:13:51,2019-09-23 07:14:27,35.912s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [5])",Firefox 68.0,,,2019-09-23 07:14:27,2019-09-23 07:15:03,36.094s,ERROR
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), 5)",Firefox 68.0,,,2019-09-23 07:15:03,2019-09-23 07:15:33,30.685s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:15:33,2019-09-23 07:15:33,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_011,Firefox 68.0,,,2019-09-23 07:15:33,2019-09-23 07:17:56,2m - 22.491s,ERROR
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-09-23 07:15:34,2019-09-23 07:15:42,8.007s,PASSED
+delay(6),Firefox 68.0,,,2019-09-23 07:15:42,2019-09-23 07:15:48,6.001s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Firefox 68.0,,,2019-09-23 07:15:48,2019-09-23 07:16:13,25.718s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [5])",Firefox 68.0,,,2019-09-23 07:16:13,2019-09-23 07:16:49,36.109s,ERROR
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [5])",Firefox 68.0,,,2019-09-23 07:16:49,2019-09-23 07:17:25,35.836s,ERROR
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), 5)",Firefox 68.0,,,2019-09-23 07:17:25,2019-09-23 07:17:56,30.517s,FAILED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-09-23 07:17:56,2019-09-23 07:17:56,0.000s,PASSED

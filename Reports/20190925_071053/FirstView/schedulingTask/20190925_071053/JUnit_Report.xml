@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="schedulingTask" time="78" tests="0" failures="0" errors="1">
+    <testsuite name="schedulingTask" tests="0" failures="0" errors="1" time="78" timestamp="2019-09-25 07:10:58" hostname="venkata.annam - FW1-D-DTA-ZENQ1" id="Test Suites/FirstView/schedulingTask">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053"/>
+            <property name="logFiles" value="C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053\\execution0.log"/>
+            <property name="attachments" value="C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053\\1569413499647.png, C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053\\1569413499811.png, C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053\\1569413506043.png, C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053\\1569413536736.png, C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053/Screenshots//TC_Sales_001.png"/>
+            <property name="hostName" value="venkata.annam - FW1-D-DTA-ZENQ1"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.3.2.4"/>
+            <property name="browser" value="Firefox 68.0"/>
+            <property name="hostAddress" value="172.25.52.168"/>
+            <property name="sessionId" value="9f68d9c1-ab53-4102-8bdb-7fab02041a7e"/>
+            <property name="seleniumVersion" value="3.141.59"/>
+            <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+            <property name="platform" value="Windows 10"/>
+        </properties>
+        <testcase name="Test Cases/FirstView/Sale/TC_Sales_001" classname="Test Cases/FirstView/Sale/TC_Sales_001" status="ERROR">
+            <error type="ERROR" message="Test Cases/FirstView/Sale/TC_Sales_001 FAILED.&#xA;Reason:&#xA;com.kms.katalon.core.exception.StepErrorException: schedulingTask.ts:unable to selectranjanatest2 - 888814981372/001 Account Type: Retail in Select by Value in time -25seconds&#xD;&#xA;&#x9;at com.kms.katalon.core.util.KeywordUtil.markError(KeywordUtil.java:65)&#xD;&#xA;&#x9;at com.kms.katalon.core.util.KeywordUtil$markError$0.call(Unknown Source)&#xD;&#xA;&#x9;at utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(SafeActions.groovy:116)&#xD;&#xA;&#x9;at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;&#xA;&#x9;at TC_Sales_001.run(TC_Sales_001:24)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1569413453876.run(TempTestSuite1569413453876.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-09-25 07:10:58 - [TEST_CASE][ERROR] - Test Cases/FirstView/Sale/TC_Sales_001: Test Cases/FirstView/Sale/TC_Sales_001 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: schedulingTask.ts:unable to selectranjanatest2 - 888814981372/001 Account Type: Retail in Select by Value in time -25seconds&#xD;
+	at com.kms.katalon.core.util.KeywordUtil.markError(KeywordUtil.java:65)&#xD;
+	at com.kms.katalon.core.util.KeywordUtil$markError$0.call(Unknown Source)&#xD;
+	at utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(SafeActions.groovy:116)&#xD;
+	at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_Sales_001.run(TC_Sales_001:24)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569413453876.run(TempTestSuite1569413453876.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-09-25 07:10:59 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null&#xD;
+&#xD;
+2019-09-25 07:10:59 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-09-25 07:10:59 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null&#xD;
+&#xD;
+2019-09-25 07:10:59 - [TEST_STEP][PASSED] - utilities.SafeActions.openBrowser(URL, [PageLoadTime]): utilities.SafeActions.openBrowser is PASSED&#xD;
+&#xD;
+2019-09-25 07:10:59 - [MESSAGE][INFO] - Opening Browser&#xD;
+&#xD;
+2019-09-25 07:11:00 - [MESSAGE][INFO] - Starting 'Firefox' driver&#xD;
+&#xD;
+2019-09-25 07:11:00 - [MESSAGE][INFO] - Action delay is set to 0 seconds&#xD;
+&#xD;
+2019-09-25 07:11:07 - [MESSAGE][PASSED] - Browser is opened with url: 'http://172.25.48.28/secure/VPOS/VPOS/Vpos'&#xD;
+&#xD;
+2019-09-25 07:11:07 - [MESSAGE][PASSED] - Current window maximized&#xD;
+&#xD;
+2019-09-25 07:11:07 - [MESSAGE][INFO] - Browser Launched Successfully&#xD;
+&#xD;
+2019-09-25 07:11:07 - [MESSAGE][PASSED] - utilities.SafeActions.openBrowser is PASSED&#xD;
+&#xD;
+2019-09-25 07:11:07 - [TEST_STEP][PASSED] - delay(delayForElement): Delayed 6 second(s)&#xD;
+&#xD;
+2019-09-25 07:11:13 - [MESSAGE][PASSED] - Delayed 6 second(s)&#xD;
+&#xD;
+2019-09-25 07:11:13 - [TEST_STEP][ERROR] - utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject("Pages/Sale/dropDown_AccountType"), RetailAccountOption, "Select by Value", [25]): com.kms.katalon.core.exception.StepErrorException: schedulingTask.ts:unable to selectranjanatest2 - 888814981372/001 Account Type: Retail in Select by Value in time -25seconds&#xD;
+&#xD;
+2019-09-25 07:11:39 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //select[@id='select-active-midtid']'. Please recheck the objects properties to make sure the desired element is located. &#xD;
+&#xD;
+2019-09-25 07:11:39 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Pages/Sale/dropDown_AccountType' located by 'By.xpath: //select[@id='select-active-midtid']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Pages/Sale/dropDown_AccountType' located by 'By.xpath: //select[@id='select-active-midtid']' not found&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1434)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$1.call(Unknown Source)&#xD;
+	at utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(SafeActions.groovy:105)&#xD;
+	at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_Sales_001.run(TC_Sales_001:24)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569413453876.run(TempTestSuite1569413453876.groovy:35)&#xD;
+)&#xD;
+[[ATTACHMENT|C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053\\1569413499647.png]]&#xD;
+&#xD;
+2019-09-25 07:11:39 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Pages/Sale/dropDown_AccountType' is present (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Pages/Sale/dropDown_AccountType' is present&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1434)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$1.call(Unknown Source)&#xD;
+	at utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(SafeActions.groovy:105)&#xD;
+	at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_Sales_001.run(TC_Sales_001:24)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569413453876.run(TempTestSuite1569413453876.groovy:35)&#xD;
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Pages/Sale/dropDown_AccountType' located by 'By.xpath: //select[@id='select-active-midtid']' not found&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xD;
+	... 22 more&#xD;
+)&#xD;
+[[ATTACHMENT|C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053\\1569413499811.png]]&#xD;
+&#xD;
+2019-09-25 07:11:39 - [MESSAGE][ERROR] - com.kms.katalon.core.exception.StepErrorException: schedulingTask.ts:unable to selectranjanatest2 - 888814981372/001 Account Type: Retail in Select by Value in time -25seconds&#xD;
+&#xD;
+2019-09-25 07:11:39 - [TEST_STEP][PASSED] - delay(delayBetweenTestSteps): Delayed 3 second(s)&#xD;
+&#xD;
+2019-09-25 07:11:42 - [MESSAGE][PASSED] - Delayed 3 second(s)&#xD;
+&#xD;
+2019-09-25 07:11:42 - [TEST_STEP][FAILED] - pages.Sale.verifyIfEntryModeIsChecked(tabName, entryModeCheckBox, delayBetweenTestSteps): Unable to check object ''&#xD;
+&#xD;
+2019-09-25 07:11:46 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //section[@id="p-Sale"]//*[text()="Manually Keyed"]/ancestor::div[1]/input'. Please recheck the objects properties to make sure the desired element is located. &#xD;
+&#xD;
+2019-09-25 07:11:46 - [MESSAGE][FAILED] - Unable to verify object '' is checked (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify object '' is checked&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementCheckedKeyword.verifyElementChecked(VerifyElementCheckedKeyword.groovy:92)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementCheckedKeyword.execute(VerifyElementCheckedKeyword.groovy:68)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementChecked(WebUiBuiltInKeywords.groovy:1367)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementChecked$2.call(Unknown Source)&#xD;
+	at pages.Sale.verifyIfEntryModeIsChecked(Sale.groovy:49)&#xD;
+	at pages.Sale.invokeMethod(Sale.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_Sales_001.run(TC_Sales_001:28)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569413453876.run(TempTestSuite1569413453876.groovy:35)&#xD;
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: '' located by 'By.xpath: //section[@id="p-Sale"]//*[text()="Manually Keyed"]/ancestor::div[1]/input' not found&#xD;
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementCheckedKeyword$_verifyElementChecked_closure1.doCall(VerifyElementCheckedKeyword.groovy:78)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementCheckedKeyword$_verifyElementChecked_closure1.call(VerifyElementCheckedKeyword.groovy)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementCheckedKeyword.verifyElementChecked(VerifyElementCheckedKeyword.groovy:92)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementCheckedKeyword.execute(VerifyElementCheckedKeyword.groovy:68)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementChecked(WebUiBuiltInKeywords.groovy:1367)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementChecked$2.call(Unknown Source)&#xD;
+	at pages.Sale.verifyIfEntryModeIsChecked(Sale.groovy:49)&#xD;
+	at pages.Sale.invokeMethod(Sale.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at Script1567766911375.run(Script1567766911375.groovy:28)&#xD;
+	... 13 more&#xD;
+)&#xD;
+[[ATTACHMENT|C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053\\1569413506043.png]]&#xD;
+&#xD;
+2019-09-25 07:11:46 - [MESSAGE][INFO] - This is the error from Catch block&#xD;
+&#xD;
+2019-09-25 07:12:16 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //section[@id="p-Sale"]//*[text()="Manually Keyed"]/ancestor::div[1]/input'. Please recheck the objects properties to make sure the desired element is located. &#xD;
+&#xD;
+2019-09-25 07:12:16 - [MESSAGE][FAILED] - Unable to check object '' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to check object ''&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.CheckKeyword.check(CheckKeyword.groovy:88)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.CheckKeyword.execute(CheckKeyword.groovy:67)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.check(WebUiBuiltInKeywords.groovy:1039)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$check$3.call(Unknown Source)&#xD;
+	at pages.Sale.verifyIfEntryModeIsChecked(Sale.groovy:61)&#xD;
+	at pages.Sale.invokeMethod(Sale.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_Sales_001.run(TC_Sales_001:28)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569413453876.run(TempTestSuite1569413453876.groovy:35)&#xD;
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: '' located by 'By.xpath: //section[@id="p-Sale"]//*[text()="Manually Keyed"]/ancestor::div[1]/input' not found&#xD;
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.CheckKeyword$_check_closure1.doCall(CheckKeyword.groovy:77)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.CheckKeyword$_check_closure1.call(CheckKeyword.groovy)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.CheckKeyword.check(CheckKeyword.groovy:88)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.CheckKeyword.execute(CheckKeyword.groovy:67)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.check(WebUiBuiltInKeywords.groovy:1039)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$check$3.call(Unknown Source)&#xD;
+	at pages.Sale.verifyIfEntryModeIsChecked(Sale.groovy:61)&#xD;
+	at pages.Sale.invokeMethod(Sale.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at Script1567766911375.run(Script1567766911375.groovy:28)&#xD;
+	... 13 more&#xD;
+)&#xD;
+[[ATTACHMENT|C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053\\1569413536736.png]]&#xD;
+&#xD;
+2019-09-25 07:12:16 - [MESSAGE][FAILED] - Unable to check object ''&#xD;
+&#xD;
+2019-09-25 07:12:16 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Taking screenshot successfully&#xD;
+&#xD;
+2019-09-25 07:12:16 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-09-25 07:12:16 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null&#xD;
+&#xD;
+2019-09-25 07:12:16 - [TEST_STEP][PASSED] - testCaseName = testCaseContext.getTestCaseId(): null&#xD;
+&#xD;
+2019-09-25 07:12:16 - [TEST_STEP][PASSED] - strCount = testCaseName.lastIndexOf("/"): null&#xD;
+&#xD;
+2019-09-25 07:12:16 - [TEST_STEP][PASSED] - testCaseName = testCaseName.substring(strCount): null&#xD;
+&#xD;
+2019-09-25 07:12:16 - [TEST_STEP][PASSED] - println(testCaseName): null&#xD;
+&#xD;
+2019-09-25 07:12:16 - [TEST_STEP][PASSED] - if (getTestCaseStatus().equalsIgnoreCase("Error")): Taking screenshot successfully&#xD;
+&#xD;
+2019-09-25 07:12:16 - [TEST_STEP][PASSED] - takeScreenshot(getReportFolder() + "/Screenshots/" + testCaseName + ".png"): Taking screenshot successfully&#xD;
+&#xD;
+2019-09-25 07:12:17 - [MESSAGE][PASSED] - Taking screenshot successfully&#xD;
+[[ATTACHMENT|C:\\Users\\venkata.annam\\Katalon Studio\\VPOS\\VPOS_Automation\\Reports\\20190925_071053\\FirstView\\schedulingTask\\20190925_071053/Screenshots//TC_Sales_001.png]]&#xD;
+&#xD;
+2019-09-25 07:12:17 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null</system-out>
+            <system-err>2019-09-25 07:10:58 - [TEST_CASE][ERROR] - Test Cases/FirstView/Sale/TC_Sales_001: Test Cases/FirstView/Sale/TC_Sales_001 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: schedulingTask.ts:unable to selectranjanatest2 - 888814981372/001 Account Type: Retail in Select by Value in time -25seconds&#xD;
+	at com.kms.katalon.core.util.KeywordUtil.markError(KeywordUtil.java:65)&#xD;
+	at com.kms.katalon.core.util.KeywordUtil$markError$0.call(Unknown Source)&#xD;
+	at utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(SafeActions.groovy:116)&#xD;
+	at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_Sales_001.run(TC_Sales_001:24)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569413453876.run(TempTestSuite1569413453876.groovy:35)</system-err>
+        </testcase>
+        <system-out>2019-09-25 07:10:58 - [TEST_SUITE][INCOMPLETE] - schedulingTask: null</system-out>
+        <system-err>2019-09-25 07:10:58 - [TEST_SUITE][INCOMPLETE] - schedulingTask: null</system-err>
+    </testsuite>
+</testsuites>
