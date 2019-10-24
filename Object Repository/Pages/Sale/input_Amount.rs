@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='text-sale-info-amount']</value>
+         <value>//input[@placeholder='Amount']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,Chrome 76.0.3809.100,,,2019-10-24 02:31:58,2019-10-24 02:32:41,43.097s,INCOMPLETE
+,,,,,,,
+Test Cases/FirstView/Login/TC_Login,Chrome 76.0.3809.100,,,2019-10-24 02:31:59,2019-10-24 02:32:19,20.652s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-24 02:31:59,2019-10-24 02:31:59,0.138s,PASSED
+"utilities.SafeActions.openBrowser(""https://q-www-firstview-net.faps.net/MVC/Account/Login"", [10])",Chrome 76.0.3809.100,,,2019-10-24 02:31:59,2019-10-24 02:32:14,14.344s,PASSED
+pages.Login.login(),Chrome 76.0.3809.100,,,2019-10-24 02:32:14,2019-10-24 02:32:19,5.666s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-24 02:32:19,2019-10-24 02:32:19,0.012s,PASSED
+,,,,,,,
+Test Cases/FirstView/Login/TC_SendCode,Chrome 76.0.3809.100,,,2019-10-24 02:32:19,2019-10-24 02:32:41,21.767s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-24 02:32:19,2019-10-24 02:32:19,0.003s,PASSED
+flag = pages.SendCode.verifyPage(),Chrome 76.0.3809.100,,,2019-10-24 02:32:20,2019-10-24 02:32:21,0.644s,PASSED
+if (flag),Chrome 76.0.3809.100,,,2019-10-24 02:32:21,2019-10-24 02:32:41,20.481s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-24 02:32:41,2019-10-24 02:32:41,0.007s,PASSED

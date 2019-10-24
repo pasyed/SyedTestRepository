@@ -16,14 +16,24 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.URL, (([GlobalVariable.PageLoadTime]) as int[]))
+not_run: CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.URL, (([GlobalVariable.PageLoadTime]) as int[]))
 
-WebUI.delay(GlobalVariable.delayForElement)
+not_run: WebUI.delay(GlobalVariable.delayForElement)
 
-CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_AccountType'), 
+not_run: CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_AccountType'), 
     GlobalVariable.RetailAccountOption, 'Select by Value', (([25]) as int[]))
 
-WebUI.delay(GlobalVariable.delayBetweenTestSteps)
+not_run: WebUI.delay(GlobalVariable.delayBetweenTestSteps)
+
+CustomKeywords.'utilities.SafeActions.openBrowser'('https://q-www-firstview-net.faps.net/MVC/Account/Login', (([10]) as int[]))
+
+CustomKeywords.'pages.Login.login'('ZenQRetail', 'P@ssword1')
+
+WebUI.callTestCase(findTestCase('FirstView/Login/TC_SendCode'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('FirstView/Login/TC_FirstView'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.switchToWindowTitle('Transcenter - VPOS')
 
 CustomKeywords.'pages.Sale.verifyIfEntryModeIsChecked'(tabName, entryModeCheckBox, GlobalVariable.delayBetweenTestSteps)
 
@@ -53,12 +63,18 @@ CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(f
 CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), 
     cardYear, 'Select Expiration Year', (([5]) as int[]))
 
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScrollOnLabel'(findTestObject('Pages/Sale/label_ExpirationYear'), 
+    'Click on Exp Year label', (([GlobalVariable.PageLoadTime]) as int[]))
+
 //CustomKeywords.'utilities.SafeActions.selectSeleniumCode'(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 'September')
 //WebElement ele=WebUiCommonHelper.findWebElement(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 60)
 //WebUI.executeJavaScript("arguments[0].className=arguments[1]",ele,"form-control parsley-success")
 //WebUI.executeJavaScript("document.getElementById('select-expiration-month').className='form-control parsley-success'", null)
 //CustomKeywords.'utilities.SafeActions.selectSeleniumCodeYear'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), '2022')
 WebUI.delay(GlobalVariable.delayBetweenTestSteps)
+
+CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_SecurityCode'), '111', 'Enter Security code', 
+        (([GlobalVariable.delayForElement]) as int[]))
 
 WebUI.scrollToElement(findTestObject('Pages/Sale/invoiceNumber'), GlobalVariable.delayBetweenTestSteps)
 

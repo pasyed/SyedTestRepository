@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="New Test Suite" time="120" tests="2" failures="0" errors="1">
+    <testsuite name="New Test Suite" tests="2" failures="0" errors="1" time="120" timestamp="2019-10-24 02:46:24" hostname="Pratyusha.Nulu - FW1-D-DTA-ZENQ2" id="Test Suites/New Test Suite">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_024620\\New Test Suite\\20191024_024620"/>
+            <property name="logFiles" value="C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_024620\\New Test Suite\\20191024_024620\\execution0.log"/>
+            <property name="attachments" value="C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_024620\\New Test Suite\\20191024_024620\\1571903303862.png, C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_024620\\New Test Suite\\20191024_024620\\1571903304190.png, C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_024620\\New Test Suite\\20191024_024620/Screenshots//TC_FirstView.png"/>
+            <property name="hostName" value="Pratyusha.Nulu - FW1-D-DTA-ZENQ2"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.3.2.4"/>
+            <property name="browser" value="Chrome 76.0.3809.100"/>
+            <property name="hostAddress" value="172.25.52.169"/>
+            <property name="sessionId" value="cbcff6912b5cca2f77d5ae1eb5c484eb"/>
+            <property name="seleniumVersion" value="3.141.59"/>
+            <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+            <property name="platform" value="Windows 10"/>
+        </properties>
+        <testcase name="Test Cases/FirstView/Login/TC_Login" classname="Test Cases/FirstView/Login/TC_Login" status="PASSED">
+            <system-out>2019-10-24 02:46:25 - [TEST_CASE][PASSED] - Test Cases/FirstView/Login/TC_Login: Test Cases/FirstView/Login/TC_Login&#xD;
+&#xD;
+2019-10-24 02:46:25 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null&#xD;
+&#xD;
+2019-10-24 02:46:25 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:46:25 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null&#xD;
+&#xD;
+2019-10-24 02:46:25 - [TEST_STEP][PASSED] - utilities.SafeActions.openBrowser("https://q-www-firstview-net.faps.net/MVC/Account/Login", [10]): utilities.SafeActions.openBrowser is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:26 - [MESSAGE][INFO] - Opening Browser&#xD;
+&#xD;
+2019-10-24 02:46:26 - [MESSAGE][INFO] - Starting 'Chrome' driver&#xD;
+&#xD;
+2019-10-24 02:46:26 - [MESSAGE][INFO] - Action delay is set to 0 seconds&#xD;
+&#xD;
+2019-10-24 02:46:36 - [MESSAGE][PASSED] - Browser is opened with url: 'https://q-www-firstview-net.faps.net/MVC/Account/Login'&#xD;
+&#xD;
+2019-10-24 02:46:40 - [MESSAGE][PASSED] - Current window maximized&#xD;
+&#xD;
+2019-10-24 02:46:40 - [MESSAGE][INFO] - Browser Launched Successfully&#xD;
+&#xD;
+2019-10-24 02:46:40 - [MESSAGE][PASSED] - utilities.SafeActions.openBrowser is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:40 - [TEST_STEP][PASSED] - pages.Login.login(): pages.Login.login is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:40 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/Login/userName' is present&#xD;
+&#xD;
+2019-10-24 02:46:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Pages/Login/userName' is clicked on&#xD;
+&#xD;
+2019-10-24 02:46:42 - [MESSAGE][PASSED] - Text 'ZenQRetail' is set on object 'Object Repository/Pages/Login/userName'&#xD;
+&#xD;
+2019-10-24 02:46:42 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/Login/password' is present&#xD;
+&#xD;
+2019-10-24 02:46:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Pages/Login/password' is clicked on&#xD;
+&#xD;
+2019-10-24 02:46:43 - [MESSAGE][PASSED] - Text 'P@ssword1' is set on object 'Object Repository/Pages/Login/password'&#xD;
+&#xD;
+2019-10-24 02:46:43 - [MESSAGE][INFO] - Safe Click Without scroll&#xD;
+&#xD;
+2019-10-24 02:46:43 - [MESSAGE][INFO] - New Test Suite.ts:waiting until Click on Login is Clickable&#xD;
+&#xD;
+2019-10-24 02:46:43 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/Login/login' is clickable&#xD;
+&#xD;
+2019-10-24 02:46:43 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/Login/login' is visible&#xD;
+&#xD;
+2019-10-24 02:46:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Pages/Login/login' is clicked on&#xD;
+&#xD;
+2019-10-24 02:46:45 - [MESSAGE][INFO] - New Test Suite.ts: click on the Click on Login&#xD;
+&#xD;
+2019-10-24 02:46:45 - [MESSAGE][PASSED] - pages.Login.login is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - testCaseName = testCaseContext.getTestCaseId(): null&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - strCount = testCaseName.lastIndexOf("/"): null&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - testCaseName = testCaseName.substring(strCount): null&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - println(testCaseName): null&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - if (getTestCaseStatus().equalsIgnoreCase("Error")): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/FirstView/Login/TC_SendCode" classname="Test Cases/FirstView/Login/TC_SendCode" status="PASSED">
+            <system-out>2019-10-24 02:46:45 - [TEST_CASE][PASSED] - Test Cases/FirstView/Login/TC_SendCode: Test Cases/FirstView/Login/TC_SendCode&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:46:45 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null&#xD;
+&#xD;
+2019-10-24 02:46:46 - [TEST_STEP][PASSED] - flag = pages.SendCode.verifyPage(): pages.SendCode.verifyPage is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:46 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/SendCodeToValidate/header_SendCodeToValidate' is present and visible in viewport&#xD;
+&#xD;
+2019-10-24 02:46:46 - [MESSAGE][PASSED] - pages.SendCode.verifyPage is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:46 - [TEST_STEP][PASSED] - if (flag): pages.SendCode.clickonUserSettings is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:46 - [TEST_STEP][PASSED] - pages.SendCode.clickonUserSettings(): pages.SendCode.clickonUserSettings is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:46 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Pages/SendCodeToValidate/link_UserSettings' successfully&#xD;
+&#xD;
+2019-10-24 02:46:46 - [MESSAGE][INFO] - New Test Suite.ts:waiting until Click on User Settings is Clickable&#xD;
+&#xD;
+2019-10-24 02:46:47 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/SendCodeToValidate/link_UserSettings' is clickable&#xD;
+&#xD;
+2019-10-24 02:46:47 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/SendCodeToValidate/link_UserSettings' is visible&#xD;
+&#xD;
+2019-10-24 02:46:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Pages/SendCodeToValidate/link_UserSettings' is clicked on&#xD;
+&#xD;
+2019-10-24 02:46:48 - [MESSAGE][INFO] - New Test Suite.ts: Clicked on the Click on User Settings&#xD;
+&#xD;
+2019-10-24 02:46:48 - [MESSAGE][PASSED] - pages.SendCode.clickonUserSettings is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - testCaseName = testCaseContext.getTestCaseId(): null&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - strCount = testCaseName.lastIndexOf("/"): null&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - testCaseName = testCaseName.substring(strCount): null&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - println(testCaseName): null&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - if (getTestCaseStatus().equalsIgnoreCase("Error")): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/FirstView/Login/TC_FirstView" classname="Test Cases/FirstView/Login/TC_FirstView" status="ERROR">
+            <error type="ERROR" message="Test Cases/FirstView/Login/TC_FirstView FAILED.&#xA;Reason:&#xA;com.kms.katalon.core.exception.StepErrorException: New Test Suite.ts:Click on VPOS button in First View screen is not Clickable&#xD;&#xA;&#x9;at com.kms.katalon.core.util.KeywordUtil.markError(KeywordUtil.java:65)&#xD;&#xA;&#x9;at com.kms.katalon.core.util.KeywordUtil$markError$0.call(Unknown Source)&#xD;&#xA;&#x9;at utilities.SafeActions.waitUntilClickable(SafeActions.groovy:174)&#xD;&#xA;&#x9;at utilities.SafeActions.safeClickWithoutScroll(SafeActions.groovy:129)&#xD;&#xA;&#x9;at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;&#xA;&#x9;at TC_FirstView.run(TC_FirstView:21)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1571903180300.run(TempTestSuite1571903180300.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-10-24 02:46:48 - [TEST_CASE][ERROR] - Test Cases/FirstView/Login/TC_FirstView: Test Cases/FirstView/Login/TC_FirstView FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: New Test Suite.ts:Click on VPOS button in First View screen is not Clickable&#xD;
+	at com.kms.katalon.core.util.KeywordUtil.markError(KeywordUtil.java:65)&#xD;
+	at com.kms.katalon.core.util.KeywordUtil$markError$0.call(Unknown Source)&#xD;
+	at utilities.SafeActions.waitUntilClickable(SafeActions.groovy:174)&#xD;
+	at utilities.SafeActions.safeClickWithoutScroll(SafeActions.groovy:129)&#xD;
+	at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_FirstView.run(TC_FirstView:21)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1571903180300.run(TempTestSuite1571903180300.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:46:48 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null&#xD;
+&#xD;
+2019-10-24 02:46:49 - [TEST_STEP][PASSED] - utilities.SafeActions.safeClickWithoutScroll(findTestObject("Pages/FirstView/link_Home"), "Click on Home button in First View screen", [PageLoadTime]): utilities.SafeActions.safeClickWithoutScroll is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:49 - [MESSAGE][INFO] - Safe Click Without scroll&#xD;
+&#xD;
+2019-10-24 02:46:49 - [MESSAGE][INFO] - New Test Suite.ts:waiting until Click on Home button in First View screen is Clickable&#xD;
+&#xD;
+2019-10-24 02:46:49 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/FirstView/link_Home' is clickable&#xD;
+&#xD;
+2019-10-24 02:46:49 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/FirstView/link_Home' is visible&#xD;
+&#xD;
+2019-10-24 02:46:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Pages/FirstView/link_Home' is clicked on&#xD;
+&#xD;
+2019-10-24 02:46:50 - [MESSAGE][INFO] - New Test Suite.ts: click on the Click on Home button in First View screen&#xD;
+&#xD;
+2019-10-24 02:46:50 - [MESSAGE][PASSED] - utilities.SafeActions.safeClickWithoutScroll is PASSED&#xD;
+&#xD;
+2019-10-24 02:46:50 - [TEST_STEP][ERROR] - utilities.SafeActions.safeClickWithoutScroll(findTestObject("Pages/FirstView/link_VPOS"), "Click on VPOS button in First View screen", [PageLoadTime]): com.kms.katalon.core.exception.StepErrorException: New Test Suite.ts:Click on VPOS button in First View screen is not Clickable&#xD;
+&#xD;
+2019-10-24 02:46:50 - [MESSAGE][INFO] - Safe Click Without scroll&#xD;
+&#xD;
+2019-10-24 02:46:50 - [MESSAGE][INFO] - New Test Suite.ts:waiting until Click on VPOS button in First View screen is Clickable&#xD;
+&#xD;
+2019-10-24 02:47:52 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[@id='lnkVPOS']'. Please recheck the objects properties to make sure the desired element is located. &#xD;
+&#xD;
+2019-10-24 02:47:52 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Pages/FirstView/link_VPOS' located by 'By.xpath: //a[@id='lnkVPOS']' not found&#xD;
+&#xD;
+2019-10-24 02:48:23 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[@id='lnkVPOS']'. Please recheck the objects properties to make sure the desired element is located. &#xD;
+&#xD;
+2019-10-24 02:48:24 - [MESSAGE][FAILED] - Web element with id: 'Object Repository/Pages/FirstView/link_VPOS' located by 'By.xpath: //a[@id='lnkVPOS']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Pages/FirstView/link_VPOS' located by 'By.xpath: //a[@id='lnkVPOS']' not found&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:372)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementVisible$5.call(Unknown Source)&#xD;
+	at utilities.SafeActions.waitUntilClickable(SafeActions.groovy:165)&#xD;
+	at utilities.SafeActions.safeClickWithoutScroll(SafeActions.groovy:129)&#xD;
+	at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_FirstView.run(TC_FirstView:21)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1571903180300.run(TempTestSuite1571903180300.groovy:35)&#xD;
+)&#xD;
+[[ATTACHMENT|C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_024620\\New Test Suite\\20191024_024620\\1571903303862.png]]&#xD;
+&#xD;
+2019-10-24 02:48:24 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Pages/FirstView/link_VPOS' is visible (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Pages/FirstView/link_VPOS' is visible&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.verifyElementVisible(VerifyElementVisibleKeyword.groovy:97)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword.execute(VerifyElementVisibleKeyword.groovy:67)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementVisible(WebUiBuiltInKeywords.groovy:372)&#xD;
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementVisible$5.call(Unknown Source)&#xD;
+	at utilities.SafeActions.waitUntilClickable(SafeActions.groovy:165)&#xD;
+	at utilities.SafeActions.safeClickWithoutScroll(SafeActions.groovy:129)&#xD;
+	at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_FirstView.run(TC_FirstView:21)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1571903180300.run(TempTestSuite1571903180300.groovy:35)&#xD;
+Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Pages/FirstView/link_VPOS' located by 'By.xpath: //a[@id='lnkVPOS']' not found&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.doCall(VerifyElementVisibleKeyword.groovy:89)&#xD;
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleKeyword$_verifyElementVisible_closure1.call(VerifyElementVisibleKeyword.groovy)&#xD;
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xD;
+	... 23 more&#xD;
+)&#xD;
+[[ATTACHMENT|C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_024620\\New Test Suite\\20191024_024620\\1571903304190.png]]&#xD;
+&#xD;
+2019-10-24 02:48:24 - [MESSAGE][FAILED] - New Test Suite.ts:Click on VPOS button in First View screen is not clickable in time - 60seconds&#xD;
+&#xD;
+2019-10-24 02:48:24 - [MESSAGE][ERROR] - com.kms.katalon.core.exception.StepErrorException: New Test Suite.ts:Click on VPOS button in First View screen is not Clickable&#xD;
+&#xD;
+2019-10-24 02:48:24 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Taking screenshot successfully&#xD;
+&#xD;
+2019-10-24 02:48:24 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:48:24 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null&#xD;
+&#xD;
+2019-10-24 02:48:24 - [TEST_STEP][PASSED] - testCaseName = testCaseContext.getTestCaseId(): null&#xD;
+&#xD;
+2019-10-24 02:48:24 - [TEST_STEP][PASSED] - strCount = testCaseName.lastIndexOf("/"): null&#xD;
+&#xD;
+2019-10-24 02:48:24 - [TEST_STEP][PASSED] - testCaseName = testCaseName.substring(strCount): null&#xD;
+&#xD;
+2019-10-24 02:48:24 - [TEST_STEP][PASSED] - println(testCaseName): null&#xD;
+&#xD;
+2019-10-24 02:48:24 - [TEST_STEP][PASSED] - if (getTestCaseStatus().equalsIgnoreCase("Error")): Taking screenshot successfully&#xD;
+&#xD;
+2019-10-24 02:48:24 - [TEST_STEP][PASSED] - takeScreenshot(getReportFolder() + "/Screenshots/" + testCaseName + ".png"): Taking screenshot successfully&#xD;
+&#xD;
+2019-10-24 02:48:24 - [MESSAGE][PASSED] - Taking screenshot successfully&#xD;
+[[ATTACHMENT|C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_024620\\New Test Suite\\20191024_024620/Screenshots//TC_FirstView.png]]</system-out>
+            <system-err>2019-10-24 02:46:48 - [TEST_CASE][ERROR] - Test Cases/FirstView/Login/TC_FirstView: Test Cases/FirstView/Login/TC_FirstView FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: New Test Suite.ts:Click on VPOS button in First View screen is not Clickable&#xD;
+	at com.kms.katalon.core.util.KeywordUtil.markError(KeywordUtil.java:65)&#xD;
+	at com.kms.katalon.core.util.KeywordUtil$markError$0.call(Unknown Source)&#xD;
+	at utilities.SafeActions.waitUntilClickable(SafeActions.groovy:174)&#xD;
+	at utilities.SafeActions.safeClickWithoutScroll(SafeActions.groovy:129)&#xD;
+	at utilities.SafeActions.invokeMethod(SafeActions.groovy)&#xD;
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)&#xD;
+	at TC_FirstView.run(TC_FirstView:21)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1571903180300.run(TempTestSuite1571903180300.groovy:35)</system-err>
+        </testcase>
+        <system-out>2019-10-24 02:46:24 - [TEST_SUITE][INCOMPLETE] - New Test Suite: null</system-out>
+        <system-err>2019-10-24 02:46:24 - [TEST_SUITE][INCOMPLETE] - New Test Suite: null</system-err>
+    </testsuite>
+</testsuites>

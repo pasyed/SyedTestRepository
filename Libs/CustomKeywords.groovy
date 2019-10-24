@@ -10,6 +10,14 @@ import com.kms.katalon.core.testobject.TestObject
 import org.openqa.selenium.WebElement
 
 
+def static "pages.Login.login"(
+    	String uName	
+     , 	String pwd	) {
+    (new pages.Login()).login(
+        	uName
+         , 	pwd)
+}
+
 def static "utilities.DynamicLocators.createDynamicLocators"(
     	String idValue	) {
     (new utilities.DynamicLocators()).createDynamicLocators(
@@ -50,6 +58,14 @@ def static "pages.Transaction_Management.verifyInvoiceRecord"(
 
 def static "pages.Transaction_Management.getInvoiceColumnCount"() {
     (new pages.Transaction_Management()).getInvoiceColumnCount()
+}
+
+def static "pages.SendCode.verifyPage"() {
+    (new pages.SendCode()).verifyPage()
+}
+
+def static "pages.SendCode.clickonUserSettings"() {
+    (new pages.SendCode()).clickonUserSettings()
 }
 
 def static "pages.FirstPayVault.verifyVaultSaved"(
@@ -396,6 +412,14 @@ def static "utilities.SafeActions.javascriptModifyClassAttribute"(
     	TestObject testObject	
      , 	int timeOut	) {
     (new utilities.SafeActions()).javascriptModifyClassAttribute(
+        	testObject
+         , 	timeOut)
+}
+
+def static "utilities.SafeActions.javascriptclick"(
+    	TestObject testObject	
+     , 	int timeOut	) {
+    (new utilities.SafeActions()).javascriptclick(
         	testObject
          , 	timeOut)
 }

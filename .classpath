@@ -115,8 +115,7 @@
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.2/plugins/com.google.http-client.google-http-client_1.22.0.jar"/>
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.2/plugins/ca.juliusdavies.not-yet-commons-ssl_0.3.11.jar"/>
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.2/plugins/com.kms.katalon.preferences_1.0.0.201908140948.jar"/>
-	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.2/configuration/plugin/install/24858/1.0.6/katalon-studio-report-plugin.jar"/>
-	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.2/configuration/plugin/install/18809/1.0.3/katalon-studio-microsoftteam-keywords-plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.2/configuration/plugin/install/24830/1.0.6/katalon-studio-report-plugin.jar"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="New Test Suite" time="43" tests="2" failures="0" errors="0">
+    <testsuite name="New Test Suite" tests="2" failures="0" errors="0" time="43" timestamp="2019-10-24 02:31:58" hostname="Pratyusha.Nulu - FW1-D-DTA-ZENQ2" id="Test Suites/New Test Suite">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_023153\\New Test Suite\\20191024_023153"/>
+            <property name="logFiles" value="C:\\Users\\Pratyusha.Nulu\\Katalon Studio\\VPOS_Internal\\VPOS_Internal\\Reports\\20191024_023153\\New Test Suite\\20191024_023153\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="Pratyusha.Nulu - FW1-D-DTA-ZENQ2"/>
+            <property name="os" value="Windows 10 64bit"/>
+            <property name="katalonVersion" value="6.3.2.4"/>
+            <property name="browser" value="Chrome 76.0.3809.100"/>
+            <property name="hostAddress" value="172.25.52.169"/>
+            <property name="sessionId" value="f878e0dc9ff385bdd39600a21d0562da"/>
+            <property name="seleniumVersion" value="3.141.59"/>
+            <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+            <property name="platform" value="Windows 10"/>
+        </properties>
+        <testcase name="Test Cases/FirstView/Login/TC_Login" classname="Test Cases/FirstView/Login/TC_Login" status="PASSED">
+            <system-out>2019-10-24 02:31:59 - [TEST_CASE][PASSED] - Test Cases/FirstView/Login/TC_Login: Test Cases/FirstView/Login/TC_Login&#xD;
+&#xD;
+2019-10-24 02:31:59 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null&#xD;
+&#xD;
+2019-10-24 02:31:59 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:31:59 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null&#xD;
+&#xD;
+2019-10-24 02:31:59 - [TEST_STEP][PASSED] - utilities.SafeActions.openBrowser("https://q-www-firstview-net.faps.net/MVC/Account/Login", [10]): utilities.SafeActions.openBrowser is PASSED&#xD;
+&#xD;
+2019-10-24 02:31:59 - [MESSAGE][INFO] - Opening Browser&#xD;
+&#xD;
+2019-10-24 02:32:00 - [MESSAGE][INFO] - Starting 'Chrome' driver&#xD;
+&#xD;
+2019-10-24 02:32:00 - [MESSAGE][INFO] - Action delay is set to 0 seconds&#xD;
+&#xD;
+2019-10-24 02:32:09 - [MESSAGE][PASSED] - Browser is opened with url: 'https://q-www-firstview-net.faps.net/MVC/Account/Login'&#xD;
+&#xD;
+2019-10-24 02:32:14 - [MESSAGE][PASSED] - Current window maximized&#xD;
+&#xD;
+2019-10-24 02:32:14 - [MESSAGE][INFO] - Browser Launched Successfully&#xD;
+&#xD;
+2019-10-24 02:32:14 - [MESSAGE][PASSED] - utilities.SafeActions.openBrowser is PASSED&#xD;
+&#xD;
+2019-10-24 02:32:14 - [TEST_STEP][PASSED] - pages.Login.login(): pages.Login.login is PASSED&#xD;
+&#xD;
+2019-10-24 02:32:14 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/Login/userName' is present&#xD;
+&#xD;
+2019-10-24 02:32:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Pages/Login/userName' is clicked on&#xD;
+&#xD;
+2019-10-24 02:32:15 - [MESSAGE][PASSED] - Text 'ZenQRetail' is set on object 'Object Repository/Pages/Login/userName'&#xD;
+&#xD;
+2019-10-24 02:32:15 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/Login/password' is present&#xD;
+&#xD;
+2019-10-24 02:32:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Pages/Login/password' is clicked on&#xD;
+&#xD;
+2019-10-24 02:32:17 - [MESSAGE][PASSED] - Text 'P@ssword1' is set on object 'Object Repository/Pages/Login/password'&#xD;
+&#xD;
+2019-10-24 02:32:17 - [MESSAGE][INFO] - Safe Click Without scroll&#xD;
+&#xD;
+2019-10-24 02:32:17 - [MESSAGE][INFO] - New Test Suite.ts:waiting until Click on Login is Clickable&#xD;
+&#xD;
+2019-10-24 02:32:17 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/Login/login' is clickable&#xD;
+&#xD;
+2019-10-24 02:32:17 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/Login/login' is visible&#xD;
+&#xD;
+2019-10-24 02:32:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Pages/Login/login' is clicked on&#xD;
+&#xD;
+2019-10-24 02:32:19 - [MESSAGE][INFO] - New Test Suite.ts: click on the Click on Login&#xD;
+&#xD;
+2019-10-24 02:32:19 - [MESSAGE][PASSED] - pages.Login.login is PASSED&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - testCaseName = testCaseContext.getTestCaseId(): null&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - strCount = testCaseName.lastIndexOf("/"): null&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - testCaseName = testCaseName.substring(strCount): null&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - println(testCaseName): null&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - if (getTestCaseStatus().equalsIgnoreCase("Error")): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/FirstView/Login/TC_SendCode" classname="Test Cases/FirstView/Login/TC_SendCode" status="PASSED">
+            <system-out>2019-10-24 02:32:19 - [TEST_CASE][PASSED] - Test Cases/FirstView/Login/TC_SendCode: Test Cases/FirstView/Login/TC_SendCode&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:32:19 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null&#xD;
+&#xD;
+2019-10-24 02:32:20 - [TEST_STEP][PASSED] - flag = pages.SendCode.verifyPage(): pages.SendCode.verifyPage is PASSED&#xD;
+&#xD;
+2019-10-24 02:32:21 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/SendCodeToValidate/header_SendCodeToValidate' is present and visible in viewport&#xD;
+&#xD;
+2019-10-24 02:32:21 - [MESSAGE][PASSED] - pages.SendCode.verifyPage is PASSED&#xD;
+&#xD;
+2019-10-24 02:32:21 - [TEST_STEP][PASSED] - if (flag): pages.SendCode.clickonUserSettings is PASSED&#xD;
+&#xD;
+2019-10-24 02:32:21 - [TEST_STEP][PASSED] - pages.SendCode.clickonUserSettings(): pages.SendCode.clickonUserSettings is PASSED&#xD;
+&#xD;
+2019-10-24 02:32:21 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Pages/SendCodeToValidate/link_UserSettings' successfully&#xD;
+&#xD;
+2019-10-24 02:32:21 - [MESSAGE][INFO] - New Test Suite.ts:waiting until Click on User Settings is Clickable&#xD;
+&#xD;
+2019-10-24 02:32:21 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/SendCodeToValidate/link_UserSettings' is clickable&#xD;
+&#xD;
+2019-10-24 02:32:21 - [MESSAGE][PASSED] - Object 'Object Repository/Pages/SendCodeToValidate/link_UserSettings' is visible&#xD;
+&#xD;
+2019-10-24 02:32:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Pages/SendCodeToValidate/link_UserSettings' is clicked on&#xD;
+&#xD;
+2019-10-24 02:32:41 - [MESSAGE][INFO] - New Test Suite.ts: Clicked on the Click on User Settings&#xD;
+&#xD;
+2019-10-24 02:32:41 - [MESSAGE][PASSED] - pages.SendCode.clickonUserSettings is PASSED&#xD;
+&#xD;
+2019-10-24 02:32:41 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null&#xD;
+&#xD;
+2019-10-24 02:32:41 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null&#xD;
+&#xD;
+2019-10-24 02:32:41 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null&#xD;
+&#xD;
+2019-10-24 02:32:41 - [TEST_STEP][PASSED] - testCaseName = testCaseContext.getTestCaseId(): null&#xD;
+&#xD;
+2019-10-24 02:32:41 - [TEST_STEP][PASSED] - strCount = testCaseName.lastIndexOf("/"): null&#xD;
+&#xD;
+2019-10-24 02:32:41 - [TEST_STEP][PASSED] - testCaseName = testCaseName.substring(strCount): null&#xD;
+&#xD;
+2019-10-24 02:32:41 - [TEST_STEP][PASSED] - println(testCaseName): null&#xD;
+&#xD;
+2019-10-24 02:32:41 - [TEST_STEP][PASSED] - if (getTestCaseStatus().equalsIgnoreCase("Error")): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-10-24 02:31:58 - [TEST_SUITE][INCOMPLETE] - New Test Suite: null</system-out>
+        <system-err>2019-10-24 02:31:58 - [TEST_SUITE][INCOMPLETE] - New Test Suite: null</system-err>
+    </testsuite>
+</testsuites>

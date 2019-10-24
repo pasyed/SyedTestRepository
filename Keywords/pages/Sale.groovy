@@ -104,6 +104,7 @@ public class Sale {
 		try{
 			boolean headingDisplayed = WebUI.verifyElementPresent(testObj, 60)
 			if(headingDisplayed){
+				safeObj.highLightElement(testObj, GlobalVariable.delayBetweenTestSteps)
 				KeywordUtil.markPassed("The screen is Transaction Complete screen")
 
 			}

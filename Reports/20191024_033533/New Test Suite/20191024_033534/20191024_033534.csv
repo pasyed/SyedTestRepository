@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,Chrome 76.0.3809.100,,,2019-10-24 03:35:39,2019-10-24 03:36:38,59.160s,INCOMPLETE
+,,,,,,,
+Test Cases/FirstView/Login/TC_Login,Chrome 76.0.3809.100,,,2019-10-24 03:35:39,2019-10-24 03:36:06,26.372s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-24 03:35:39,2019-10-24 03:35:40,0.555s,PASSED
+"utilities.SafeActions.openBrowser(""https://q-www-firstview-net.faps.net/MVC/Account/Login"", [10])",Chrome 76.0.3809.100,,,2019-10-24 03:35:40,2019-10-24 03:35:58,17.703s,PASSED
+pages.Login.login(),Chrome 76.0.3809.100,,,2019-10-24 03:35:58,2019-10-24 03:36:05,7.587s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-24 03:36:05,2019-10-24 03:36:06,0.017s,PASSED
+,,,,,,,
+Test Cases/FirstView/Login/TC_SendCode,Chrome 76.0.3809.100,,,2019-10-24 03:36:06,2019-10-24 03:36:35,29.767s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-24 03:36:06,2019-10-24 03:36:06,0.003s,PASSED
+flag = pages.SendCode.verifyPage(),Chrome 76.0.3809.100,,,2019-10-24 03:36:06,2019-10-24 03:36:07,0.630s,PASSED
+if (flag),Chrome 76.0.3809.100,,,2019-10-24 03:36:07,2019-10-24 03:36:35,28.582s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-24 03:36:35,2019-10-24 03:36:35,0.014s,PASSED
+,,,,,,,
+Test Cases/FirstView/Login/TC_FirstView,Chrome 76.0.3809.100,,,2019-10-24 03:36:35,2019-10-24 03:36:38,2.439s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-24 03:36:35,2019-10-24 03:36:35,0.003s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstView/link_Home""), ""Click on Home button in First View screen"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 03:36:36,2019-10-24 03:36:36,0.002s,NOT_RUN
+"utilities.SafeActions.javascriptclick(findTestObject(""Pages/FirstView/link_Home""), delayForElement)",Chrome 76.0.3809.100,,,2019-10-24 03:36:36,2019-10-24 03:36:37,0.908s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstView/link_VPOS""), ""Click on VPOS button in First View screen"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 03:36:37,2019-10-24 03:36:38,1.082s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-24 03:36:38,2019-10-24 03:36:38,0.014s,PASSED

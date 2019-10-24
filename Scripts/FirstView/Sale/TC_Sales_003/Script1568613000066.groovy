@@ -13,14 +13,24 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.URL, (([GlobalVariable.PageLoadTime]) as int[]))
+not_run: CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.URL, (([GlobalVariable.PageLoadTime]) as int[]))
 
-WebUI.delay(delayForPageLoad)
+not_run: WebUI.delay(delayForPageLoad)
 
-CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_AccountType'), 
+not_run: CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_AccountType'), 
     accountType, 'Select by Value', (([25]) as int[]))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
+
+CustomKeywords.'utilities.SafeActions.openBrowser'('https://q-www-firstview-net.faps.net/MVC/Account/Login', (([10]) as int[]))
+
+CustomKeywords.'pages.Login.login'('ZenQRetail', 'P@ssword1')
+
+WebUI.callTestCase(findTestCase('FirstView/Login/TC_SendCode'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('FirstView/Login/TC_FirstView'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.switchToWindowTitle('Transcenter - VPOS')
 
 CustomKeywords.'pages.Sale.verifyIfEntryModeIsChecked'('Sale', 'Manually Keyed', 5)
 
@@ -53,7 +63,18 @@ CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(f
 CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), 
     '2022', 'Select Expiration Year', (([5]) as int[]))
 
-WebUI.delay(2)
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScrollOnLabel'(findTestObject('Pages/Sale/label_ExpirationYear'), 
+    'Click on Exp Year label', (([GlobalVariable.PageLoadTime]) as int[]))
+
+//CustomKeywords.'utilities.SafeActions.selectSeleniumCode'(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 'September')
+//WebElement ele=WebUiCommonHelper.findWebElement(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 60)
+//WebUI.executeJavaScript("arguments[0].className=arguments[1]",ele,"form-control parsley-success")
+//WebUI.executeJavaScript("document.getElementById('select-expiration-month').className='form-control parsley-success'", null)
+//CustomKeywords.'utilities.SafeActions.selectSeleniumCodeYear'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), '2022')
+WebUI.delay(GlobalVariable.delayBetweenTestSteps)
+
+CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_SecurityCode'), '111', 'Enter Security code', 
+        (([GlobalVariable.delayForElement]) as int[]))
 
 WebUI.scrollToElement(findTestObject('Pages/Sale/invoiceNumber'), 10)
 
@@ -93,19 +114,23 @@ vaultReference = CustomKeywords.'utilities.SafeActions.timeWithMilliSeconds'()
 CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_VaultReferenceNumber'), vaultReference, 
     'Enter Vault Reference Number', (([5]) as int[]))
 
-CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/Sale/button_SaveAndReturnToSale_TransactionComplete'), 
-    'Click on Save and Return To Sale button', (([10]) as int[]))
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/Sale/button_SaveToVault'), 'Click on Save To Vault button', 
+        (([10]) as int[]))
 
-popupFromMessage = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Sale/popupText_AfterClickOn_SaveAndReturnToSale_TransactionComplete'), 
-    5)
+popupFromMessage = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Sale/popupAfterClickOn_SaveToVault'), 
+    GlobalVariable.PageLoadTime)
 
-CustomKeywords.'utilities.SafeActions.verifyPopupMessage'('Successfully Saved to Vault. Please click ok to return to sale screen.', 
-    popupFromMessage)
+String saveToVaultPopUpMessage = ('Successfully Saved to Vault: Reference Number:' + ' ') + vaultReference
+
+CustomKeywords.'utilities.SafeActions.verifyPopupMessage'(saveToVaultPopUpMessage, popupFromMessage)
 
 WebUI.delay(3)
 
-CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/Sale/button_OK_PopupAfterClickOnSaveAndReturnToSale_TransactionComplete'), 
-    'Click on OK', (([15]) as int[]))
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/Sale/close_TextBox'), 'Click on Close', 
+        (([15]) as int[]))
+
+CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/Sale/button_ReturnToSale'), 'Click on Return To Sale', 
+        (([GlobalVariable.PageLoadTime]) as int[]))
 
 WebUI.delay(5)
 
@@ -141,6 +166,5 @@ CustomKeywords.'utilities.SafeActions.verifyPopupMessage'('Vault Deletion succes
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/closeLocatorForDeletePopupMessage'), 
     'Click on Close button', (([5]) as int[]))*/
-
 WebUI.closeBrowser()
 

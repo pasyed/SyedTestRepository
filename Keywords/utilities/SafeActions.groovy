@@ -283,10 +283,11 @@ public class SafeActions {
 
 	@Keyword
 	def getAttributeValue(TestObject testObject,String tabName){
+		String attributeValue
 		try{
-			String attributeValue=WebUI.getAttribute(testObject, "class")
+			attributeValue=WebUI.getAttribute(testObject, "class")
 			println attributeValue
-			if(attributeValue.contains("active_tab")){
+			if(attributeValue.contains("active_tab tabs__link")){
 
 				KeywordUtil.markPassed("The screen is ${tabName} screen")
 			}
@@ -298,7 +299,7 @@ public class SafeActions {
 			//WebUI.takeScreenshot(reportsFolderPath+"/getAttributeValue.png")
 			KeywordUtil.markError("Expection while getting Class Attribute")
 		}
-		return attributeValue
+		attributeValue
 	}
 
 	@Keyword
@@ -411,6 +412,14 @@ public class SafeActions {
 		WebElement ele=WebUiCommonHelper.findWebElement(testObject, timeOut)
 		JavascriptExecutor je=(JavascriptExecutor)driver
 		je.executeScript("arguments[0].setAttribute('class',arguments[1]);", ele,"form-control parsley-success")
+	}
+
+	@Keyword
+	def javascriptclick(TestObject testObject,int timeOut){
+		WebDriver driver = DriverFactory.getWebDriver()
+		WebElement ele=WebUiCommonHelper.findWebElement(testObject, timeOut)
+		JavascriptExecutor je=(JavascriptExecutor)driver
+		je.executeScript("arguments[0].click();", ele)
 	}
 
 	@Keyword

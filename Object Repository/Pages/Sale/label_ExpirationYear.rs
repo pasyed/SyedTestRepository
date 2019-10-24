@@ -6,12 +6,11 @@
    <elementGuidId>a846b97d-8eec-4fcf-b838-2e1f7eb4876c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//section[@id='p-Sale']//label[contains(@for,'select-expiration-year')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//section[@id='p-Sale']//label[@for='select-expiration-year']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
