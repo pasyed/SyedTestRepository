@@ -13,51 +13,57 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.URL, (([GlobalVariable.PageLoadTime]) as int[]))
+not_run: CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.Old_URL, (([GlobalVariable.PageLoadTime]) as int[]))
 
-WebUI.delay(6)
+not_run: WebUI.delay(6)
 
-CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_AccountType'), 
+not_run: CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_AccountType'), 
     'ranjanatest2 - 888814981372/003 Account Type: Moto', 'Select by Value', (([25]) as int[]))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
+
+CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.URL, (([GlobalVariable.PageLoadTime]) as int[]))
+
+CustomKeywords.'pages.Login.login'(uName, password)
+
+WebUI.callTestCase(findTestCase('FirstView/Login/TC_SendCode'), [:], FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'utilities.SafeActions.javascriptclick'(findTestObject('Pages/FirstView/link_Home'), GlobalVariable.delayForElement)
+
+WebUI.switchToWindowTitle('Transcenter - VPOS')
 
 CustomKeywords.'pages.Sale.verifyIfEntryModeIsChecked'('Sale', 'Manually Keyed', GlobalVariable.delayBetweenTestSteps)
 
 //CustomKeywords.'pages.Sale.verify1stPayVposPage'(findTestObject('Pages/Sale/img_1stPayVPOS'))
 'Scroll down to Element inputAmount'
-WebUI.scrollToElement(findTestObject('Pages/Sale/input_Amount'), 60)
+WebUI.scrollToElement(findTestObject('Pages/Sale/input_Amount'), GlobalVariable.PageLoadTime)
 
-CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_Amount'), '550', 'Enter Amount into Amount text box', 
-        (([20]) as int[]))
+CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_Amount'), amount, 'Enter Amount into Amount text box', 
+        (([GlobalVariable.PageLoadTime]) as int[]))
 
-total_Amount = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Sale/total_Amount'), 10)
-
-WebUI.scrollToElement(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 60)
+WebUI.scrollToElement(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), GlobalVariable.PageLoadTime)
 
 CustomKeywords.'pages.Sale.verifyIfEntryModeIsChecked'('Sale', 'Card Not Present', GlobalVariable.delayBetweenTestSteps)
 
-CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_CardNumber'), '4111111111111111', 'Entering Card Number', 
-        (([10]) as int[]))
+CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_CardNumber'), GlobalVariable.visaCardNumber, 
+    'Entering Card Number', (([GlobalVariable.PageLoadTime]) as int[]))
 
 /*CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 
     'May', 'Selecting Month', (([10]) as int[]))*/
-WebUI.delay(4)
-
+//WebUI.delay(4)
 CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 
-    'September', 'Enter Expiration Month', (([5]) as int[]))
+    cardMonth, 'Enter Expiration Month', (([GlobalVariable.PageLoadTime]) as int[]))
 
 //WebElement ele=WebUiCommonHelper.findWebElement(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 60)
 //WebUI.executeJavaScript("arguments[0].className=arguments[1]",ele,"form-control parsley-success")
 //WebUI.executeJavaScript("document.getElementById('select-expiration-month').className='form-control parsley-success'", null)
 CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), 
-    '2022', 'Enter Expiration Year', (([5]) as int[]))
+    cardYear, 'Enter Expiration Year', (([GlobalVariable.PageLoadTime]) as int[]))
 
-WebUI.delay(2)
+//WebUI.delay(2)
+WebUI.scrollToElement(findTestObject('Pages/Sale/invoiceNumber'), GlobalVariable.PageLoadTime)
 
-WebUI.scrollToElement(findTestObject('Pages/Sale/invoiceNumber'), 10)
-
-invoiceNumber = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Sale/invoiceNumber'), 10)
+invoiceNumber = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Sale/invoiceNumber'), GlobalVariable.PageLoadTime)
 
 //WebUI.executeJavaScript("document.getElementById('select-expiration-year').className='form-control parsley-success'", null)
 /*CustomKeywords.'utilities.SafeActions.selectSeleniumCode'(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 'December')
@@ -78,22 +84,24 @@ WebUI.delay(4)
 
 CustomKeywords.'utilities.SafeActions.selectSeleniumCode'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), '2025')*/
 CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/Sale/button_Checkout'), 'Click on Checkout button', 
-        (([60]) as int[]))
+        (([GlobalVariable.PageLoadTime]) as int[]))
 
 CustomKeywords.'pages.Sale.verifyTransactionCompletePage'(findTestObject('Pages/Sale/heading_TransactionComplete'))
 
-WebUI.delay(6)
+//WebUI.delay(6)
+total_Amount = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Sale/totalAmount_In_TransactionComplete'), 
+    GlobalVariable.PageLoadTime)
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/Sale/button_ReturnToSale'), 'Click on Return To Sale', 
-        (([10]) as int[]))
+        (([GlobalVariable.PageLoadTime]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/Transaction_Management/tab_TransactionManagement'), 
-    'Transaction Management Tab', (([10]) as int[]))
+    'Transaction Management Tab', (([GlobalVariable.PageLoadTime]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/Transaction_Management/button_Search'), 
-    'Search', (([10]) as int[]))
+    'Search', (([GlobalVariable.PageLoadTime]) as int[]))
 
-WebUI.scrollToElement(findTestObject('Pages/Transaction_Management/invoice_ForTransaction'), 5)
+WebUI.scrollToElement(findTestObject('Pages/Transaction_Management/invoice_ForTransaction'), GlobalVariable.PageLoadTime)
 
 //invoiceFromTable = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Transaction_Management/invoice_ForTransaction'), 
 // 10)

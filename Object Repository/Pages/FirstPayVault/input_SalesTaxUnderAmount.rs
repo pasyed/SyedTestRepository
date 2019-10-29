@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//section[@id='p-1stPayVault']//div[@id='container-sale-info']//label[text()='Sales Tax']/parent::div/following-sibling::div/div/div</value>
+         <value>//section[@id='p-1stPayVault']//div[@id='container-sale-info']//label[contains(text(),'Sales Tax')]/parent::div/following-sibling::div/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

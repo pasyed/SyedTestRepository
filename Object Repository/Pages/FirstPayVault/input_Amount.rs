@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='text-vault-sale-info-amount']</value>
+         <value>//section[@id='p-1stPayVault']//input[contains(@id,'saleId')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

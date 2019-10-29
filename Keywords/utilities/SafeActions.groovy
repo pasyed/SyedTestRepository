@@ -62,6 +62,9 @@ public class SafeActions {
 		int waitTime=0;
 		try{
 			waitTime = syncObj.getWaitTime(optionWaitTime)
+			WebUI.waitForElementPresent(testObj, waitTime)
+			//if(!WebUI.verifyElementPresent(testObj, waitTime))
+			WebUI.scrollToElement(testObj, waitTime)
 			if(WebUI.verifyElementPresent(testObj,waitTime)){
 				highLightElement(testObj,waitTime)
 				WebUI.click(testObj)
@@ -81,6 +84,9 @@ public class SafeActions {
 		int waitTime=0;
 		try{
 			waitTime = syncObj.getWaitTime(optionWaitTime)
+			WebUI.waitForElementPresent(testObj, waitTime)
+			if(!WebUI.verifyElementVisible(testObj))
+				WebUI.scrollToElement(testObj, waitTime)
 			if(WebUI.verifyElementPresent(testObj,waitTime)){
 				highLightElement(testObj,waitTime)
 				WebUI.click(testObj)
@@ -100,6 +106,7 @@ public class SafeActions {
 		int waitTime=0;
 		try{
 			waitTime = syncObj.getWaitTime(optionWaitTime)
+			WebUI.waitForElementVisible(testObj, waitTime)
 			if(WebUI.verifyElementPresent(testObj,waitTime)){
 				highLightElement(testObj,waitTime)
 				WebUI.click(testObj)
@@ -146,6 +153,7 @@ public class SafeActions {
 		try{
 			KeywordUtil.logInfo("Safe Click Without scroll On Label")
 			waitTime = syncObj.getWaitTime(optionWaitTime)
+			WebUI.waitForElementVisible(testObj, waitTime)
 			KeywordUtil.logInfo(syncObj.getTestCaseName()+" click on the "+friendlyWebElementName)
 			highLightElement(testObj,waitTime)
 			WebUI.click(testObj)
@@ -180,7 +188,9 @@ public class SafeActions {
 		int waitTime=0
 		try{
 			waitTime=syncObj.getWaitTime(optionWaitTime)
-			WebUI.scrollToElement(testObj, waitTime)
+			WebUI.waitForElementPresent(testObj, waitTime)
+			if(!WebUI.verifyElementVisible(testObj))
+				WebUI.scrollToElement(testObj, waitTime)
 			if(waitUntilClickable(testObj, friendlyWebElementName, waitTime)){
 				highLightElement(testObj,waitTime)
 				WebUI.click(testObj)
@@ -198,6 +208,9 @@ public class SafeActions {
 
 	@Keyword
 	def selectSeleniumCode(TestObject testObj,String value){
+		WebUI.waitForElementPresent(testObj, GlobalVariable.pageLoadTime)
+		if(!WebUI.verifyElementVisible(testObj))
+			WebUI.scrollToElement(testObj, GlobalVariable.pageLoadTime)
 		WebElement ele=WebUiCommonHelper.findWebElement(testObj, 10)
 		Select s=new Select(ele);
 		//s.selectByIndex(value)
@@ -207,6 +220,9 @@ public class SafeActions {
 
 	@Keyword
 	def selectSeleniumCodeYear(TestObject testObj,String value){
+		WebUI.waitForElementPresent(testObj, waitTime)
+		if(!WebUI.verifyElementVisible(testObj))
+			WebUI.scrollToElement(testObj, waitTime)
 		WebElement ele=WebUiCommonHelper.findWebElement(testObj, 10)
 		Select s=new Select(ele);
 		//s.selectByIndex(Value)
@@ -218,6 +234,9 @@ public class SafeActions {
 	def safeGetText(TestObject testObj,int waitTime){
 		String sValue=null
 		try{
+			WebUI.waitForElementPresent(testObj, waitTime)
+			//if(!WebUI.verifyElementPresent(testObj))
+			WebUI.scrollToElement(testObj, waitTime)
 			if(WebUI.verifyElementPresent(testObj, waitTime)){
 				highLightElement(testObj,waitTime)
 				sValue=WebUI.getText(testObj)
@@ -237,6 +256,9 @@ public class SafeActions {
 	@Keyword
 	def safeCheckForElement(TestObject testObj,int waitTime){
 		try{
+			WebUI.waitForElementPresent(testObj, waitTime)
+			if(!WebUI.verifyElementVisible(testObj))
+				WebUI.scrollToElement(testObj, waitTime)
 			if(WebUI.verifyElementPresent(testObj, waitTime)){
 				highLightElement(testObj,waitTime)
 				WebUI.check(testObj)
@@ -252,6 +274,9 @@ public class SafeActions {
 	}
 	@Keyword
 	def verifyInvoicePresent(TestObject testObj){
+		WebUI.waitForElementPresent(testObj, GlobalVariable.pageLoadTime)
+		if(!WebUI.verifyElementVisible(testObj))
+			WebUI.scrollToElement(testObj, GlobalVariable.pageLoadTime)
 		String invoiceNumber = WebUI.getText(testObj)
 		return invoiceNumber
 	}
@@ -285,6 +310,10 @@ public class SafeActions {
 	def getAttributeValue(TestObject testObject,String tabName){
 		String attributeValue
 		try{
+			//WebUI.waitForElementPresent(testObj, GlobalVariable.pageLoadTime)
+			//if(!WebUI.verifyElementPresent(testObj,GlobalVariable.pageLoadTime))
+			//WebUI.scrollToElement(testObj, GlobalVariable.pageLoadTime)
+			//WebUI.waitForElementHasAttribute(testObject,"class", GlobalVariable.pageLoadTime)
 			attributeValue=WebUI.getAttribute(testObject, "class")
 			println attributeValue
 			if(attributeValue.contains("active_tab tabs__link")){
@@ -304,8 +333,10 @@ public class SafeActions {
 
 	@Keyword
 	def getAttribute(TestObject testObject,String tabName){
+		String attributeValue
 		try{
-			String attributeValue=WebUI.getAttribute(testObject, "value")
+			//WebUI.waitForElementHasAttribute(testObject, "value", GlobalVariable.pageLoadTime)
+			attributeValue=WebUI.getAttribute(testObject, "value")
 			println attributeValue
 		}
 		catch(Exception e){
@@ -318,7 +349,7 @@ public class SafeActions {
 		 else{
 		 KeywordUtil.markFailed("The screen is not ${tabName} screen")
 		 }*/
-		return attributeValue
+		attributeValue
 	}
 
 	@Keyword
@@ -349,6 +380,13 @@ public class SafeActions {
 		}
 	}
 
+	@Keyword
+	def safeTypeUsingJavascript(TestObject testObject,String amount){
+		WebDriver driver = DriverFactory.getWebDriver()
+		JavascriptExecutor je=(JavascriptExecutor)driver
+		WebElement ele=WebUiCommonHelper.findWebElement(testObject, GlobalVariable.delayForElement)
+		je.executeScript("arguments[0].value='${amount}';", ele)
+	}
 	@Keyword
 	def highLightElement(WebElement element,int timeOut){
 		try{

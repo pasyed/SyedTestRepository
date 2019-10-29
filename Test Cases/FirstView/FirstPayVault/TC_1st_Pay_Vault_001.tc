@@ -5,4 +5,67 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>dc54fcb9-a09f-4c97-a5a5-9657be44f4a7</testCaseGuid>
+   <variable>
+      <defaultValue>'ZenQRetail'</defaultValue>
+      <description></description>
+      <id>451258bc-7ec5-424c-9d7b-a4fb7f849c48</id>
+      <masked>false</masked>
+      <name>uName</name>
+   </variable>
+   <variable>
+      <defaultValue>'P@ssword1'</defaultValue>
+      <description></description>
+      <id>d45112be-10e0-40b8-9f9c-1945d70aca92</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'September'</defaultValue>
+      <description></description>
+      <id>659fad05-1a8d-4e7c-bbe1-1e729fb05804</id>
+      <masked>false</masked>
+      <name>cardMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'2023'</defaultValue>
+      <description></description>
+      <id>d9315dce-d87c-4456-b0d5-a0fc41b7f379</id>
+      <masked>false</masked>
+      <name>cardYear</name>
+   </variable>
+   <variable>
+      <defaultValue>'Venkata Sai'</defaultValue>
+      <description></description>
+      <id>5e57cc59-5152-4e3d-b850-501b3e6ae242</id>
+      <masked>false</masked>
+      <name>contactName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street123'</defaultValue>
+      <description></description>
+      <id>8618dc7f-924f-4f46-840f-9802a2be002c</id>
+      <masked>false</masked>
+      <name>address</name>
+   </variable>
+   <variable>
+      <defaultValue>'76102'</defaultValue>
+      <description></description>
+      <id>684ac16b-a925-4a20-b6b4-5227dafc3300</id>
+      <masked>false</masked>
+      <name>postalCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'DTDC'</defaultValue>
+      <description></description>
+      <id>a21a2598-a169-4e04-9a6a-8cf682500ec8</id>
+      <masked>false</masked>
+      <name>shippingMethod</name>
+   </variable>
+   <variable>
+      <defaultValue>100</defaultValue>
+      <description></description>
+      <id>842ede62-a771-463a-ae8b-c5b068d6d26e</id>
+      <masked>false</masked>
+      <name>elementTime</name>
+   </variable>
 </TestCaseEntity>

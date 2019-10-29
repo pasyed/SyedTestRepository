@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='first-pay-vault-container']//select[@id=&quot;select-expiration-month&quot;]</value>
+         <value>//div[@id='first-pay-vault-container']//select[contains(@id,&quot;select-expiration-month&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

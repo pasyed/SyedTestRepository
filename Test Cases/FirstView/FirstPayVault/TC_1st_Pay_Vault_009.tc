@@ -6,31 +6,87 @@
    <comment></comment>
    <testCaseGuid>9f5c0a02-0a3d-4cb3-94a7-7e660a942c4e</testCaseGuid>
    <variable>
-      <defaultValue>'September'</defaultValue>
+      <defaultValue>'Venkata Sai'</defaultValue>
+      <description></description>
+      <id>a5508d63-c963-42ca-9314-b6d3b5e2aba3</id>
+      <masked>false</masked>
+      <name>customerName</name>
+   </variable>
+   <variable>
+      <defaultValue>'ZenQRetail'</defaultValue>
+      <description></description>
+      <id>d471881c-bf11-4a65-bcc1-4a115237ebd2</id>
+      <masked>false</masked>
+      <name>uName</name>
+   </variable>
+   <variable>
+      <defaultValue>'P@ssword1'</defaultValue>
+      <description></description>
+      <id>8a34252d-7022-4fc9-b646-648da00b0e72</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'October'</defaultValue>
       <description></description>
       <id>0cdaff34-3548-409e-9223-43f203784e8d</id>
       <masked>false</masked>
-      <name>cardMonth</name>
+      <name>cardThisMonth</name>
    </variable>
    <variable>
       <defaultValue>'2019'</defaultValue>
       <description></description>
       <id>ab3940db-98ba-491b-84bb-598071157871</id>
       <masked>false</masked>
-      <name>cardYear</name>
+      <name>cardThisYear</name>
    </variable>
    <variable>
-      <defaultValue>20</defaultValue>
+      <defaultValue>29</defaultValue>
       <description></description>
       <id>1f2c29d6-4e5d-42a6-b83e-855e14f286e1</id>
       <masked>false</masked>
       <name>start_date_Value</name>
    </variable>
    <variable>
-      <defaultValue>20</defaultValue>
+      <defaultValue>29</defaultValue>
       <description></description>
       <id>d3ac6547-142d-4009-9fec-e631cd44b0c6</id>
       <masked>false</masked>
       <name>end_date_Value</name>
+   </variable>
+   <variable>
+      <defaultValue>'September'</defaultValue>
+      <description></description>
+      <id>44f0ae67-41b9-47e5-adc4-0c5fefa893db</id>
+      <masked>false</masked>
+      <name>cardMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'2032'</defaultValue>
+      <description></description>
+      <id>fec838c5-a872-4acc-89f0-d4f4afe1d218</id>
+      <masked>false</masked>
+      <name>cardYear</name>
+   </variable>
+   <variable>
+      <defaultValue>'76102'</defaultValue>
+      <description></description>
+      <id>0015fcee-d4ad-4c0d-9e0a-04e10fb71d94</id>
+      <masked>false</masked>
+      <name>postalCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street123'</defaultValue>
+      <description></description>
+      <id>a1283993-64a0-49bb-9521-24895f026f21</id>
+      <masked>false</masked>
+      <name>address</name>
+   </variable>
+   <variable>
+      <defaultValue>'DTDC'</defaultValue>
+      <description></description>
+      <id>dca63e2f-c4c4-478a-9821-e7fe58d4e5ed</id>
+      <masked>false</masked>
+      <name>shippingMethod</name>
    </variable>
 </TestCaseEntity>

@@ -53,9 +53,14 @@ public class Transaction_Management {
 					String cellTransactionValue = cols.get(map_TableCount['Invoice']).getText()
 					String cellAmountValue = cols.get(map_TableCount['Amount']).getText()
 					String cellTransactionStatus = cols.get(map_TableCount['Transaction Status']).getText()
+					//cellAmountValue=cellAmountValue.substring(1)
 					println cellTransactionValue
 					println cellAmountValue
+					//if(amount.contains('$')){
+					//amount=amount.substring(1)
+					//}
 					println amount
+					println invoice
 					if(cellTransactionValue.equalsIgnoreCase(invoice) && cellAmountValue.equalsIgnoreCase(amount) && cellTransactionStatus.equalsIgnoreCase("Pending")){
 						safeActions.highLightElement(cols.get(map_TableCount['Invoice']), GlobalVariable.delayBetweenTestSteps)
 						safeActions.highLightElement(cols.get(map_TableCount['Amount']), GlobalVariable.delayBetweenTestSteps)

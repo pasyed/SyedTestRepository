@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='text-vault-cardholder-verification-customer-name']</value>
+         <value>//input[@id='p_1_2_3_1_2_3__text-cardholder-verification-customer-name']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,10 +6,59 @@
    <comment></comment>
    <testCaseGuid>0e506ed9-7b1c-43f9-9b66-5a4707d9ff24</testCaseGuid>
    <variable>
-      <defaultValue>'4111111111111111'</defaultValue>
+      <defaultValue>'Venkata Sai'</defaultValue>
       <description></description>
-      <id>aa6a81db-98b4-43ae-82ca-7aa1a268136b</id>
+      <id>a5508d63-c963-42ca-9314-b6d3b5e2aba3</id>
       <masked>false</masked>
-      <name>cardNumber</name>
+      <name>customerName</name>
+   </variable>
+   <variable>
+      <defaultValue>'ZenQRetail'</defaultValue>
+      <description></description>
+      <id>d471881c-bf11-4a65-bcc1-4a115237ebd2</id>
+      <masked>false</masked>
+      <name>uName</name>
+   </variable>
+   <variable>
+      <defaultValue>'P@ssword1'</defaultValue>
+      <description></description>
+      <id>8a34252d-7022-4fc9-b646-648da00b0e72</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'September'</defaultValue>
+      <description></description>
+      <id>44f0ae67-41b9-47e5-adc4-0c5fefa893db</id>
+      <masked>false</masked>
+      <name>cardMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'2032'</defaultValue>
+      <description></description>
+      <id>fec838c5-a872-4acc-89f0-d4f4afe1d218</id>
+      <masked>false</masked>
+      <name>cardYear</name>
+   </variable>
+   <variable>
+      <defaultValue>'76102'</defaultValue>
+      <description></description>
+      <id>0015fcee-d4ad-4c0d-9e0a-04e10fb71d94</id>
+      <masked>false</masked>
+      <name>postalCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street123'</defaultValue>
+      <description></description>
+      <id>a1283993-64a0-49bb-9521-24895f026f21</id>
+      <masked>false</masked>
+      <name>address</name>
+   </variable>
+   <variable>
+      <defaultValue>'DTDC'</defaultValue>
+      <description></description>
+      <id>dca63e2f-c4c4-478a-9821-e7fe58d4e5ed</id>
+      <masked>false</masked>
+      <name>shippingMethod</name>
    </variable>
 </TestCaseEntity>

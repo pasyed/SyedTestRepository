@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='text-cardholder-verification-postal-code']</value>
+         <value>//input[@placeholder='Postal Code' and contains(@id,'postal-code')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

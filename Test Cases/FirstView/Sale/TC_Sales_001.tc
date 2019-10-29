@@ -47,4 +47,25 @@
       <masked>false</masked>
       <name>cardYear</name>
    </variable>
+   <variable>
+      <defaultValue>'111'</defaultValue>
+      <description></description>
+      <id>cecd97ee-d2ac-4c1c-9703-78e8ba2e466a</id>
+      <masked>false</masked>
+      <name>securityCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'ZenQRetail'</defaultValue>
+      <description></description>
+      <id>afd6895c-5029-4bdd-8503-34812611a1b1</id>
+      <masked>false</masked>
+      <name>uName</name>
+   </variable>
+   <variable>
+      <defaultValue>'P@ssword1'</defaultValue>
+      <description></description>
+      <id>d747eb0e-4ab0-4b52-9a27-279883d57859</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
 </TestCaseEntity>

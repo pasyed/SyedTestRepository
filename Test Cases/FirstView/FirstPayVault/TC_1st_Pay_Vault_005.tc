@@ -13,6 +13,20 @@
       <name>customerName</name>
    </variable>
    <variable>
+      <defaultValue>'ZenQRetail'</defaultValue>
+      <description></description>
+      <id>d471881c-bf11-4a65-bcc1-4a115237ebd2</id>
+      <masked>false</masked>
+      <name>uName</name>
+   </variable>
+   <variable>
+      <defaultValue>'P@ssword1'</defaultValue>
+      <description></description>
+      <id>8a34252d-7022-4fc9-b646-648da00b0e72</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
       <defaultValue>'September'</defaultValue>
       <description></description>
       <id>2023a30b-97ea-4cbb-b697-516512c6ee79</id>
@@ -32,5 +46,33 @@
       <id>7bbb06d8-f0e4-456b-95a9-0ddd66433a26</id>
       <masked>false</masked>
       <name>cardMonthUpdate</name>
+   </variable>
+   <variable>
+      <defaultValue>'76102'</defaultValue>
+      <description></description>
+      <id>0015fcee-d4ad-4c0d-9e0a-04e10fb71d94</id>
+      <masked>false</masked>
+      <name>postalCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street123'</defaultValue>
+      <description></description>
+      <id>a1283993-64a0-49bb-9521-24895f026f21</id>
+      <masked>false</masked>
+      <name>address</name>
+   </variable>
+   <variable>
+      <defaultValue>'DTDC'</defaultValue>
+      <description></description>
+      <id>dca63e2f-c4c4-478a-9821-e7fe58d4e5ed</id>
+      <masked>false</masked>
+      <name>shippingMethod</name>
+   </variable>
+   <variable>
+      <defaultValue>'450'</defaultValue>
+      <description></description>
+      <id>ba37705b-4ba7-43ba-9ef9-39cc25e1fef0</id>
+      <masked>false</masked>
+      <name>amount</name>
    </variable>
 </TestCaseEntity>

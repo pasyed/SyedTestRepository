@@ -6,12 +6,11 @@
    <elementGuidId>43ce614a-2034-4d78-b0d3-349b6787490f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//label[text()='Total']/parent::div/following-sibling::div//label</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

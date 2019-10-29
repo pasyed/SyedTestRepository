@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Return_InTransactionComplete</name>
+   <name>totalAmount_In_TransactionComplete</name>
    <tag></tag>
-   <elementGuidId>b78b77aa-9d3c-449c-8842-ed270fe41a10</elementGuidId>
+   <elementGuidId>8befb27e-2490-4f23-aadf-b5074fd512c5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[text()='Return']</value>
+         <value>//td[text()='Total Amount Due']/following-sibling::td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

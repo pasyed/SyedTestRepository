@@ -1,0 +1,458 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+1stPayVault,Chrome 76.0.3809.100,,,2019-10-29 04:49:59,2019-10-29 05:04:12,14m - 13.668s,INCOMPLETE
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_001,Chrome 76.0.3809.100,,,2019-10-29 04:49:59,2019-10-29 04:51:09,1m - 9.048s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:50:01,2019-10-29 04:50:01,0.021s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:02,2019-10-29 04:50:02,0.011s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-29 04:50:02,2019-10-29 04:50:02,0.002s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-29 04:50:02,2019-10-29 04:50:02,0.004s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:02,2019-10-29 04:50:20,17.469s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-29 04:50:20,2019-10-29 04:50:30,10.379s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:50:30,2019-10-29 04:50:35,5.191s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:50:35,2019-10-29 04:50:40,4.430s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-29 04:50:40,2019-10-29 04:50:48,8.262s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:48,2019-10-29 04:50:49,1.073s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:49,2019-10-29 04:50:50,1.083s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-29 04:50:50,2019-10-29 04:50:50,0.026s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), vaultReference, ""Entering Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:50,2019-10-29 04:50:52,1.653s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_CreditCardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:52,2019-10-29 04:50:54,1.814s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationMonth""), cardMonth, ""Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:54,2019-10-29 04:50:55,1.523s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationYear""), cardYear, ""year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:55,2019-10-29 04:50:56,1.162s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ContactName""), contactName, ""Enter Contact Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:56,2019-10-29 04:50:58,1.405s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:58,2019-10-29 04:50:59,1.403s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Address""), address, ""Enter ddress"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:50:59,2019-10-29 04:51:01,1.636s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/chekBox_AddShippingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:51:01,2019-10-29 04:51:02,1.062s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:02,2019-10-29 04:51:03,1.495s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:51:03,2019-10-29 04:51:04,0.895s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Create""), ""Click on Create Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:04,2019-10-29 04:51:06,1.401s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:51:06,2019-10-29 04:51:06,0.001s,NOT_RUN
+"popupSavedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), elementTime)",Chrome 76.0.3809.100,,,2019-10-29 04:51:06,2019-10-29 04:51:07,1.318s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupSavedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 04:51:07,2019-10-29 04:51:07,0.018s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-29 04:51:07,2019-10-29 04:51:08,1.397s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:51:08,2019-10-29 04:51:09,0.011s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:51:09,2019-10-29 04:51:09,0.002s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_002,Chrome 76.0.3809.100,,,2019-10-29 04:51:09,2019-10-29 04:52:18,1m - 9.952s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:51:09,2019-10-29 04:51:09,0.012s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:10,2019-10-29 04:51:10,0.011s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-29 04:51:10,2019-10-29 04:51:10,0.004s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-29 04:51:10,2019-10-29 04:51:10,0.002s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:10,2019-10-29 04:51:24,14.699s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-29 04:51:24,2019-10-29 04:51:30,5.320s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:51:30,2019-10-29 04:51:33,3.423s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:51:33,2019-10-29 04:51:36,3.145s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-29 04:51:36,2019-10-29 04:51:43,6.391s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:43,2019-10-29 04:51:44,0.989s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:44,2019-10-29 04:51:45,1.123s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:51:45,2019-10-29 04:51:45,0.325s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-29 04:51:45,2019-10-29 04:51:45,0.001s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), vaultReference, ""Entering Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:45,2019-10-29 04:51:47,2.175s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_CreditCardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:47,2019-10-29 04:51:50,2.814s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationMonth""), cardMonth, ""Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:50,2019-10-29 04:51:52,2.055s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationYear""), cardYear, ""year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:52,2019-10-29 04:51:53,1.294s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ContactName""), contactName, ""Enter Contact Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:53,2019-10-29 04:51:55,1.425s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:55,2019-10-29 04:51:57,1.838s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Address""), address, ""Enter ddress"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:51:57,2019-10-29 04:52:00,3.084s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/chekBox_AddShippingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:52:00,2019-10-29 04:52:01,1.302s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:52:01,2019-10-29 04:52:02,1.433s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:52:02,2019-10-29 04:52:03,0.969s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Create""), ""Click on Create Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:52:03,2019-10-29 04:52:05,1.210s,PASSED
+"popupSavedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:52:05,2019-10-29 04:52:06,1.088s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupSavedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 04:52:06,2019-10-29 04:52:06,0.001s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_RunASale_InPopup""), ""Click on Run A Sale in Popup"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 04:52:06,2019-10-29 04:52:08,2.136s,PASSED
+"value = utilities.SafeActions.getAttributeValue(findTestObject(""Pages/Sale/tab_Sale_Active""), ""Sale"")",Chrome 76.0.3809.100,,,2019-10-29 04:52:08,2019-10-29 04:52:08,0.225s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-29 04:52:08,2019-10-29 04:52:18,10.416s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:52:18,2019-10-29 04:52:18,0.009s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:52:18,2019-10-29 04:52:18,0.001s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_003,Chrome 76.0.3809.100,,,2019-10-29 04:52:19,2019-10-29 04:53:59,1m - 40.371s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:52:19,2019-10-29 04:52:19,0.003s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:52:19,2019-10-29 04:52:19,0.019s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-29 04:52:19,2019-10-29 04:52:20,0.021s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-29 04:52:20,2019-10-29 04:52:20,0.012s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:52:20,2019-10-29 04:52:40,20.894s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-29 04:52:40,2019-10-29 04:52:48,7.902s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:52:48,2019-10-29 04:52:54,5.206s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:52:54,2019-10-29 04:53:00,6.485s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-29 04:53:00,2019-10-29 04:53:08,7.852s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:08,2019-10-29 04:53:09,1.451s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:09,2019-10-29 04:53:11,1.222s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:53:11,2019-10-29 04:53:11,0.322s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-29 04:53:11,2019-10-29 04:53:11,0.003s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), vaultReference, ""Entering Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:11,2019-10-29 04:53:15,3.841s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_CreditCardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:15,2019-10-29 04:53:18,3.054s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-10-29 04:53:18,2019-10-29 04:53:18,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationMonth""), cardMonth, ""Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:18,2019-10-29 04:53:20,1.823s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationYear""), cardYear, ""year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:20,2019-10-29 04:53:22,2.335s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:53:22,2019-10-29 04:53:22,0.001s,NOT_RUN
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ContactName""), customerName, ""Enter Contact Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:22,2019-10-29 04:53:26,3.884s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:26,2019-10-29 04:53:28,2.410s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Address""), address, ""Enter ddress"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:28,2019-10-29 04:53:31,3.144s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/chekBox_AddShippingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:53:31,2019-10-29 04:53:33,1.672s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:33,2019-10-29 04:53:35,2.074s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:53:35,2019-10-29 04:53:37,1.727s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Create""), ""Click on Create Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:37,2019-10-29 04:53:39,2.017s,PASSED
+"popupSavedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:53:39,2019-10-29 04:53:41,1.798s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupSavedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 04:53:41,2019-10-29 04:53:41,0.001s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:53:41,2019-10-29 04:53:41,0.000s,NOT_RUN
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_RunSaleWithThisVault_InPopup""), ""Click on Run Sale With This Vault in Popup"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 04:53:41,2019-10-29 04:53:42,1.849s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-10-29 04:53:42,2019-10-29 04:53:42,0.002s,NOT_RUN
+"value = utilities.SafeActions.getAttributeValue(findTestObject(""Pages/FirstPayVault/tab_1stPayVault_Active""), ""1st_PayVault"")",Chrome 76.0.3809.100,,,2019-10-29 04:53:42,2019-10-29 04:53:43,0.699s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_Amount""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:53:43,2019-10-29 04:53:44,0.339s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Amount""), amount, ""Enter Amount"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:44,2019-10-29 04:53:45,1.957s,PASSED
+"salesTax = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/input_SalesTaxUnderAmount""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:53:45,2019-10-29 04:53:47,1.150s,PASSED
+pages.FirstPayVault.verifyAmountIsNotZero(salesTax),Chrome 76.0.3809.100,,,2019-10-29 04:53:47,2019-10-29 04:53:47,0.021s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_CreditCardNumberForVerification""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:53:47,2019-10-29 04:53:47,0.236s,PASSED
+"cardNumber = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/input_CreditCardNumberForVerification""), ""1st Pay Vault"")",Chrome 76.0.3809.100,,,2019-10-29 04:53:47,2019-10-29 04:53:47,0.172s,PASSED
+"pages.FirstPayVault.verifyCardNumber(cardNumber, visaCardNumber)",Chrome 76.0.3809.100,,,2019-10-29 04:53:47,2019-10-29 04:53:47,0.003s,PASSED
+"expirationYear = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/dropDownExpirationYearForVerification""), ""1st Pay Vault"")",Chrome 76.0.3809.100,,,2019-10-29 04:53:47,2019-10-29 04:53:47,0.164s,PASSED
+"pages.FirstPayVault.verifyStrings(expirationYear, cardYear)",Chrome 76.0.3809.100,,,2019-10-29 04:53:47,2019-10-29 04:53:47,0.001s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VerifyCardHolderName""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:53:47,2019-10-29 04:53:47,0.210s,PASSED
+"name = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/input_VerifyCardHolderName""), ""1stPayVault"")",Chrome 76.0.3809.100,,,2019-10-29 04:53:47,2019-10-29 04:53:48,0.489s,PASSED
+"pages.FirstPayVault.verifyStrings(name, customerName)",Chrome 76.0.3809.100,,,2019-10-29 04:53:48,2019-10-29 04:53:48,0.002s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/checkbox_TaxExempt""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:53:48,2019-10-29 04:53:48,0.150s,PASSED
+"salesTax = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/amount_UnderPurchaseCardInformation""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:53:48,2019-10-29 04:53:48,0.002s,NOT_RUN
+pages.FirstPayVault.verifyAmountIsNotZero(salesTax),Chrome 76.0.3809.100,,,2019-10-29 04:53:48,2019-10-29 04:53:48,0.001s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_TaxExempt""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:53:48,2019-10-29 04:53:50,1.422s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Checkout""), ""Click on Checkout"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:50,2019-10-29 04:53:51,1.642s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Chrome 76.0.3809.100,,,2019-10-29 04:53:51,2019-10-29 04:53:53,1.522s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_ReturnToSale_InTransactionComplete""), ""Click On Return Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:53:53,2019-10-29 04:53:54,1.478s,PASSED
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-29 04:53:54,2019-10-29 04:53:57,3.010s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-29 04:53:57,2019-10-29 04:53:59,1.749s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:53:59,2019-10-29 04:53:59,0.006s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:53:59,2019-10-29 04:53:59,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_004,Chrome 76.0.3809.100,,,2019-10-29 04:53:59,2019-10-29 04:56:21,2m - 21.987s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:53:59,2019-10-29 04:53:59,0.002s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:00,2019-10-29 04:54:00,0.001s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-29 04:54:00,2019-10-29 04:54:00,0.000s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-29 04:54:00,2019-10-29 04:54:00,0.002s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:00,2019-10-29 04:54:13,12.956s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-29 04:54:13,2019-10-29 04:54:21,8.563s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:54:21,2019-10-29 04:54:25,3.961s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:54:25,2019-10-29 04:54:29,3.514s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-29 04:54:29,2019-10-29 04:54:33,4.602s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:33,2019-10-29 04:54:37,4.009s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:37,2019-10-29 04:54:39,1.102s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:54:39,2019-10-29 04:54:39,0.264s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-29 04:54:39,2019-10-29 04:54:39,0.001s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), vaultReference, ""Entering Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:39,2019-10-29 04:54:41,2.387s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_CreditCardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:41,2019-10-29 04:54:44,2.964s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-10-29 04:54:44,2019-10-29 04:54:44,0.000s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationMonth""), cardMonth, ""Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:44,2019-10-29 04:54:47,2.656s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationYear""), cardYear, ""year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:47,2019-10-29 04:54:49,2.369s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:54:49,2019-10-29 04:54:49,0.001s,NOT_RUN
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ContactName""), customerName, ""Enter Contact Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:49,2019-10-29 04:54:52,2.766s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:52,2019-10-29 04:54:55,2.903s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Address""), address, ""Enter ddress"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:54:55,2019-10-29 04:54:58,3.392s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/chekBox_AddShippingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:54:58,2019-10-29 04:55:00,1.707s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:55:00,2019-10-29 04:55:03,2.674s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:55:03,2019-10-29 04:55:05,2.238s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Create""), ""Click on Create Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:55:05,2019-10-29 04:55:07,2.165s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:55:07,2019-10-29 04:55:07,0.000s,NOT_RUN
+"popupSavedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:55:07,2019-10-29 04:55:09,1.764s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupSavedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 04:55:09,2019-10-29 04:55:09,0.001s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:55:09,2019-10-29 04:55:09,0.000s,NOT_RUN
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_RunSaleWithThisVault_InPopup""), ""Click on Run Sale With This Vault in Popup"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 04:55:09,2019-10-29 04:55:11,1.764s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-10-29 04:55:11,2019-10-29 04:55:11,0.001s,NOT_RUN
+"value = utilities.SafeActions.getAttributeValue(findTestObject(""Pages/FirstPayVault/tab_1stPayVault_Active""), ""1st_PayVault"")",Chrome 76.0.3809.100,,,2019-10-29 04:55:11,2019-10-29 04:55:11,0.491s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_Amount""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:55:11,2019-10-29 04:55:11,0.437s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Amount""), amount, ""Enter Amount"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:55:11,2019-10-29 04:55:14,2.186s,PASSED
+"salesTax = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/input_SalesTaxUnderAmount""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:55:14,2019-10-29 04:55:15,1.380s,PASSED
+pages.FirstPayVault.verifyAmountIsNotZero(salesTax),Chrome 76.0.3809.100,,,2019-10-29 04:55:15,2019-10-29 04:55:15,0.001s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_CreditCardNumberForVerification""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:55:15,2019-10-29 04:55:15,0.117s,PASSED
+"cardNumber = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/input_CreditCardNumberForVerification""), ""1st Pay Vault"")",Chrome 76.0.3809.100,,,2019-10-29 04:55:15,2019-10-29 04:55:15,0.125s,PASSED
+"pages.FirstPayVault.verifyCardNumber(cardNumber, visaCardNumber)",Chrome 76.0.3809.100,,,2019-10-29 04:55:15,2019-10-29 04:55:15,0.001s,PASSED
+"expirationYear = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/dropDownExpirationYearForVerification""), ""1st Pay Vault"")",Chrome 76.0.3809.100,,,2019-10-29 04:55:15,2019-10-29 04:55:15,0.145s,PASSED
+"pages.FirstPayVault.verifyStrings(expirationYear, cardYear)",Chrome 76.0.3809.100,,,2019-10-29 04:55:15,2019-10-29 04:55:15,0.003s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VerifyCardHolderName""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:55:15,2019-10-29 04:55:16,0.164s,PASSED
+"name = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/input_VerifyCardHolderName""), ""1stPayVault"")",Chrome 76.0.3809.100,,,2019-10-29 04:55:16,2019-10-29 04:55:16,0.191s,PASSED
+"pages.FirstPayVault.verifyStrings(name, customerName)",Chrome 76.0.3809.100,,,2019-10-29 04:55:16,2019-10-29 04:55:16,0.002s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/checkbox_TaxExempt""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:55:16,2019-10-29 04:55:16,0.147s,PASSED
+"salesTax = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/amount_UnderPurchaseCardInformation""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:55:16,2019-10-29 04:55:16,0.001s,NOT_RUN
+pages.FirstPayVault.verifyAmountIsNotZero(salesTax),Chrome 76.0.3809.100,,,2019-10-29 04:55:16,2019-10-29 04:55:16,0.000s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_TaxExempt""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:55:16,2019-10-29 04:55:17,1.547s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Checkout""), ""Click on Checkout"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:55:17,2019-10-29 04:55:21,3.100s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Chrome 76.0.3809.100,,,2019-10-29 04:55:21,2019-10-29 04:55:23,2.616s,PASSED
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-29 04:55:23,2019-10-29 04:55:23,0.001s,NOT_RUN
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_ReturnToSale_InTransactionComplete""), ""Click On Return Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:55:23,2019-10-29 04:55:29,5.486s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:55:29,2019-10-29 04:55:37,8.326s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_SearchVault""), ""Click on Search Vault"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:55:37,2019-10-29 04:55:42,5.371s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_Search""), ""Click On Search button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:55:42,2019-10-29 04:55:45,3.030s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:55:45,2019-10-29 04:55:47,1.536s,PASSED
+"pages.FirstPayVault.verifyInvoiceRecord(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), vaultReference)",Chrome 76.0.3809.100,,,2019-10-29 04:55:47,2019-10-29 04:55:53,6.475s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:55:53,2019-10-29 04:55:53,0.003s,NOT_RUN
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-29 04:55:53,2019-10-29 04:56:21,27.471s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:56:21,2019-10-29 04:56:21,0.010s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:56:21,2019-10-29 04:56:21,0.001s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_005,Chrome 76.0.3809.100,,,2019-10-29 04:56:21,2019-10-29 04:58:55,2m - 34.257s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:56:21,2019-10-29 04:56:21,0.009s,PASSED
+"utilities.SafeActions.safeClickWithoutScrollOnLabel(Old_URL, [PageLoadTime], [])",Chrome 76.0.3809.100,,,2019-10-29 04:56:22,2019-10-29 04:56:22,0.007s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-29 04:56:22,2019-10-29 04:56:22,0.004s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-29 04:56:22,2019-10-29 04:56:22,0.002s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:56:22,2019-10-29 04:56:39,17.138s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-29 04:56:39,2019-10-29 04:56:48,8.470s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:56:48,2019-10-29 04:56:51,3.864s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:56:51,2019-10-29 04:56:55,3.647s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-29 04:56:55,2019-10-29 04:57:08,12.766s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:08,2019-10-29 04:57:09,1.279s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:09,2019-10-29 04:57:11,1.758s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:57:11,2019-10-29 04:57:11,0.399s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-29 04:57:11,2019-10-29 04:57:11,0.001s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), vaultReference, ""Entering Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:11,2019-10-29 04:57:21,9.860s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_CreditCardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:21,2019-10-29 04:57:31,9.993s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-10-29 04:57:31,2019-10-29 04:57:31,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationMonth""), cardMonth, ""Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:31,2019-10-29 04:57:35,4.192s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationYear""), cardYear, ""year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:35,2019-10-29 04:57:41,5.870s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:57:41,2019-10-29 04:57:41,0.000s,NOT_RUN
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ContactName""), customerName, ""Enter Contact Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:41,2019-10-29 04:57:44,2.479s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:44,2019-10-29 04:57:48,4.154s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Address""), address, ""Enter ddress"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:48,2019-10-29 04:57:53,4.984s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/chekBox_AddShippingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:57:53,2019-10-29 04:57:56,3.413s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:57:56,2019-10-29 04:58:01,4.217s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:58:01,2019-10-29 04:58:02,1.625s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Create""), ""Click on Create Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:02,2019-10-29 04:58:04,1.984s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:58:04,2019-10-29 04:58:04,0.001s,NOT_RUN
+"popupSavedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:58:04,2019-10-29 04:58:06,1.475s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupSavedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 04:58:06,2019-10-29 04:58:06,0.001s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:58:06,2019-10-29 04:58:06,0.001s,NOT_RUN
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_RunSaleWithThisVault_InPopup""), ""Click on Run Sale With This Vault in Popup"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 04:58:06,2019-10-29 04:58:07,1.485s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-10-29 04:58:07,2019-10-29 04:58:07,0.001s,NOT_RUN
+"value = utilities.SafeActions.getAttributeValue(findTestObject(""Pages/FirstPayVault/tab_1stPayVault_Active""), ""1st_PayVault"")",Chrome 76.0.3809.100,,,2019-10-29 04:58:07,2019-10-29 04:58:08,0.453s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_Amount""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:58:08,2019-10-29 04:58:08,0.254s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Amount""), amount, ""Enter Amount"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:08,2019-10-29 04:58:10,1.764s,PASSED
+"salesTax = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/input_SalesTaxUnderAmount""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:58:10,2019-10-29 04:58:11,1.052s,PASSED
+pages.FirstPayVault.verifyAmountIsNotZero(salesTax),Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:11,0.001s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_CreditCardNumberForVerification""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:11,0.212s,PASSED
+"cardNumber = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/input_CreditCardNumberForVerification""), ""1st Pay Vault"")",Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:11,0.165s,PASSED
+"pages.FirstPayVault.verifyCardNumber(cardNumber, visaCardNumber)",Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:11,0.002s,PASSED
+"expirationYear = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/dropDownExpirationYearForVerification""), ""1st Pay Vault"")",Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:11,0.168s,PASSED
+"pages.FirstPayVault.verifyStrings(expirationYear, cardYear)",Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:11,0.002s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VerifyCardHolderName""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:11,0.156s,PASSED
+"name = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/input_VerifyCardHolderName""), ""1stPayVault"")",Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:11,0.162s,PASSED
+"pages.FirstPayVault.verifyStrings(name, customerName)",Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:11,0.001s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/checkbox_TaxExempt""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:58:11,2019-10-29 04:58:12,0.259s,PASSED
+"salesTax = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/amount_UnderPurchaseCardInformation""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:58:12,2019-10-29 04:58:12,0.001s,NOT_RUN
+pages.FirstPayVault.verifyAmountIsNotZero(salesTax),Chrome 76.0.3809.100,,,2019-10-29 04:58:12,2019-10-29 04:58:12,0.002s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_TaxExempt""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:58:12,2019-10-29 04:58:13,1.240s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Checkout""), ""Click on Checkout"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:13,2019-10-29 04:58:14,1.242s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Chrome 76.0.3809.100,,,2019-10-29 04:58:14,2019-10-29 04:58:16,1.505s,PASSED
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-29 04:58:16,2019-10-29 04:58:16,0.001s,NOT_RUN
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_ReturnToSale_InTransactionComplete""), ""Click On Return Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:16,2019-10-29 04:58:17,1.423s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:17,2019-10-29 04:58:19,2.276s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_SearchVault""), ""Click on Search Vault"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:19,2019-10-29 04:58:23,3.322s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_Search""), ""Click On Search button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:23,2019-10-29 04:58:24,1.263s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:58:24,2019-10-29 04:58:26,2.036s,PASSED
+"pages.FirstPayVault.verifyInvoiceRecord(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), vaultReference)",Chrome 76.0.3809.100,,,2019-10-29 04:58:26,2019-10-29 04:58:28,1.781s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:58:28,2019-10-29 04:58:28,0.001s,NOT_RUN
+"pages.FirstPayVault.clickOnEdit(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), vaultReference)",Chrome 76.0.3809.100,,,2019-10-29 04:58:28,2019-10-29 04:58:36,8.312s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/dropDownExpirationMonthForVerification""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:58:36,2019-10-29 04:58:37,0.397s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDownExpirationMonthForVerification""), cardMonthUpdate, ""Update expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:37,2019-10-29 04:58:38,1.496s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:38,2019-10-29 04:58:40,1.464s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:58:40,2019-10-29 04:58:41,1.228s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/button_Update""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:58:41,2019-10-29 04:58:41,0.351s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Update""), ""Click On Update"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 04:58:41,2019-10-29 04:58:42,1.204s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:58:42,2019-10-29 04:58:42,0.000s,NOT_RUN
+"popupUpdatedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:58:42,2019-10-29 04:58:43,1.058s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupUpdatedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 04:58:43,2019-10-29 04:58:43,0.001s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:58:43,2019-10-29 04:58:43,0.001s,NOT_RUN
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-29 04:58:43,2019-10-29 04:58:55,11.839s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:58:55,2019-10-29 04:58:55,0.008s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:58:55,2019-10-29 04:58:55,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_006,Chrome 76.0.3809.100,,,2019-10-29 04:58:55,2019-10-29 05:00:49,1m - 53.593s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:58:55,2019-10-29 04:58:55,0.004s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:56,2019-10-29 04:58:56,0.002s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-29 04:58:56,2019-10-29 04:58:56,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-29 04:58:56,2019-10-29 04:58:56,0.001s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:58:56,2019-10-29 04:59:09,13.480s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-29 04:59:09,2019-10-29 04:59:15,5.441s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:59:15,2019-10-29 04:59:17,2.670s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 04:59:17,2019-10-29 04:59:19,2.058s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-29 04:59:19,2019-10-29 04:59:27,7.335s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:27,2019-10-29 04:59:28,1.290s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:28,2019-10-29 04:59:29,1.062s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:59:29,2019-10-29 04:59:29,0.286s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-29 04:59:29,2019-10-29 04:59:29,0.001s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), vaultReference, ""Entering Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:29,2019-10-29 04:59:31,1.333s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_CreditCardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:31,2019-10-29 04:59:32,1.484s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-10-29 04:59:32,2019-10-29 04:59:32,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationMonth""), cardMonth, ""Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:32,2019-10-29 04:59:34,1.381s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationYear""), cardYear, ""year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:34,2019-10-29 04:59:35,1.225s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:59:35,2019-10-29 04:59:35,0.000s,NOT_RUN
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ContactName""), customerName, ""Enter Contact Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:35,2019-10-29 04:59:36,1.528s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:36,2019-10-29 04:59:38,1.183s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Address""), address, ""Enter ddress"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:38,2019-10-29 04:59:39,1.397s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/chekBox_AddShippingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:59:39,2019-10-29 04:59:40,1.112s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:40,2019-10-29 04:59:41,1.214s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:59:41,2019-10-29 04:59:42,0.885s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Create""), ""Click on Create Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:42,2019-10-29 04:59:43,1.086s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:59:43,2019-10-29 04:59:43,0.000s,NOT_RUN
+"popupSavedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:59:43,2019-10-29 04:59:45,1.720s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupSavedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 04:59:45,2019-10-29 04:59:45,0.001s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 04:59:45,2019-10-29 04:59:45,0.001s,NOT_RUN
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_RunSaleWithThisVault_InPopup""), ""Click on Run Sale With This Vault in Popup"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 04:59:45,2019-10-29 04:59:46,1.282s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-10-29 04:59:46,2019-10-29 04:59:46,0.001s,NOT_RUN
+"value = utilities.SafeActions.getAttributeValue(findTestObject(""Pages/FirstPayVault/tab_1stPayVault_Active""), ""1st_PayVault"")",Chrome 76.0.3809.100,,,2019-10-29 04:59:46,2019-10-29 04:59:47,0.781s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_Amount""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:59:47,2019-10-29 04:59:47,0.121s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Amount""), amount, ""Enter Amount"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:47,2019-10-29 04:59:48,1.005s,PASSED
+"salesTax = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/input_SalesTaxUnderAmount""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:59:48,2019-10-29 04:59:49,0.738s,PASSED
+pages.FirstPayVault.verifyAmountIsNotZero(salesTax),Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:49,0.002s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_CreditCardNumberForVerification""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:49,0.113s,PASSED
+"cardNumber = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/input_CreditCardNumberForVerification""), ""1st Pay Vault"")",Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:49,0.093s,PASSED
+"pages.FirstPayVault.verifyCardNumber(cardNumber, visaCardNumber)",Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:49,0.001s,PASSED
+"expirationYear = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/dropDownExpirationYearForVerification""), ""1st Pay Vault"")",Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:49,0.107s,PASSED
+"pages.FirstPayVault.verifyStrings(expirationYear, cardYear)",Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:49,0.001s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VerifyCardHolderName""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:49,0.100s,PASSED
+"name = utilities.SafeActions.getAttribute(findTestObject(""Pages/FirstPayVault/input_VerifyCardHolderName""), ""1stPayVault"")",Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:49,0.096s,PASSED
+"pages.FirstPayVault.verifyStrings(name, customerName)",Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:49,0.001s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/checkbox_TaxExempt""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:59:49,2019-10-29 04:59:50,0.104s,PASSED
+"salesTax = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/amount_UnderPurchaseCardInformation""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 04:59:50,2019-10-29 04:59:50,0.001s,NOT_RUN
+pages.FirstPayVault.verifyAmountIsNotZero(salesTax),Chrome 76.0.3809.100,,,2019-10-29 04:59:50,2019-10-29 04:59:50,0.000s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_TaxExempt""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 04:59:50,2019-10-29 04:59:50,0.908s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Checkout""), ""Click on Checkout"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:50,2019-10-29 04:59:52,1.535s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Chrome 76.0.3809.100,,,2019-10-29 04:59:52,2019-10-29 04:59:55,2.950s,PASSED
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-29 04:59:55,2019-10-29 04:59:55,0.000s,NOT_RUN
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_ReturnToSale_InTransactionComplete""), ""Click On Return Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:55,2019-10-29 04:59:56,0.869s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:56,2019-10-29 04:59:57,1.254s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_SearchVault""), ""Click on Search Vault"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:57,2019-10-29 04:59:59,1.477s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_Search""), ""Click On Search button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 04:59:59,2019-10-29 05:00:00,1.849s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:00:00,2019-10-29 05:00:03,3.042s,PASSED
+"pages.FirstPayVault.verifyInvoiceRecord(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), vaultReference)",Chrome 76.0.3809.100,,,2019-10-29 05:00:03,2019-10-29 05:00:07,3.699s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:00:07,2019-10-29 05:00:07,0.001s,NOT_RUN
+"pages.FirstPayVault.clickOnDelete(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), findTestObject(""Pages/FirstPayVault/button_deleteFromVault""), vaultReference)",Chrome 76.0.3809.100,,,2019-10-29 05:00:07,2019-10-29 05:00:21,14.066s,PASSED
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-29 05:00:21,2019-10-29 05:00:21,0.000s,NOT_RUN
+"deleteVaultPopupMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/alertMessageAfterDeleteVault""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 05:00:21,2019-10-29 05:00:22,1.183s,PASSED
+"utilities.SafeActions.verifyPopupMessage(""Vault Deletion successfully completed"", deleteVaultPopupMessage)",Chrome 76.0.3809.100,,,2019-10-29 05:00:22,2019-10-29 05:00:22,0.001s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/closeLocatorForDeletePopupMessage""), ""Click on Close button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:00:22,2019-10-29 05:00:24,1.252s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-29 05:00:24,2019-10-29 05:00:49,25.129s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:00:49,2019-10-29 05:00:49,0.009s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:00:49,2019-10-29 05:00:49,0.001s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_009,Chrome 76.0.3809.100,,,2019-10-29 05:00:49,2019-10-29 05:01:47,58.679s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:00:49,2019-10-29 05:00:49,0.004s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:00:50,2019-10-29 05:00:50,0.001s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-29 05:00:50,2019-10-29 05:00:50,0.002s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-29 05:00:50,2019-10-29 05:00:50,0.000s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:00:50,2019-10-29 05:01:02,12.915s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-29 05:01:02,2019-10-29 05:01:08,5.306s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 05:01:08,2019-10-29 05:01:11,3.044s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 05:01:11,2019-10-29 05:01:13,1.839s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-29 05:01:13,2019-10-29 05:01:19,6.719s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:19,2019-10-29 05:01:20,0.987s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:20,2019-10-29 05:01:21,1.135s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:01:21,2019-10-29 05:01:22,0.299s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-29 05:01:22,2019-10-29 05:01:22,0.001s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), vaultReference, ""Entering Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:22,2019-10-29 05:01:24,1.769s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_CreditCardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:24,2019-10-29 05:01:25,1.180s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-10-29 05:01:25,2019-10-29 05:01:25,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationYear""), cardYear, ""year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:25,2019-10-29 05:01:26,1.078s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationMonth""), cardMonth, ""Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:26,2019-10-29 05:01:27,1.018s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:01:27,2019-10-29 05:01:27,0.000s,NOT_RUN
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ContactName""), customerName, ""Enter Contact Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:27,2019-10-29 05:01:28,1.140s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:28,2019-10-29 05:01:29,1.118s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Address""), address, ""Enter ddress"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:29,2019-10-29 05:01:30,1.223s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/chekBox_AddShippingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:01:30,2019-10-29 05:01:31,0.942s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:31,2019-10-29 05:01:32,1.111s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:01:32,2019-10-29 05:01:33,0.851s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Create""), ""Click on Create Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:33,2019-10-29 05:01:34,1.100s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:01:34,2019-10-29 05:01:34,0.001s,NOT_RUN
+"popupSavedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:01:34,2019-10-29 05:01:35,0.918s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupSavedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 05:01:35,2019-10-29 05:01:35,0.001s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_SearchVault_InPopup""), ""Search Vault in Popup"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 05:01:35,2019-10-29 05:01:36,1.037s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/date_StartDate""), ""Click on Date Input"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:36,2019-10-29 05:01:37,1.040s,PASSED
+"pages.Sale.selectMonthYear(findTestObject(""Pages/Sale/link_MonthYear""), findTestObject(""Pages/Sale/calender_NextButton""), cardThisMonth, cardThisYear)",Chrome 76.0.3809.100,,,2019-10-29 05:01:37,2019-10-29 05:01:38,0.211s,PASSED
+pages.Sale.selectDate(start_date_Value),Chrome 76.0.3809.100,,,2019-10-29 05:01:38,2019-10-29 05:01:38,0.127s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/date_EndDate""), ""Click on Date Input"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:38,2019-10-29 05:01:38,0.826s,PASSED
+"pages.Sale.selectMonthYear(findTestObject(""Pages/Sale/link_MonthYear""), findTestObject(""Pages/Sale/calender_NextButton""), cardThisMonth, cardThisYear)",Chrome 76.0.3809.100,,,2019-10-29 05:01:38,2019-10-29 05:01:39,0.235s,PASSED
+pages.Sale.selectDate(end_date_Value),Chrome 76.0.3809.100,,,2019-10-29 05:01:39,2019-10-29 05:01:39,0.214s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_Search""), ""Click On Search button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:39,2019-10-29 05:01:40,1.078s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:01:40,2019-10-29 05:01:41,1.280s,PASSED
+"pages.FirstPayVault.verifyInvoiceRecord(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), vaultReference)",Chrome 76.0.3809.100,,,2019-10-29 05:01:41,2019-10-29 05:01:43,2.074s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:01:43,2019-10-29 05:01:43,0.001s,NOT_RUN
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-29 05:01:43,2019-10-29 05:01:47,4.098s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:01:47,2019-10-29 05:01:47,0.013s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:01:47,2019-10-29 05:01:47,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_010,Chrome 76.0.3809.100,,,2019-10-29 05:01:48,2019-10-29 05:03:25,1m - 37.173s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:01:48,2019-10-29 05:01:48,0.001s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:49,2019-10-29 05:01:49,0.004s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-29 05:01:49,2019-10-29 05:01:49,0.002s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-29 05:01:49,2019-10-29 05:01:49,0.002s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:01:49,2019-10-29 05:02:01,11.822s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-29 05:02:01,2019-10-29 05:02:05,4.242s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 05:02:05,2019-10-29 05:02:07,2.444s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 05:02:07,2019-10-29 05:02:09,1.463s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-29 05:02:09,2019-10-29 05:02:14,5.604s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:14,2019-10-29 05:02:15,1.018s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:15,2019-10-29 05:02:16,0.931s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:02:16,2019-10-29 05:02:17,0.277s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-29 05:02:17,2019-10-29 05:02:17,0.001s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), vaultReference, ""Entering Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:17,2019-10-29 05:02:18,1.145s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_CreditCardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:18,2019-10-29 05:02:19,1.230s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-10-29 05:02:19,2019-10-29 05:02:19,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationMonth""), cardMonth, ""Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:19,2019-10-29 05:02:20,1.038s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationYear""), cardYear, ""year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:20,2019-10-29 05:02:21,1.044s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:02:21,2019-10-29 05:02:21,0.001s,NOT_RUN
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ContactName""), customerName, ""Enter Contact Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:21,2019-10-29 05:02:22,1.165s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:22,2019-10-29 05:02:23,1.080s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Address""), address, ""Enter ddress"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:23,2019-10-29 05:02:25,1.210s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/chekBox_AddShippingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:02:25,2019-10-29 05:02:26,0.947s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:26,2019-10-29 05:02:27,1.066s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:02:27,2019-10-29 05:02:27,0.825s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Create""), ""Click on Create Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:27,2019-10-29 05:02:28,0.938s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:02:28,2019-10-29 05:02:28,0.000s,NOT_RUN
+"popupSavedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:02:28,2019-10-29 05:02:29,0.884s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupSavedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 05:02:29,2019-10-29 05:02:29,0.001s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_SearchVault_InPopup""), ""Search Vault in Popup"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 05:02:29,2019-10-29 05:02:30,1.208s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/filter_FullCreditCardNumber""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 05:02:30,2019-10-29 05:02:31,0.111s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/filter_FullCreditCardNumber""), visaCardNumber, ""Enter full Credit Card Number"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 05:02:31,2019-10-29 05:02:32,1.394s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_Search""), ""Click On Search button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:02:32,2019-10-29 05:02:33,1.030s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:02:33,2019-10-29 05:02:34,1.229s,PASSED
+"pages.FirstPayVault.verifyAllRecordsFilteredByCardNumber(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), visaCardNumber)",Chrome 76.0.3809.100,,,2019-10-29 05:02:34,2019-10-29 05:03:24,49.316s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:03:24,2019-10-29 05:03:24,0.001s,NOT_RUN
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-29 05:03:24,2019-10-29 05:03:25,1.117s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:03:25,2019-10-29 05:03:25,0.003s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:03:25,2019-10-29 05:03:25,0.001s,PASSED
+,,,,,,,
+Test Cases/FirstView/FirstPayVault/TC_1st_Pay_Vault_011,Chrome 76.0.3809.100,,,2019-10-29 05:03:25,2019-10-29 05:04:12,47.519s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:03:25,2019-10-29 05:03:25,0.001s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:25,2019-10-29 05:03:25,0.000s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-29 05:03:25,2019-10-29 05:03:25,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/001 Account Type: Retail"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-29 05:03:25,2019-10-29 05:03:25,0.001s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:25,2019-10-29 05:03:37,11.554s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-29 05:03:37,2019-10-29 05:03:41,4.125s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 05:03:41,2019-10-29 05:03:43,2.401s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-29 05:03:43,2019-10-29 05:03:45,1.465s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-29 05:03:45,2019-10-29 05:03:50,4.906s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""Click on FirstPayVault tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:50,2019-10-29 05:03:51,1.537s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_CreateVault""), ""Click on CreateVault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:51,2019-10-29 05:03:52,1.049s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), 5)",Chrome 76.0.3809.100,,,2019-10-29 05:03:52,2019-10-29 05:03:53,0.350s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-29 05:03:53,2019-10-29 05:03:53,0.001s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_VaultReferenceNumber""), vaultReference, ""Entering Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:53,2019-10-29 05:03:54,1.166s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_CreditCardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:54,2019-10-29 05:03:55,1.337s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-10-29 05:03:55,2019-10-29 05:03:55,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationMonth""), cardMonth, ""Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:55,2019-10-29 05:03:56,1.141s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/FirstPayVault/dropDown_ExpirationYear""), cardYear, ""year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:56,2019-10-29 05:03:57,1.060s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:03:57,2019-10-29 05:03:57,0.000s,NOT_RUN
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ContactName""), customerName, ""Enter Contact Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:57,2019-10-29 05:03:59,1.274s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:03:59,2019-10-29 05:04:00,1.556s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_Address""), address, ""Enter ddress"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:04:00,2019-10-29 05:04:02,1.366s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/chekBox_AddShippingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:04:02,2019-10-29 05:04:03,0.983s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/input_ShippingMethod""), shippingMethod, ""Enter Shipping Method"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:04:03,2019-10-29 05:04:04,1.086s,PASSED
+"utilities.SafeActions.safeCheckForElement(findTestObject(""Pages/FirstPayVault/checkbox_SameAsBillingInformation""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:04:04,2019-10-29 05:04:04,0.842s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_Create""), ""Click on Create Button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:04:04,2019-10-29 05:04:05,0.913s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:04:05,2019-10-29 05:04:05,0.001s,NOT_RUN
+"popupSavedToVaultMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/FirstPayVault/popup_SavedToVaultMessage""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:04:05,2019-10-29 05:04:06,0.893s,PASSED
+"flag = utilities.SafeActions.verifyPopupMessage(""Successfully Saved to Vault"", popupSavedToVaultMessage)",Chrome 76.0.3809.100,,,2019-10-29 05:04:06,2019-10-29 05:04:06,0.000s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_SearchVault_InPopup""), ""Search Vault in Popup"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 05:04:06,2019-10-29 05:04:07,0.963s,PASSED
+"scrollToElement(findTestObject(""Pages/FirstPayVault/filter_SearchPayVaultByVaultReferenceNumber""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-29 05:04:07,2019-10-29 05:04:07,0.102s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/FirstPayVault/filter_SearchPayVaultByVaultReferenceNumber""), vaultReference, ""Enter Vault Reference Number"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-29 05:04:07,2019-10-29 05:04:09,1.500s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_Search""), ""Click On Search button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-29 05:04:09,2019-10-29 05:04:10,0.916s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-29 05:04:10,2019-10-29 05:04:10,0.119s,PASSED
+"pages.FirstPayVault.verifyInvoiceRecord(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), vaultReference)",Chrome 76.0.3809.100,,,2019-10-29 05:04:10,2019-10-29 05:04:11,1.139s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-29 05:04:11,2019-10-29 05:04:11,0.001s,NOT_RUN
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-29 05:04:11,2019-10-29 05:04:12,1.171s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:04:12,2019-10-29 05:04:12,0.005s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 05:04:12,2019-10-29 05:04:12,0.000s,PASSED

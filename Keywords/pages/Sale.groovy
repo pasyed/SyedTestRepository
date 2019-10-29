@@ -122,6 +122,7 @@ public class Sale {
 	def selectMonthYear(TestObject testObj,TestObject testObj1,String month,String yearToSelect){
 		int year=Integer.parseInt(yearToSelect)
 		String yearMonth_Value=WebUI.getText(testObj)
+		println yearMonth_Value
 		//String yearVal=Integer.toString(year)
 		String monthYear=month+" "+yearToSelect
 		println monthYear

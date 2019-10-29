@@ -7,7 +7,7 @@
    <GlobalVariableEntity>
       <description>URL of VPOS application</description>
       <initValue>'http://172.25.48.28/secure/VPOS/VPOS/Vpos'</initValue>
-      <name>URL</name>
+      <name>Old_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Page Loading Time</description>
@@ -43,5 +43,10 @@
       <description></description>
       <initValue>'true'</initValue>
       <name>HighLightElements</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://q-www-firstview-net.faps.net/MVC/Account/Login'</initValue>
+      <name>URL</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -12,7 +12,7 @@ public class GlobalVariable {
     /**
      * <p>Profile GlobalVariables_VPOS : URL of VPOS application</p>
      */
-    public static Object URL
+    public static Object Old_URL
      
     /**
      * <p>Profile GlobalVariables_VPOS : Page Loading Time</p>
@@ -49,6 +49,11 @@ public class GlobalVariable {
      */
     public static Object HighLightElements
      
+    /**
+     * <p></p>
+     */
+    public static Object URL
+     
 
     static {
         try {
@@ -56,7 +61,7 @@ public class GlobalVariable {
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += RunConfiguration.getOverridingParameters()
     
-            URL = selectedVariables['URL']
+            Old_URL = selectedVariables['Old_URL']
             PageLoadTime = selectedVariables['PageLoadTime']
             delayForElement = selectedVariables['delayForElement']
             RetailAccountOption = selectedVariables['RetailAccountOption']
@@ -64,6 +69,7 @@ public class GlobalVariable {
             visaCardNumber = selectedVariables['visaCardNumber']
             emailAddress = selectedVariables['emailAddress']
             HighLightElements = selectedVariables['HighLightElements']
+            URL = selectedVariables['URL']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

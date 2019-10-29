@@ -400,6 +400,14 @@ def static "utilities.SafeActions.highLightElement"(
          , 	timeOut)
 }
 
+def static "utilities.SafeActions.safeTypeUsingJavascript"(
+    	TestObject testObject	
+     , 	String amount	) {
+    (new utilities.SafeActions()).safeTypeUsingJavascript(
+        	testObject
+         , 	amount)
+}
+
 def static "utilities.SafeActions.highLightElement"(
     	WebElement element	
      , 	int timeOut	) {

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='first-pay-vault-container']//input[@id=&quot;text-card-number&quot;]</value>
+         <value>//div[@id='first-pay-vault-container']//input[@id=&quot;text-card-number1&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-not_run: CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.URL, (([GlobalVariable.PageLoadTime]) as int[]))
+not_run: CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.Old_URL, (([GlobalVariable.PageLoadTime]) as int[]))
 
 not_run: WebUI.delay(GlobalVariable.delayForElement)
 
@@ -25,9 +25,9 @@ not_run: CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisib
 
 not_run: WebUI.delay(GlobalVariable.delayBetweenTestSteps)
 
-CustomKeywords.'utilities.SafeActions.openBrowser'('https://q-www-firstview-net.faps.net/MVC/Account/Login', (([10]) as int[]))
+CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.URL, (([GlobalVariable.delayForElement]) as int[]))
 
-CustomKeywords.'pages.Login.login'('ZenQRetail', 'P@ssword1')
+CustomKeywords.'pages.Login.login'(uName, password)
 
 WebUI.callTestCase(findTestCase('FirstView/Login/TC_SendCode'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -41,27 +41,29 @@ CustomKeywords.'pages.Sale.verifyIfEntryModeIsChecked'(tabName, entryModeCheckBo
 'Scroll down to Element inputAmount'
 WebUI.scrollToElement(findTestObject('Pages/Sale/input_Amount'), GlobalVariable.delayBetweenTestSteps)
 
-CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_Amount'), amountInput, 'Enter Amount into Amount text box', 
-        (([20]) as int[]))
+CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_Amount'), amountInput, 'Enter Amount', 
+        (([GlobalVariable.PageLoadTime]) as int[]))
+
+WebUI.scrollToElement(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), GlobalVariable.delayBetweenTestSteps)
 
 total_Amount = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Sale/total_Amount'), GlobalVariable.delayBetweenTestSteps)
 
-WebUI.scrollToElement(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), GlobalVariable.delayBetweenTestSteps)
+println(total_Amount)
 
 CustomKeywords.'pages.Sale.verifyIfEntryModeIsChecked'(tabName, cardInformationCheckBox, GlobalVariable.delayBetweenTestSteps)
 
 CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_CardNumber'), GlobalVariable.visaCardNumber, 
-    'Entering Card Number', (([10]) as int[]))
+    'Entering Card Number', (([GlobalVariable.delayBetweenTestSteps]) as int[]))
 
 /*CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 
     'May', 'Selecting Month', (([10]) as int[]))*/
 WebUI.delay(GlobalVariable.delayBetweenTestSteps)
 
 CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 
-    cardMonth, 'Enter Month', (([5]) as int[]))
+    cardMonth, 'Enter Month', (([GlobalVariable.delayBetweenTestSteps]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), 
-    cardYear, 'Select Expiration Year', (([5]) as int[]))
+    cardYear, 'Select Expiration Year', (([GlobalVariable.delayBetweenTestSteps]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScrollOnLabel'(findTestObject('Pages/Sale/label_ExpirationYear'), 
     'Click on Exp Year label', (([GlobalVariable.PageLoadTime]) as int[]))
@@ -73,12 +75,14 @@ CustomKeywords.'utilities.SafeActions.safeClickWithoutScrollOnLabel'(findTestObj
 //CustomKeywords.'utilities.SafeActions.selectSeleniumCodeYear'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), '2022')
 WebUI.delay(GlobalVariable.delayBetweenTestSteps)
 
-CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_SecurityCode'), '111', 'Enter Security code', 
+CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_SecurityCode'), securityCode, 'Enter Security code', 
         (([GlobalVariable.delayForElement]) as int[]))
 
 WebUI.scrollToElement(findTestObject('Pages/Sale/invoiceNumber'), GlobalVariable.delayBetweenTestSteps)
 
 invoiceNumber = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Sale/invoiceNumber'), GlobalVariable.delayBetweenTestSteps)
+
+println(invoiceNumber)
 
 //WebUI.executeJavaScript("document.getElementById('select-expiration-year').className='form-control parsley-success'", null)
 /*CustomKeywords.'utilities.SafeActions.selectSeleniumCode'(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), 'December')
@@ -99,20 +103,20 @@ WebUI.delay(4)
 
 CustomKeywords.'utilities.SafeActions.selectSeleniumCode'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), '2025')*/
 CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/Sale/button_Checkout'), 'Click on Checkout button', 
-        (([60]) as int[]))
+        (([GlobalVariable.delayBetweenTestSteps]) as int[]))
 
 CustomKeywords.'pages.Sale.verifyTransactionCompletePage'(findTestObject('Pages/Sale/heading_TransactionComplete'))
 
 WebUI.delay(GlobalVariable.delayBetweenTestSteps)
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/Sale/button_ReturnToSale'), 'Click on Return To Sale', 
-        (([10]) as int[]))
+        (([GlobalVariable.delayBetweenTestSteps]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/Transaction_Management/tab_TransactionManagement'), 
-    'Transaction Management Tab', (([10]) as int[]))
+    'Transaction Management Tab', (([GlobalVariable.delayBetweenTestSteps]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/Transaction_Management/button_Search'), 
-    'Search', (([10]) as int[]))
+    'Search', (([GlobalVariable.delayBetweenTestSteps]) as int[]))
 
 WebUI.scrollToElement(findTestObject('Pages/Transaction_Management/invoice_ForTransaction'), GlobalVariable.delayBetweenTestSteps)
 

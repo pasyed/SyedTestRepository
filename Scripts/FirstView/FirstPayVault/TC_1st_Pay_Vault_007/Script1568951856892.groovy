@@ -13,12 +13,22 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.URL, (([GlobalVariable.PageLoadTime]) as int[]))
+not_run: CustomKeywords.'utilities.SafeActions.openBrowser'(GlobalVariable.Old_URL, (([GlobalVariable.PageLoadTime]) as int[]))
 
-WebUI.delay(6)
+not_run: WebUI.delay(6)
 
-CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_AccountType'), 
+not_run: CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/Sale/dropDown_AccountType'), 
     'ranjanatest2 - 888814981372/001 Account Type: Retail', 'Select by Value', (([25]) as int[]))
+
+CustomKeywords.'utilities.SafeActions.openBrowser'('https://q-www-firstview-net.faps.net/MVC/Account/Login', (([10]) as int[]))
+
+CustomKeywords.'pages.Login.login'('ZenQRetail', 'P@ssword1')
+
+WebUI.callTestCase(findTestCase('FirstView/Login/TC_SendCode'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('FirstView/Login/TC_FirstView'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.switchToWindowTitle('Transcenter - VPOS')
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FirstPayVault tab', 
         (([5]) as int[]))
@@ -121,7 +131,7 @@ CustomKeywords.'pages.FirstPayVault.verifyStrings'(name, customerName)
 
 WebUI.scrollToElement(findTestObject('Pages/FirstPayVault/checkbox_TaxExempt'), 5)
 
-salesTax = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/FirstPayVault/amount_UnderPurchaseCardInformation'), 
+not_run: salesTax = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/FirstPayVault/amount_UnderPurchaseCardInformation'), 
     GlobalVariable.delayBetweenTestSteps)
 
 CustomKeywords.'pages.FirstPayVault.verifyAmountIsNotZero'(salesTax)
@@ -135,8 +145,11 @@ CustomKeywords.'pages.Sale.verifyTransactionCompletePage'(findTestObject('Pages/
 
 WebUI.delay(GlobalVariable.delayBetweenTestSteps)
 
-CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_Return_InTransactionComplete'), 
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_ReturnToSale_InTransactionComplete'), 
     'Click On Return Button', (([5]) as int[]))
+
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FirstPayVault tab', 
+        (([5]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/FirstPayVault/button_SearchVault'), 'Click on Search Vault', 
         (([10]) as int[]))
