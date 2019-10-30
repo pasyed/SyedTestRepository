@@ -30,8 +30,14 @@ WebUI.callTestCase(findTestCase('FirstView/Login/TC_FirstView'), [:], FailureHan
 
 WebUI.switchToWindowTitle('Transcenter - VPOS')
 
-CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FirstPayVault tab', 
-        (([GlobalVariable.PageLoadTime]) as int[]))
+WebUI.focus(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'))
+
+CustomKeywords.'utilities.SafeActions.javascriptclick'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), GlobalVariable.PageLoadTime)
+
+WebUI.delay(GlobalVariable.delayForElement)
+
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FistPayVault tab', 
+        (([GlobalVariable.delayForElement]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_CreateVault'), 
     'Click on CreateVault button', (([GlobalVariable.PageLoadTime]) as int[]))
@@ -80,7 +86,6 @@ CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages
         (([GlobalVariable.PageLoadTime]) as int[]))
 
 //WebUI.delay(2)
-
 popupSavedToVaultMessage = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/FirstPayVault/popup_SavedToVaultMessage'), 
     GlobalVariable.PageLoadTime)
 
@@ -144,7 +149,6 @@ CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages
 CustomKeywords.'pages.Sale.verifyTransactionCompletePage'(findTestObject('Pages/Sale/heading_TransactionComplete'))
 
 //WebUI.delay(GlobalVariable.delayBetweenTestSteps)
-
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_ReturnToSale_InTransactionComplete'), 
     'Click On Return Button', (([GlobalVariable.PageLoadTime]) as int[]))
 

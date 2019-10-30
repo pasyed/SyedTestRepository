@@ -16,6 +16,8 @@ import internal.GlobalVariable as GlobalVariable
 not_run: CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstView/link_Home'), 'Click on Home button in First View screen', 
         (([GlobalVariable.PageLoadTime]) as int[]))
 
+WebUI.delay(3)
+
 CustomKeywords.'utilities.SafeActions.javascriptclick'(findTestObject('Pages/FirstView/link_Home'), GlobalVariable.delayForElement)
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstView/link_VPOS'), 'Click on VPOS button in First View screen', 

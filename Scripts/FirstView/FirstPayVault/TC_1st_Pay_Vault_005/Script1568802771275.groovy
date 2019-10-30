@@ -31,8 +31,14 @@ WebUI.callTestCase(findTestCase('FirstView/Login/TC_FirstView'), [:], FailureHan
 
 WebUI.switchToWindowTitle('Transcenter - VPOS')
 
-CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FirstPayVault tab', 
-        (([GlobalVariable.PageLoadTime]) as int[]))
+WebUI.focus(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'))
+
+CustomKeywords.'utilities.SafeActions.javascriptclick'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), GlobalVariable.PageLoadTime)
+
+WebUI.delay(GlobalVariable.delayForElement)
+
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FistPayVault tab', 
+        (([GlobalVariable.delayForElement]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_CreateVault'), 
     'Click on CreateVault button', (([GlobalVariable.PageLoadTime]) as int[]))
@@ -176,6 +182,9 @@ WebUI.scrollToElement(findTestObject('Pages/FirstPayVault/dropDownExpirationMont
 
 CustomKeywords.'utilities.SafeActions.safeSelectOptionInDropDownByVisibleText'(findTestObject('Pages/FirstPayVault/dropDownExpirationMonthForVerification'), 
     cardMonthUpdate, 'Update expiration Month', (([GlobalVariable.PageLoadTime]) as int[]))
+
+CustomKeywords.'utilities.SafeActions.safeCheckForElement'(findTestObject('Pages/FirstPayVault/chekBox_AddShippingInformation'), 
+    GlobalVariable.PageLoadTime)
 
 CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/FirstPayVault/input_ShippingMethod'), shippingMethod, 
     'Enter Shipping Method', (([GlobalVariable.PageLoadTime]) as int[]))

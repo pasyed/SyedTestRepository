@@ -30,8 +30,14 @@ WebUI.callTestCase(findTestCase('FirstView/Login/TC_FirstView'), [:], FailureHan
 
 WebUI.switchToWindowTitle('Transcenter - VPOS')
 
-CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FirstPayVault tab', 
-        (([5]) as int[]))
+WebUI.focus(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'))
+
+CustomKeywords.'utilities.SafeActions.javascriptclick'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), GlobalVariable.PageLoadTime)
+
+WebUI.delay(GlobalVariable.delayForElement)
+
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FistPayVault tab', 
+        (([GlobalVariable.delayForElement]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_CreateVault'), 
     'Click on CreateVault button', (([5]) as int[]))
@@ -218,7 +224,10 @@ CustomKeywords.'utilities.SafeActions.safeCheckForElement'(findTestObject('Pages
 CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/FirstPayVault/textBox_EmailAddress_TransactionComplete'), 
     GlobalVariable.emailAddress, 'Enter EmailAddress into text box', (([5]) as int[]))
 
-CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/FirstPayVault/button_SaveAndReturn_TransactionCompletePage'), 
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_SaveSetUp'), 'Click on Save and Return', 
+        (([10]) as int[]))
+
+CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/FirstPayVault/button_ReturnToSale_InTransactionComplete'), 
     'Click on Save and Return', (([10]) as int[]))
 
 popUpMessage = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/FirstPayVault/popupMessage_TransactionComplete'), 

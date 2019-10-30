@@ -46,7 +46,8 @@ public class Sale {
 		TestObject checkboxObject = dl.createDynamicLocatorForCheckBox(tabName,checkboxValue)
 		boolean checkElementStatus
 		try{
-			checkElementStatus = WebUI.verifyElementChecked(checkboxObject, timeOut)
+			checkElementStatus = WebUI.verifyElementChecked(checkboxObject, timeOut, FailureHandling.OPTIONAL)
+			
 		}
 		catch(Exception e){
 			//WebUI.click(checkboxObject)

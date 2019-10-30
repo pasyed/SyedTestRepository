@@ -118,5 +118,6 @@
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.2/configuration/plugin/install/24858/1.0.6/katalon-studio-report-plugin.jar"/>
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.2/configuration/plugin/install/18809/1.0.3/katalon-studio-microsoftteam-keywords-plugin.jar"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

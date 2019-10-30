@@ -30,8 +30,14 @@ WebUI.callTestCase(findTestCase('FirstView/Login/TC_FirstView'), [:], FailureHan
 
 WebUI.switchToWindowTitle('Transcenter - VPOS')
 
-CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FirstPayVault tab', 
-        (([GlobalVariable.PageLoadTime]) as int[]))
+WebUI.focus(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'))
+
+CustomKeywords.'utilities.SafeActions.javascriptclick'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), GlobalVariable.PageLoadTime)
+
+WebUI.delay(GlobalVariable.delayForElement)
+
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FistPayVault tab', 
+        (([GlobalVariable.delayForElement]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_CreateVault'), 
     'Click on CreateVault button', (([GlobalVariable.PageLoadTime]) as int[]))

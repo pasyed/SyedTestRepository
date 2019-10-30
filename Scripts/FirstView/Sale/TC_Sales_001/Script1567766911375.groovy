@@ -41,8 +41,16 @@ CustomKeywords.'pages.Sale.verifyIfEntryModeIsChecked'(tabName, entryModeCheckBo
 'Scroll down to Element inputAmount'
 WebUI.scrollToElement(findTestObject('Pages/Sale/input_Amount'), GlobalVariable.delayBetweenTestSteps)
 
-CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_Amount'), amountInput, 'Enter Amount', 
-        (([GlobalVariable.PageLoadTime]) as int[]))
+not_run: WebUI.click(findTestObject('Pages/Sale/input_Amount'))
+
+CustomKeywords.'utilities.SafeActions.safeTypeUsingJavascript'(findTestObject('Pages/Sale/input_Amount'), amountInput)
+
+not_run: WebUI.focus(findTestObject('Pages/Sale/input_Amount'))
+
+WebUI.delay(2)
+
+CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_Amount'), amountInput, 'Amount field', 
+        (([GlobalVariable.delayForElement]) as int[]))
 
 WebUI.scrollToElement(findTestObject('Pages/Sale/dropDown_ExpirationMonth'), GlobalVariable.delayBetweenTestSteps)
 
@@ -75,8 +83,8 @@ CustomKeywords.'utilities.SafeActions.safeClickWithoutScrollOnLabel'(findTestObj
 //CustomKeywords.'utilities.SafeActions.selectSeleniumCodeYear'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), '2022')
 WebUI.delay(GlobalVariable.delayBetweenTestSteps)
 
-CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_SecurityCode'), securityCode, 'Enter Security code', 
-        (([GlobalVariable.delayForElement]) as int[]))
+not_run: CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_SecurityCode'), securityCode, 
+    'Enter Security code', (([GlobalVariable.delayForElement]) as int[]))
 
 WebUI.scrollToElement(findTestObject('Pages/Sale/invoiceNumber'), GlobalVariable.delayBetweenTestSteps)
 
@@ -126,6 +134,8 @@ WebUI.scrollToElement(findTestObject('Pages/Transaction_Management/invoice_ForTr
 Assert.assertEquals(invoiceFromTable.trim(), invoiceNumber.trim())*/
 CustomKeywords.'pages.Transaction_Management.verifyInvoiceRecord'(findTestObject('Pages/Transaction_Management/footer_NextButton'), 
     findTestObject('Pages/Transaction_Management/page_Number'), invoiceNumber, total_Amount)
+
+
 
 WebUI.closeBrowser()
 

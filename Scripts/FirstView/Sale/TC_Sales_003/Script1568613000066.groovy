@@ -38,7 +38,14 @@ CustomKeywords.'pages.Sale.verifyIfEntryModeIsChecked'('Sale', 'Manually Keyed',
 'Scroll down to Element inputAmount'
 WebUI.scrollToElement(findTestObject('Pages/Sale/input_Amount'), GlobalVariable.PageLoadTime)
 
-CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_Amount'), amountInput, 'Enter Amount into Amount text box', 
+CustomKeywords.'utilities.SafeActions.safeTypeUsingJavascript'(findTestObject('Pages/Sale/input_Amount'), amountInput)
+
+WebUI.delay(2)
+
+CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_Amount'), amountInput, 'Amount field', 
+        (([GlobalVariable.delayForElement]) as int[]))
+
+not_run: CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_Amount'), amountInput, 'Enter Amount into Amount text box', 
         (([GlobalVariable.PageLoadTime]) as int[]))
 
 total_Amount = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/Sale/total_Amount'), GlobalVariable.PageLoadTime)
@@ -72,8 +79,8 @@ CustomKeywords.'utilities.SafeActions.safeClickWithoutScrollOnLabel'(findTestObj
 //CustomKeywords.'utilities.SafeActions.selectSeleniumCodeYear'(findTestObject('Pages/Sale/dropDown_ExpirationYear'), '2022')
 WebUI.delay(GlobalVariable.delayBetweenTestSteps)
 
-CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_SecurityCode'), securityCode, 'Enter Security code', 
-        (([GlobalVariable.delayForElement]) as int[]))
+not_run: CustomKeywords.'utilities.SafeActions.safeType'(findTestObject('Pages/Sale/input_SecurityCode'), securityCode, 
+    'Enter Security code', (([GlobalVariable.delayForElement]) as int[]))
 
 WebUI.scrollToElement(findTestObject('Pages/Sale/invoiceNumber'), GlobalVariable.PageLoadTime)
 

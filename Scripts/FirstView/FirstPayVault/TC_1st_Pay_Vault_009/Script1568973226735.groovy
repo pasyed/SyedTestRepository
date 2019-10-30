@@ -30,8 +30,14 @@ WebUI.callTestCase(findTestCase('FirstView/Login/TC_FirstView'), [:], FailureHan
 
 WebUI.switchToWindowTitle('Transcenter - VPOS')
 
-CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FirstPayVault tab', 
-        (([GlobalVariable.PageLoadTime]) as int[]))
+WebUI.focus(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'))
+
+CustomKeywords.'utilities.SafeActions.javascriptclick'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), GlobalVariable.PageLoadTime)
+
+WebUI.delay(GlobalVariable.delayForElement)
+
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/tab_FirstPayVault'), 'Click on FistPayVault tab', 
+        (([GlobalVariable.delayForElement]) as int[]))
 
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_CreateVault'), 
     'Click on CreateVault button', (([GlobalVariable.PageLoadTime]) as int[]))
@@ -89,16 +95,16 @@ flag = CustomKeywords.'utilities.SafeActions.verifyPopupMessage'('Successfully S
 CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/button_SearchVault_InPopup'), 
     'Search Vault in Popup', (([GlobalVariable.delayBetweenTestSteps]) as int[]))
 
-CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/FirstPayVault/date_StartDate'), 'Click on Date Input', 
-        (([GlobalVariable.PageLoadTime]) as int[]))
+CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/FirstPayVault/date_StartDate_1stPayVault'), 
+    'Click on Date Input', (([GlobalVariable.PageLoadTime]) as int[]))
 
 CustomKeywords.'pages.Sale.selectMonthYear'(findTestObject('Pages/Sale/link_MonthYear'), findTestObject('Pages/Sale/calender_NextButton'), 
     cardThisMonth, cardThisYear)
 
 CustomKeywords.'pages.Sale.selectDate'(start_date_Value)
 
-CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/date_EndDate'), 'Click on Date Input', 
-        (([GlobalVariable.PageLoadTime]) as int[]))
+CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pages/FirstPayVault/date_EndDate_1stPayVault'), 
+    'Click on Date Input', (([GlobalVariable.PageLoadTime]) as int[]))
 
 CustomKeywords.'pages.Sale.selectMonthYear'(findTestObject('Pages/Sale/link_MonthYear'), findTestObject('Pages/Sale/calender_NextButton'), 
     cardThisMonth, cardThisYear)
