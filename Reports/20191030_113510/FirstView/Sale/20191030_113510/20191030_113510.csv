@@ -1,0 +1,171 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Sale,Firefox 68.0,,,2019-10-30 11:35:21,2019-10-30 11:43:11,7m - 50.357s,INCOMPLETE
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_001,Firefox 68.0,,,2019-10-30 11:35:22,2019-10-30 11:38:27,3m - 4.771s,PASSED
+Start listener action : sampleBeforeTestCase,Firefox 68.0,,,2019-10-30 11:35:24,2019-10-30 11:35:24,0.009s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:35:26,2019-10-30 11:35:26,0.004s,NOT_RUN
+delay(delayForElement),Firefox 68.0,,,2019-10-30 11:35:26,2019-10-30 11:35:26,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), RetailAccountOption, ""Select by Value"", [25])",Firefox 68.0,,,2019-10-30 11:35:26,2019-10-30 11:35:26,0.002s,NOT_RUN
+delay(delayBetweenTestSteps),Firefox 68.0,,,2019-10-30 11:35:26,2019-10-30 11:35:26,0.003s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [delayForElement])",Firefox 68.0,,,2019-10-30 11:35:26,2019-10-30 11:36:13,47.209s,PASSED
+"pages.Login.login(uName, password)",Firefox 68.0,,,2019-10-30 11:36:13,2019-10-30 11:36:21,8.038s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-30 11:36:21,2019-10-30 11:36:28,6.663s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-30 11:36:28,2019-10-30 11:36:36,8.029s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Firefox 68.0,,,2019-10-30 11:36:36,2019-10-30 11:36:41,5.083s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(tabName, entryModeCheckBox, delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:36:41,2019-10-30 11:36:51,10.423s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_Amount""), delayBetweenTestSteps)",Firefox 68.0,Scroll down to Element inputAmount,,2019-10-30 11:36:51,2019-10-30 11:36:52,0.950s,PASSED
+"click(findTestObject(""Pages/Sale/input_Amount""))",Firefox 68.0,,,2019-10-30 11:36:52,2019-10-30 11:36:52,0.002s,NOT_RUN
+"utilities.SafeActions.safeTypeUsingJavascript(findTestObject(""Pages/Sale/input_Amount""), amountInput)",Firefox 68.0,,,2019-10-30 11:36:52,2019-10-30 11:36:54,1.446s,PASSED
+"focus(findTestObject(""Pages/Sale/input_Amount""))",Firefox 68.0,,,2019-10-30 11:36:54,2019-10-30 11:36:54,0.001s,NOT_RUN
+delay(2),Firefox 68.0,,,2019-10-30 11:36:54,2019-10-30 11:36:56,2.006s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amountInput, ""Amount field"", [delayForElement])",Firefox 68.0,,,2019-10-30 11:36:56,2019-10-30 11:36:58,1.847s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:36:58,2019-10-30 11:36:58,0.206s,PASSED
+"total_Amount = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/total_Amount""), delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:36:58,2019-10-30 11:36:59,0.921s,PASSED
+println(total_Amount),Firefox 68.0,,,2019-10-30 11:36:59,2019-10-30 11:36:59,0.008s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(tabName, cardInformationCheckBox, delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:36:59,2019-10-30 11:36:59,0.022s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CardNumber""), visaCardNumber, ""Entering Card Number"", [delayBetweenTestSteps])",Firefox 68.0,,,2019-10-30 11:36:59,2019-10-30 11:37:02,3.155s,PASSED
+delay(delayBetweenTestSteps),Firefox 68.0,,,2019-10-30 11:37:02,2019-10-30 11:37:06,4.195s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), cardMonth, ""Enter Month"", [delayBetweenTestSteps])",Firefox 68.0,,,2019-10-30 11:37:06,2019-10-30 11:37:08,1.628s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationYear""), cardYear, ""Select Expiration Year"", [delayBetweenTestSteps])",Firefox 68.0,,,2019-10-30 11:37:08,2019-10-30 11:37:09,1.388s,PASSED
+"utilities.SafeActions.safeClickWithoutScrollOnLabel(findTestObject(""Pages/Sale/label_ExpirationYear""), ""Click on Exp Year label"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:37:09,2019-10-30 11:37:10,1.213s,PASSED
+delay(delayBetweenTestSteps),Firefox 68.0,,,2019-10-30 11:37:10,2019-10-30 11:37:13,3.004s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_SecurityCode""), securityCode, ""Enter Security code"", [delayForElement])",Firefox 68.0,,,2019-10-30 11:37:13,2019-10-30 11:37:13,0.003s,NOT_RUN
+"scrollToElement(findTestObject(""Pages/Sale/invoiceNumber""), delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:37:13,2019-10-30 11:37:13,0.150s,PASSED
+"invoiceNumber = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/invoiceNumber""), delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:37:13,2019-10-30 11:37:14,0.701s,PASSED
+println(invoiceNumber),Firefox 68.0,,,2019-10-30 11:37:14,2019-10-30 11:37:14,0.001s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_Checkout""), ""Click on Checkout button"", [delayBetweenTestSteps])",Firefox 68.0,,,2019-10-30 11:37:14,2019-10-30 11:37:16,1.668s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Firefox 68.0,,,2019-10-30 11:37:16,2019-10-30 11:37:17,1.451s,PASSED
+delay(delayBetweenTestSteps),Firefox 68.0,,,2019-10-30 11:37:17,2019-10-30 11:37:20,3.004s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/button_ReturnToSale""), ""Click on Return To Sale"", [delayBetweenTestSteps])",Firefox 68.0,,,2019-10-30 11:37:20,2019-10-30 11:37:22,1.992s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Transaction_Management/tab_TransactionManagement""), ""Transaction Management Tab"", [delayBetweenTestSteps])",Firefox 68.0,,,2019-10-30 11:37:22,2019-10-30 11:37:25,2.308s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Transaction_Management/button_Search""), ""Search"", [delayBetweenTestSteps])",Firefox 68.0,,,2019-10-30 11:37:25,2019-10-30 11:37:28,3.002s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:37:28,2019-10-30 11:37:28,0.288s,PASSED
+"pages.Transaction_Management.verifyInvoiceRecord(findTestObject(""Pages/Transaction_Management/footer_NextButton""), findTestObject(""Pages/Transaction_Management/page_Number""), invoiceNumber, total_Amount)",Firefox 68.0,,,2019-10-30 11:37:28,2019-10-30 11:37:32,4.538s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-30 11:37:32,2019-10-30 11:38:27,54.361s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-30 11:38:27,2019-10-30 11:38:27,0.010s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-30 11:38:27,2019-10-30 11:38:27,0.002s,PASSED
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_005,Firefox 68.0,,,2019-10-30 11:38:27,2019-10-30 11:40:07,1m - 40.268s,PASSED
+Start listener action : sampleBeforeTestCase,Firefox 68.0,,,2019-10-30 11:38:28,2019-10-30 11:38:28,0.002s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:38:30,2019-10-30 11:38:30,0.001s,NOT_RUN
+delay(6),Firefox 68.0,,,2019-10-30 11:38:30,2019-10-30 11:38:30,0.003s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/002 Account Type: Ecommerce"", ""Select by Value"", [25])",Firefox 68.0,,,2019-10-30 11:38:30,2019-10-30 11:38:30,0.090s,NOT_RUN
+delay(3),Firefox 68.0,,,2019-10-30 11:38:30,2019-10-30 11:38:30,0.005s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:38:30,2019-10-30 11:38:59,29.054s,PASSED
+"pages.Login.login(uName, password)",Firefox 68.0,,,2019-10-30 11:38:59,2019-10-30 11:39:04,5.494s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-30 11:39:04,2019-10-30 11:39:07,2.981s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-30 11:39:07,2019-10-30 11:39:14,6.489s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Firefox 68.0,,,2019-10-30 11:39:14,2019-10-30 11:39:18,4.475s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Manually Keyed"", delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:39:18,2019-10-30 11:39:25,6.822s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_Amount""), PageLoadTime)",Firefox 68.0,Scroll down to Element inputAmount,,2019-10-30 11:39:25,2019-10-30 11:39:26,0.841s,PASSED
+"utilities.SafeActions.safeTypeUsingJavascript(findTestObject(""Pages/Sale/input_Amount""), amount)",Firefox 68.0,,,2019-10-30 11:39:26,2019-10-30 11:39:26,0.223s,PASSED
+delay(2),Firefox 68.0,,,2019-10-30 11:39:26,2019-10-30 11:39:28,2.004s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amount, ""Amount field"", [delayForElement])",Firefox 68.0,,,2019-10-30 11:39:28,2019-10-30 11:39:30,1.457s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amount, ""Enter Amount into Amount text box"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:30,2019-10-30 11:39:30,0.002s,NOT_RUN
+"total_Amount = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/total_Amount""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:39:30,2019-10-30 11:39:30,0.902s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:39:30,2019-10-30 11:39:31,0.158s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Card Not Present"", delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:39:31,2019-10-30 11:39:31,0.033s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:31,2019-10-30 11:39:32,1.814s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), cardMonth, ""Enter Expiration Month"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:32,2019-10-30 11:39:34,1.750s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationYear""), cardYear, ""Enter Expiration Year"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:34,2019-10-30 11:39:36,1.692s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_CustomerName""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:39:36,2019-10-30 11:39:36,0.224s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CustomerName""), customerName, ""Enter Customer Name"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:36,2019-10-30 11:39:38,1.402s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Address""), address, ""Enter Address"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:38,2019-10-30 11:39:39,1.209s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:39,2019-10-30 11:39:40,1.109s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:39:40,2019-10-30 11:39:40,0.231s,PASSED
+"invoiceNumber = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:39:40,2019-10-30 11:39:41,0.904s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_Checkout""), ""Click on Checkout button"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:41,2019-10-30 11:39:42,1.518s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Firefox 68.0,,,2019-10-30 11:39:42,2019-10-30 11:39:43,0.877s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/button_ReturnToSale""), ""Click on Return To Sale"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:43,2019-10-30 11:39:45,1.179s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Transaction_Management/tab_TransactionManagement""), ""Transaction Management Tab"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:45,2019-10-30 11:39:46,1.361s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Transaction_Management/button_Search""), ""Search"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:39:46,2019-10-30 11:39:47,1.436s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:39:47,2019-10-30 11:39:47,0.107s,PASSED
+"pages.Transaction_Management.verifyInvoiceRecord(findTestObject(""Pages/Transaction_Management/footer_NextButton""), findTestObject(""Pages/Transaction_Management/page_Number""), invoiceNumber, total_Amount)",Firefox 68.0,,,2019-10-30 11:39:47,2019-10-30 11:39:50,2.527s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-30 11:39:50,2019-10-30 11:40:07,17.101s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-30 11:40:07,2019-10-30 11:40:07,0.016s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-30 11:40:07,2019-10-30 11:40:07,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_006,Firefox 68.0,,,2019-10-30 11:40:07,2019-10-30 11:41:43,1m - 35.743s,PASSED
+Start listener action : sampleBeforeTestCase,Firefox 68.0,,,2019-10-30 11:40:08,2019-10-30 11:40:08,0.002s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:40:10,2019-10-30 11:40:10,0.001s,NOT_RUN
+delay(6),Firefox 68.0,,,2019-10-30 11:40:10,2019-10-30 11:40:10,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/003 Account Type: Moto"", ""Select by Value"", [25])",Firefox 68.0,,,2019-10-30 11:40:10,2019-10-30 11:40:10,0.001s,NOT_RUN
+delay(3),Firefox 68.0,,,2019-10-30 11:40:10,2019-10-30 11:40:10,0.102s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:40:10,2019-10-30 11:40:54,44.249s,PASSED
+"pages.Login.login(uName, password)",Firefox 68.0,,,2019-10-30 11:40:54,2019-10-30 11:41:00,5.564s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-30 11:41:00,2019-10-30 11:41:04,4.009s,PASSED
+"utilities.SafeActions.javascriptclick(findTestObject(""Pages/FirstView/link_Home""), delayForElement)",Firefox 68.0,,,2019-10-30 11:41:04,2019-10-30 11:41:04,0.322s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Firefox 68.0,,,2019-10-30 11:41:04,2019-10-30 11:41:08,3.832s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Manually Keyed"", delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:41:08,2019-10-30 11:41:15,6.764s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_Amount""), PageLoadTime)",Firefox 68.0,Scroll down to Element inputAmount,,2019-10-30 11:41:15,2019-10-30 11:41:15,0.339s,PASSED
+"utilities.SafeActions.safeTypeUsingJavascript(findTestObject(""Pages/Sale/input_Amount""), amount)",Firefox 68.0,,,2019-10-30 11:41:15,2019-10-30 11:41:15,0.120s,PASSED
+delay(2),Firefox 68.0,,,2019-10-30 11:41:15,2019-10-30 11:41:17,2.003s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amount, ""Amount field"", [delayForElement])",Firefox 68.0,,,2019-10-30 11:41:17,2019-10-30 11:41:18,1.115s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amount, ""Enter Amount into Amount text box"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:18,2019-10-30 11:41:18,0.001s,NOT_RUN
+"scrollToElement(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:41:18,2019-10-30 11:41:18,0.129s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Card Not Present"", delayBetweenTestSteps)",Firefox 68.0,,,2019-10-30 11:41:18,2019-10-30 11:41:18,0.033s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:18,2019-10-30 11:41:20,1.700s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), cardMonth, ""Enter Expiration Month"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:20,2019-10-30 11:41:21,1.394s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationYear""), cardYear, ""Enter Expiration Year"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:21,2019-10-30 11:41:23,1.665s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:41:23,2019-10-30 11:41:23,0.109s,PASSED
+"invoiceNumber = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:41:23,2019-10-30 11:41:24,0.820s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_Checkout""), ""Click on Checkout button"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:24,2019-10-30 11:41:25,1.232s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Firefox 68.0,,,2019-10-30 11:41:25,2019-10-30 11:41:26,1.139s,PASSED
+"total_Amount = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/totalAmount_In_TransactionComplete""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:41:26,2019-10-30 11:41:27,0.717s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/button_ReturnToSale""), ""Click on Return To Sale"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:27,2019-10-30 11:41:28,1.458s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Transaction_Management/tab_TransactionManagement""), ""Transaction Management Tab"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:28,2019-10-30 11:41:30,1.230s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Transaction_Management/button_Search""), ""Search"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:30,2019-10-30 11:41:31,1.527s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:41:31,2019-10-30 11:41:31,0.122s,PASSED
+"pages.Transaction_Management.verifyInvoiceRecord(findTestObject(""Pages/Transaction_Management/footer_NextButton""), findTestObject(""Pages/Transaction_Management/page_Number""), invoiceNumber, total_Amount)",Firefox 68.0,,,2019-10-30 11:41:31,2019-10-30 11:41:34,2.583s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-30 11:41:34,2019-10-30 11:41:43,8.893s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-30 11:41:43,2019-10-30 11:41:43,0.003s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-30 11:41:43,2019-10-30 11:41:43,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_003,Firefox 68.0,,,2019-10-30 11:41:43,2019-10-30 11:43:11,1m - 28.363s,PASSED
+Start listener action : sampleBeforeTestCase,Firefox 68.0,,,2019-10-30 11:41:43,2019-10-30 11:41:43,0.002s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:46,2019-10-30 11:41:46,0.001s,NOT_RUN
+delay(delayForPageLoad),Firefox 68.0,,,2019-10-30 11:41:46,2019-10-30 11:41:46,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), accountType, ""Select by Value"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:46,2019-10-30 11:41:46,0.007s,NOT_RUN
+delay(3),Firefox 68.0,,,2019-10-30 11:41:46,2019-10-30 11:41:46,0.001s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:41:46,2019-10-30 11:42:12,25.933s,PASSED
+"pages.Login.login(uName, password)",Firefox 68.0,,,2019-10-30 11:42:12,2019-10-30 11:42:17,5.228s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-30 11:42:17,2019-10-30 11:42:20,2.898s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-30 11:42:20,2019-10-30 11:42:26,5.952s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Firefox 68.0,,,2019-10-30 11:42:26,2019-10-30 11:42:29,3.445s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Manually Keyed"", PageLoadTime)",Firefox 68.0,,,2019-10-30 11:42:29,2019-10-30 11:42:34,4.023s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_Amount""), PageLoadTime)",Firefox 68.0,Scroll down to Element inputAmount,,2019-10-30 11:42:34,2019-10-30 11:42:34,0.302s,PASSED
+"utilities.SafeActions.safeTypeUsingJavascript(findTestObject(""Pages/Sale/input_Amount""), amountInput)",Firefox 68.0,,,2019-10-30 11:42:34,2019-10-30 11:42:34,0.200s,PASSED
+delay(2),Firefox 68.0,,,2019-10-30 11:42:34,2019-10-30 11:42:36,2.010s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amountInput, ""Amount field"", [delayForElement])",Firefox 68.0,,,2019-10-30 11:42:36,2019-10-30 11:42:37,1.209s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amountInput, ""Enter Amount into Amount text box"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:37,2019-10-30 11:42:37,0.001s,NOT_RUN
+"total_Amount = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/total_Amount""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:42:37,2019-10-30 11:42:38,0.800s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:42:38,2019-10-30 11:42:38,0.076s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Card Not Present"", PageLoadTime)",Firefox 68.0,,,2019-10-30 11:42:38,2019-10-30 11:42:38,0.027s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:38,2019-10-30 11:42:40,1.730s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), cardMonth, ""Select Expiration Month"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:40,2019-10-30 11:42:41,1.342s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationYear""), cardYear, ""Select Expiration Year"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:41,2019-10-30 11:42:43,1.379s,PASSED
+"utilities.SafeActions.safeClickWithoutScrollOnLabel(findTestObject(""Pages/Sale/label_ExpirationYear""), ""Click on Exp Year label"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:43,2019-10-30 11:42:44,1.071s,PASSED
+delay(delayBetweenTestSteps),Firefox 68.0,,,2019-10-30 11:42:44,2019-10-30 11:42:47,3.010s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_SecurityCode""), securityCode, ""Enter Security code"", [delayForElement])",Firefox 68.0,,,2019-10-30 11:42:47,2019-10-30 11:42:47,0.001s,NOT_RUN
+"scrollToElement(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:42:47,2019-10-30 11:42:47,0.125s,PASSED
+"invoiceNumber = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:42:47,2019-10-30 11:42:48,0.722s,PASSED
+"pages.Sale.verifyIfAdditionalPromptingIsChecked(""Save to Vault?"", PageLoadTime)",Firefox 68.0,,,2019-10-30 11:42:48,2019-10-30 11:42:48,0.553s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_Checkout""), ""Click on Checkout button"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:48,2019-10-30 11:42:50,1.631s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Firefox 68.0,,,2019-10-30 11:42:50,2019-10-30 11:42:52,1.807s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_VaultReferenceNumber""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:42:52,2019-10-30 11:42:52,0.241s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Firefox 68.0,,,2019-10-30 11:42:52,2019-10-30 11:42:52,0.016s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_VaultReferenceNumber""), vaultReference, ""Enter Vault Reference Number"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:52,2019-10-30 11:42:53,1.154s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/button_SaveToVault""), ""Click on Save To Vault button"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:53,2019-10-30 11:42:54,1.029s,PASSED
+"popupFromMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/popupAfterClickOn_SaveToVault""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:42:54,2019-10-30 11:42:55,0.716s,PASSED
+"saveToVaultPopUpMessage = ""Successfully Saved to Vault: Reference Number:"" + "" "" + vaultReference",Firefox 68.0,,,2019-10-30 11:42:55,2019-10-30 11:42:55,0.001s,PASSED
+"utilities.SafeActions.verifyPopupMessage(saveToVaultPopUpMessage, popupFromMessage)",Firefox 68.0,,,2019-10-30 11:42:55,2019-10-30 11:42:55,0.003s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/close_TextBox""), ""Click on Close"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:55,2019-10-30 11:42:56,1.031s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_ReturnToSale""), ""Click on Return To Sale"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:56,2019-10-30 11:42:57,1.302s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""First Pay Vault Tab"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:57,2019-10-30 11:42:58,1.317s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_SearchVault""), ""Click on Search Vault"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:42:58,2019-10-30 11:43:00,1.566s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_Search""), ""Click On Search button"", [PageLoadTime])",Firefox 68.0,,,2019-10-30 11:43:00,2019-10-30 11:43:01,1.115s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Firefox 68.0,,,2019-10-30 11:43:01,2019-10-30 11:43:02,1.316s,PASSED
+"pages.FirstPayVault.verifyInvoiceRecord(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), vaultReference)",Firefox 68.0,,,2019-10-30 11:43:02,2019-10-30 11:43:04,1.230s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-30 11:43:04,2019-10-30 11:43:11,7.669s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-30 11:43:11,2019-10-30 11:43:11,0.004s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-30 11:43:11,2019-10-30 11:43:11,0.000s,PASSED

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='transcenter-modal-return-to-sale']//div[@class='modal-content']/div[@class='modal-body']/div[@class='form-group progress-status form-group progress-status']</value>
+         <value>//div[@id='transcenter-modal-message']//div[@class='modal-content modal']/div[@class='modal-body']/div[@class='form-group progress-status form-group progress-status']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

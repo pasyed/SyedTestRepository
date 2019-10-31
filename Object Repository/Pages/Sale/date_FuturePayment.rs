@@ -6,12 +6,11 @@
    <elementGuidId>ede49cac-d83d-46e6-9df1-5d650924d8cb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='text-future-payment-date']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[contains(@id,'text-future-payment-date')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

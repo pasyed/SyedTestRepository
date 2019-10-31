@@ -177,7 +177,7 @@ not_run: WebUI.delay(2)
 CustomKeywords.'pages.FirstPayVault.clickOnDelete'(findTestObject('Pages/FirstPayVault/footer_NextButton'), findTestObject(
         'Pages/FirstPayVault/page_Number'), findTestObject('Pages/FirstPayVault/button_deleteFromVault'), vaultReference)
 
-not_run: WebUI.delay(GlobalVariable.delayBetweenTestSteps)
+WebUI.delay(GlobalVariable.delayBetweenTestSteps)
 
 deleteVaultPopupMessage = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/FirstPayVault/alertMessageAfterDeleteVault'), 
     GlobalVariable.delayBetweenTestSteps)

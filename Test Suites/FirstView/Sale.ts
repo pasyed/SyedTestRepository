@@ -14,7 +14,7 @@
       <guid>24995bde-70da-4a53-be7d-40e421ed7d46</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/FirstView/Sale/TC_Sales_001</testCaseId>
+      <testCaseId>Test Cases/FirstView/Sale/VPOS_Sale_Transaction_Retail_No_AdditionalPrompting</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -74,7 +74,7 @@
       <guid>2d15a9da-02ff-4546-a91f-f78f3333c622</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/FirstView/Sale/TC_Sales_005</testCaseId>
+      <testCaseId>Test Cases/FirstView/Sale/VPOS_Sale_Transaction_ECommerce_No_AdditionalPrompting</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -128,7 +128,7 @@
       <guid>05647078-50a0-4a23-96b2-dc413cd9c8c4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/FirstView/Sale/TC_Sales_006</testCaseId>
+      <testCaseId>Test Cases/FirstView/Sale/VPOS_Sale_Transaction_Moto_No_AdditionalPrompting</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -170,7 +170,7 @@
       <guid>1b61761a-4ff2-4a12-8037-1be458b89f2e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/FirstView/Sale/TC_Sales_003</testCaseId>
+      <testCaseId>Test Cases/FirstView/Sale/VPOS_Sale_Transaction_Retail_SaveToVault</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

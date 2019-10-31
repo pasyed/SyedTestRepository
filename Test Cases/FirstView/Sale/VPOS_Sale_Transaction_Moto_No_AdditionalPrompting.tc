@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>VPOS_Sale_Transaction_Moto_No_AdditionalPrompting</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4dd8039c-a644-4681-8857-e7e82ba4f56a</testCaseGuid>
+   <variable>
+      <defaultValue>'Manually Keyed'</defaultValue>
+      <description></description>
+      <id>f2d95c7e-4cc1-4775-8dea-5d8281aaa40a</id>
+      <masked>false</masked>
+      <name>entryModeCheckBox</name>
+   </variable>
+   <variable>
+      <defaultValue>'450'</defaultValue>
+      <description></description>
+      <id>595eb94a-ae22-4e18-8268-d5cdc2439cb7</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'ZenQMoto'</defaultValue>
+      <description></description>
+      <id>540f1fa8-eb57-42e2-8b74-a8d657eaa776</id>
+      <masked>false</masked>
+      <name>uName</name>
+   </variable>
+   <variable>
+      <defaultValue>'P@ssword1'</defaultValue>
+      <description></description>
+      <id>3f564a47-4fb7-47ae-8fc3-29277f36a983</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'September'</defaultValue>
+      <description></description>
+      <id>2e88cf46-a110-43d5-ab6c-3a079494eba0</id>
+      <masked>false</masked>
+      <name>cardMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'2023'</defaultValue>
+      <description></description>
+      <id>b5b3cffa-e937-49d8-850e-25f782b8b92f</id>
+      <masked>false</masked>
+      <name>cardYear</name>
+   </variable>
+</TestCaseEntity>

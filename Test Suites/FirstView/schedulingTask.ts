@@ -14,7 +14,7 @@
       <guid>2d55413f-2dfd-4c30-bed6-012dc329faf8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/FirstView/Sale/TC_Sales_001</testCaseId>
+      <testCaseId>Test Cases/FirstView/Sale/VPOS_Sale_Transaction_Retail_No_AdditionalPrompting</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

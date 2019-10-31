@@ -11,3 +11,6 @@
 [0909/071652.217:ERROR:exception_snapshot_win.cc(98)] thread ID 143628 not found in process
 [1030/070428.139:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [1030/070428.144:ERROR:exception_snapshot_win.cc(98)] thread ID 419192 not found in process
+[1030/115734.983:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1030/115734.997:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1030/115734.997:ERROR:exception_snapshot_win.cc(98)] thread ID 436116 not found in process

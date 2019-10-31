@@ -83,6 +83,8 @@ CustomKeywords.'utilities.SafeActions.safeCheckForElement'(findTestObject('Pages
 CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/FirstPayVault/button_Create'), 'Click on Create Button', 
         (([GlobalVariable.PageLoadTime]) as int[]))
 
+WebUI.delay(2)
+
 //WebUI.delay(2)
 popupSavedToVaultMessage = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/FirstPayVault/popup_SavedToVaultMessage'), 
     GlobalVariable.PageLoadTime)

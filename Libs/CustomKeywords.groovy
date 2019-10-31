@@ -186,6 +186,22 @@ def static "pages.FirstPayVault.verifyCardNumber"(
          , 	popupMessage)
 }
 
+def static "pages.Future_Payments.verifyInvoiceRecord"(
+    	TestObject nextObj	
+     , 	TestObject numberOfPages	
+     , 	String invoice	
+     , 	String amount	) {
+    (new pages.Future_Payments()).verifyInvoiceRecord(
+        	nextObj
+         , 	numberOfPages
+         , 	invoice
+         , 	amount)
+}
+
+def static "pages.Future_Payments.getInvoiceColumnCount"() {
+    (new pages.Future_Payments()).getInvoiceColumnCount()
+}
+
 def static "pages.Sale.verify1stPayVposPage"(
     	TestObject testObj	) {
     (new pages.Sale()).verify1stPayVposPage(

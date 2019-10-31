@@ -197,7 +197,7 @@ WebUI.scrollToElement(findTestObject('Pages/FirstPayVault/button_Update'), Globa
 CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/FirstPayVault/button_Update'), 'Click On Update', 
         (([GlobalVariable.delayBetweenTestSteps]) as int[]))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 popupUpdatedToVaultMessage = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/FirstPayVault/popup_SavedToVaultMessage'), 
     GlobalVariable.PageLoadTime)

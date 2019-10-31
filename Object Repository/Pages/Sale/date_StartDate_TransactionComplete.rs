@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//form[@id='form-recurring-payment-setup']//input[@id='text-start-date']</value>
+         <value>//form[@id='p_1_2_1_1_8_1__formId']//input[contains(@id,'startDateId')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

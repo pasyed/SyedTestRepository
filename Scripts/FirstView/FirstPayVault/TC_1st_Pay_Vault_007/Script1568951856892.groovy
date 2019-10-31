@@ -230,6 +230,8 @@ CustomKeywords.'utilities.SafeActions.safeClickWithoutScroll'(findTestObject('Pa
 CustomKeywords.'utilities.SafeActions.safeClickwithScroll'(findTestObject('Pages/FirstPayVault/button_ReturnToSale_InTransactionComplete'), 
     'Click on Save and Return', (([10]) as int[]))
 
+WebUI.delay(2)
+
 popUpMessage = CustomKeywords.'utilities.SafeActions.safeGetText'(findTestObject('Pages/FirstPayVault/popupMessage_TransactionComplete'), 
     GlobalVariable.delayBetweenTestSteps)
 

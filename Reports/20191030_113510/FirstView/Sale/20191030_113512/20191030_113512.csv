@@ -1,0 +1,171 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Sale,Chrome 76.0.3809.100,,,2019-10-30 11:35:35,2019-10-30 11:47:05,11m - 29.902s,INCOMPLETE
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_001,Chrome 76.0.3809.100,,,2019-10-30 11:35:37,2019-10-30 11:39:59,4m - 22.214s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:35:38,2019-10-30 11:35:38,0.011s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:35:39,2019-10-30 11:35:39,0.062s,NOT_RUN
+delay(delayForElement),Chrome 76.0.3809.100,,,2019-10-30 11:35:39,2019-10-30 11:35:39,0.001s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), RetailAccountOption, ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-30 11:35:39,2019-10-30 11:35:39,0.004s,NOT_RUN
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-30 11:35:39,2019-10-30 11:35:39,0.001s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [delayForElement])",Chrome 76.0.3809.100,,,2019-10-30 11:35:39,2019-10-30 11:36:12,33.729s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-30 11:36:12,2019-10-30 11:37:09,56.318s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-30 11:37:09,2019-10-30 11:37:21,12.213s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-30 11:37:21,2019-10-30 11:37:37,15.988s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-30 11:37:37,2019-10-30 11:37:46,9.229s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(tabName, entryModeCheckBox, delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:37:46,2019-10-30 11:37:47,0.466s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_Amount""), delayBetweenTestSteps)",Chrome 76.0.3809.100,Scroll down to Element inputAmount,,2019-10-30 11:37:47,2019-10-30 11:37:47,0.774s,PASSED
+"click(findTestObject(""Pages/Sale/input_Amount""))",Chrome 76.0.3809.100,,,2019-10-30 11:37:47,2019-10-30 11:37:47,0.004s,NOT_RUN
+"utilities.SafeActions.safeTypeUsingJavascript(findTestObject(""Pages/Sale/input_Amount""), amountInput)",Chrome 76.0.3809.100,,,2019-10-30 11:37:47,2019-10-30 11:37:49,1.213s,PASSED
+"focus(findTestObject(""Pages/Sale/input_Amount""))",Chrome 76.0.3809.100,,,2019-10-30 11:37:49,2019-10-30 11:37:49,0.002s,NOT_RUN
+delay(2),Chrome 76.0.3809.100,,,2019-10-30 11:37:49,2019-10-30 11:37:51,2.003s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amountInput, ""Amount field"", [delayForElement])",Chrome 76.0.3809.100,,,2019-10-30 11:37:51,2019-10-30 11:37:54,3.337s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:37:54,2019-10-30 11:37:54,0.363s,PASSED
+"total_Amount = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/total_Amount""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:37:54,2019-10-30 11:37:57,2.776s,PASSED
+println(total_Amount),Chrome 76.0.3809.100,,,2019-10-30 11:37:57,2019-10-30 11:37:57,0.004s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(tabName, cardInformationCheckBox, delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:37:57,2019-10-30 11:37:58,0.867s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CardNumber""), visaCardNumber, ""Entering Card Number"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-30 11:37:58,2019-10-30 11:38:11,13.129s,PASSED
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-30 11:38:11,2019-10-30 11:38:14,3.004s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), cardMonth, ""Enter Month"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-30 11:38:14,2019-10-30 11:38:16,2.133s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationYear""), cardYear, ""Select Expiration Year"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-30 11:38:16,2019-10-30 11:38:20,3.354s,PASSED
+"utilities.SafeActions.safeClickWithoutScrollOnLabel(findTestObject(""Pages/Sale/label_ExpirationYear""), ""Click on Exp Year label"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:38:20,2019-10-30 11:38:25,5.126s,PASSED
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-30 11:38:25,2019-10-30 11:38:28,3.005s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_SecurityCode""), securityCode, ""Enter Security code"", [delayForElement])",Chrome 76.0.3809.100,,,2019-10-30 11:38:28,2019-10-30 11:38:28,0.001s,NOT_RUN
+"scrollToElement(findTestObject(""Pages/Sale/invoiceNumber""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:38:28,2019-10-30 11:38:31,3.128s,PASSED
+"invoiceNumber = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/invoiceNumber""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:38:31,2019-10-30 11:38:33,2.519s,PASSED
+println(invoiceNumber),Chrome 76.0.3809.100,,,2019-10-30 11:38:33,2019-10-30 11:38:33,0.002s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_Checkout""), ""Click on Checkout button"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-30 11:38:33,2019-10-30 11:38:35,1.770s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Chrome 76.0.3809.100,,,2019-10-30 11:38:35,2019-10-30 11:38:36,1.247s,PASSED
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-30 11:38:36,2019-10-30 11:38:39,3.003s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/button_ReturnToSale""), ""Click on Return To Sale"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-30 11:38:39,2019-10-30 11:38:42,3.039s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Transaction_Management/tab_TransactionManagement""), ""Transaction Management Tab"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-30 11:38:42,2019-10-30 11:38:45,2.802s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Transaction_Management/button_Search""), ""Search"", [delayBetweenTestSteps])",Chrome 76.0.3809.100,,,2019-10-30 11:38:45,2019-10-30 11:38:49,3.412s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:38:49,2019-10-30 11:38:50,1.571s,PASSED
+"pages.Transaction_Management.verifyInvoiceRecord(findTestObject(""Pages/Transaction_Management/footer_NextButton""), findTestObject(""Pages/Transaction_Management/page_Number""), invoiceNumber, total_Amount)",Chrome 76.0.3809.100,,,2019-10-30 11:38:50,2019-10-30 11:39:06,15.800s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-30 11:39:06,2019-10-30 11:39:59,52.891s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:39:59,2019-10-30 11:39:59,0.008s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:39:59,2019-10-30 11:39:59,0.003s,PASSED
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_005,Chrome 76.0.3809.100,,,2019-10-30 11:39:59,2019-10-30 11:42:46,2m - 46.725s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:40:00,2019-10-30 11:40:00,0.002s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:40:02,2019-10-30 11:40:02,0.003s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-30 11:40:02,2019-10-30 11:40:02,0.005s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/002 Account Type: Ecommerce"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-30 11:40:02,2019-10-30 11:40:02,0.003s,NOT_RUN
+delay(3),Chrome 76.0.3809.100,,,2019-10-30 11:40:02,2019-10-30 11:40:02,0.003s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:40:02,2019-10-30 11:40:24,22.338s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-30 11:40:24,2019-10-30 11:40:30,6.157s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-30 11:40:30,2019-10-30 11:40:39,8.785s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-30 11:40:39,2019-10-30 11:40:46,7.057s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-30 11:40:46,2019-10-30 11:40:57,10.954s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Manually Keyed"", delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:40:57,2019-10-30 11:40:57,0.084s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_Amount""), PageLoadTime)",Chrome 76.0.3809.100,Scroll down to Element inputAmount,,2019-10-30 11:40:57,2019-10-30 11:40:58,0.478s,PASSED
+"utilities.SafeActions.safeTypeUsingJavascript(findTestObject(""Pages/Sale/input_Amount""), amount)",Chrome 76.0.3809.100,,,2019-10-30 11:40:58,2019-10-30 11:40:58,0.175s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-30 11:40:58,2019-10-30 11:41:00,2.007s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amount, ""Amount field"", [delayForElement])",Chrome 76.0.3809.100,,,2019-10-30 11:41:00,2019-10-30 11:41:06,5.866s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amount, ""Enter Amount into Amount text box"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:06,2019-10-30 11:41:06,0.001s,NOT_RUN
+"total_Amount = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/total_Amount""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:41:06,2019-10-30 11:41:07,0.996s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:41:07,2019-10-30 11:41:09,1.939s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Card Not Present"", delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:41:09,2019-10-30 11:41:10,1.028s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:10,2019-10-30 11:41:16,6.765s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), cardMonth, ""Enter Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:16,2019-10-30 11:41:18,1.474s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationYear""), cardYear, ""Enter Expiration Year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:18,2019-10-30 11:41:21,3.073s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_CustomerName""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:41:21,2019-10-30 11:41:21,0.191s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CustomerName""), customerName, ""Enter Customer Name"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:21,2019-10-30 11:41:26,4.798s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Address""), address, ""Enter Address"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:26,2019-10-30 11:41:29,3.165s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_PostalCode""), postalCode, ""Enter Postal Code"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:29,2019-10-30 11:41:36,6.852s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:41:36,2019-10-30 11:41:37,0.815s,PASSED
+"invoiceNumber = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:41:37,2019-10-30 11:41:39,2.272s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_Checkout""), ""Click on Checkout button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:39,2019-10-30 11:41:41,2.161s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Chrome 76.0.3809.100,,,2019-10-30 11:41:41,2019-10-30 11:41:43,1.752s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/button_ReturnToSale""), ""Click on Return To Sale"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:43,2019-10-30 11:41:49,6.014s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Transaction_Management/tab_TransactionManagement""), ""Transaction Management Tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:49,2019-10-30 11:41:51,1.713s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Transaction_Management/button_Search""), ""Search"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:41:51,2019-10-30 11:41:53,1.972s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:41:53,2019-10-30 11:41:54,1.154s,PASSED
+"pages.Transaction_Management.verifyInvoiceRecord(findTestObject(""Pages/Transaction_Management/footer_NextButton""), findTestObject(""Pages/Transaction_Management/page_Number""), invoiceNumber, total_Amount)",Chrome 76.0.3809.100,,,2019-10-30 11:41:54,2019-10-30 11:42:05,10.798s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-30 11:42:05,2019-10-30 11:42:46,40.964s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:42:46,2019-10-30 11:42:46,0.028s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:42:46,2019-10-30 11:42:46,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_006,Chrome 76.0.3809.100,,,2019-10-30 11:42:46,2019-10-30 11:45:01,2m - 15.581s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:42:46,2019-10-30 11:42:46,0.002s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:42:46,2019-10-30 11:42:46,0.002s,NOT_RUN
+delay(6),Chrome 76.0.3809.100,,,2019-10-30 11:42:46,2019-10-30 11:42:46,0.003s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), ""ranjanatest2 - 888814981372/003 Account Type: Moto"", ""Select by Value"", [25])",Chrome 76.0.3809.100,,,2019-10-30 11:42:46,2019-10-30 11:42:46,0.003s,NOT_RUN
+delay(3),Chrome 76.0.3809.100,,,2019-10-30 11:42:46,2019-10-30 11:42:46,0.002s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:42:46,2019-10-30 11:43:02,15.700s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-30 11:43:02,2019-10-30 11:43:15,13.409s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-30 11:43:15,2019-10-30 11:43:24,9.009s,PASSED
+"utilities.SafeActions.javascriptclick(findTestObject(""Pages/FirstView/link_Home""), delayForElement)",Chrome 76.0.3809.100,,,2019-10-30 11:43:24,2019-10-30 11:43:43,19.200s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-30 11:43:43,2019-10-30 11:43:45,1.697s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Manually Keyed"", delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:43:45,2019-10-30 11:43:46,0.450s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_Amount""), PageLoadTime)",Chrome 76.0.3809.100,Scroll down to Element inputAmount,,2019-10-30 11:43:46,2019-10-30 11:43:46,0.188s,PASSED
+"utilities.SafeActions.safeTypeUsingJavascript(findTestObject(""Pages/Sale/input_Amount""), amount)",Chrome 76.0.3809.100,,,2019-10-30 11:43:46,2019-10-30 11:43:46,0.104s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-30 11:43:46,2019-10-30 11:43:48,2.003s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amount, ""Amount field"", [delayForElement])",Chrome 76.0.3809.100,,,2019-10-30 11:43:48,2019-10-30 11:43:52,3.820s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amount, ""Enter Amount into Amount text box"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:43:52,2019-10-30 11:43:52,0.001s,NOT_RUN
+"scrollToElement(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:43:52,2019-10-30 11:43:52,0.399s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Card Not Present"", delayBetweenTestSteps)",Chrome 76.0.3809.100,,,2019-10-30 11:43:52,2019-10-30 11:43:52,0.110s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:43:52,2019-10-30 11:44:12,19.564s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), cardMonth, ""Enter Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:44:12,2019-10-30 11:44:15,2.814s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationYear""), cardYear, ""Enter Expiration Year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:44:15,2019-10-30 11:44:17,2.469s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:44:17,2019-10-30 11:44:17,0.180s,PASSED
+"invoiceNumber = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:44:17,2019-10-30 11:44:19,1.658s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_Checkout""), ""Click on Checkout button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:44:19,2019-10-30 11:44:21,1.897s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Chrome 76.0.3809.100,,,2019-10-30 11:44:21,2019-10-30 11:44:23,2.189s,PASSED
+"total_Amount = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/totalAmount_In_TransactionComplete""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:44:23,2019-10-30 11:44:25,2.072s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/button_ReturnToSale""), ""Click on Return To Sale"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:44:25,2019-10-30 11:44:27,1.973s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Transaction_Management/tab_TransactionManagement""), ""Transaction Management Tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:44:27,2019-10-30 11:44:33,6.167s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Transaction_Management/button_Search""), ""Search"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:44:33,2019-10-30 11:44:39,6.058s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:44:39,2019-10-30 11:44:40,0.437s,PASSED
+"pages.Transaction_Management.verifyInvoiceRecord(findTestObject(""Pages/Transaction_Management/footer_NextButton""), findTestObject(""Pages/Transaction_Management/page_Number""), invoiceNumber, total_Amount)",Chrome 76.0.3809.100,,,2019-10-30 11:44:40,2019-10-30 11:44:46,6.052s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-30 11:44:46,2019-10-30 11:45:01,15.555s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:45:01,2019-10-30 11:45:01,0.006s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:45:01,2019-10-30 11:45:01,0.000s,PASSED
+,,,,,,,
+Test Cases/FirstView/Sale/TC_Sales_003,Chrome 76.0.3809.100,,,2019-10-30 11:45:01,2019-10-30 11:47:05,2m - 4.030s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:45:01,2019-10-30 11:45:01,0.004s,PASSED
+"utilities.SafeActions.openBrowser(Old_URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:45:02,2019-10-30 11:45:02,0.002s,NOT_RUN
+delay(delayForPageLoad),Chrome 76.0.3809.100,,,2019-10-30 11:45:02,2019-10-30 11:45:02,0.005s,NOT_RUN
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_AccountType""), accountType, ""Select by Value"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:45:02,2019-10-30 11:45:02,0.001s,NOT_RUN
+delay(3),Chrome 76.0.3809.100,,,2019-10-30 11:45:02,2019-10-30 11:45:02,0.001s,NOT_RUN
+"utilities.SafeActions.openBrowser(URL, [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:45:02,2019-10-30 11:45:17,15.094s,PASSED
+"pages.Login.login(uName, password)",Chrome 76.0.3809.100,,,2019-10-30 11:45:17,2019-10-30 11:45:23,5.435s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_SendCode""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-30 11:45:23,2019-10-30 11:45:25,2.188s,PASSED
+"callTestCase(findTestCase(""FirstView/Login/TC_FirstView""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-30 11:45:25,2019-10-30 11:45:31,5.741s,PASSED
+"switchToWindowTitle(""Transcenter - VPOS"")",Chrome 76.0.3809.100,,,2019-10-30 11:45:31,2019-10-30 11:45:41,10.685s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Manually Keyed"", PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:45:41,2019-10-30 11:45:42,0.364s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_Amount""), PageLoadTime)",Chrome 76.0.3809.100,Scroll down to Element inputAmount,,2019-10-30 11:45:42,2019-10-30 11:45:42,0.680s,PASSED
+"utilities.SafeActions.safeTypeUsingJavascript(findTestObject(""Pages/Sale/input_Amount""), amountInput)",Chrome 76.0.3809.100,,,2019-10-30 11:45:42,2019-10-30 11:45:43,0.200s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-30 11:45:43,2019-10-30 11:45:45,2.003s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amountInput, ""Amount field"", [delayForElement])",Chrome 76.0.3809.100,,,2019-10-30 11:45:45,2019-10-30 11:45:47,2.138s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_Amount""), amountInput, ""Enter Amount into Amount text box"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:45:47,2019-10-30 11:45:47,0.001s,NOT_RUN
+"total_Amount = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/total_Amount""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:45:47,2019-10-30 11:45:49,1.949s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:45:49,2019-10-30 11:45:49,0.098s,PASSED
+"pages.Sale.verifyIfEntryModeIsChecked(""Sale"", ""Card Not Present"", PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:45:49,2019-10-30 11:45:49,0.052s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_CardNumber""), visaCardNumber, ""Entering Card Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:45:49,2019-10-30 11:45:51,1.939s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationMonth""), cardMonth, ""Select Expiration Month"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:45:51,2019-10-30 11:45:52,1.186s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropDownByVisibleText(findTestObject(""Pages/Sale/dropDown_ExpirationYear""), cardYear, ""Select Expiration Year"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:45:52,2019-10-30 11:45:53,1.066s,PASSED
+"utilities.SafeActions.safeClickWithoutScrollOnLabel(findTestObject(""Pages/Sale/label_ExpirationYear""), ""Click on Exp Year label"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:45:53,2019-10-30 11:45:54,0.987s,PASSED
+delay(delayBetweenTestSteps),Chrome 76.0.3809.100,,,2019-10-30 11:45:54,2019-10-30 11:45:57,3.002s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_SecurityCode""), securityCode, ""Enter Security code"", [delayForElement])",Chrome 76.0.3809.100,,,2019-10-30 11:45:57,2019-10-30 11:45:57,0.000s,NOT_RUN
+"scrollToElement(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:45:57,2019-10-30 11:45:57,0.162s,PASSED
+"invoiceNumber = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/invoiceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:45:57,2019-10-30 11:45:59,1.636s,PASSED
+"pages.Sale.verifyIfAdditionalPromptingIsChecked(""Save to Vault?"", PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:45:59,2019-10-30 11:46:01,1.593s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_Checkout""), ""Click on Checkout button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:46:01,2019-10-30 11:46:03,2.525s,PASSED
+"pages.Sale.verifyTransactionCompletePage(findTestObject(""Pages/Sale/heading_TransactionComplete""))",Chrome 76.0.3809.100,,,2019-10-30 11:46:03,2019-10-30 11:46:07,4.334s,PASSED
+"scrollToElement(findTestObject(""Pages/Sale/input_VaultReferenceNumber""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:46:07,2019-10-30 11:46:09,2.069s,PASSED
+vaultReference = utilities.SafeActions.timeWithMilliSeconds(),Chrome 76.0.3809.100,,,2019-10-30 11:46:09,2019-10-30 11:46:09,0.026s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""Pages/Sale/input_VaultReferenceNumber""), vaultReference, ""Enter Vault Reference Number"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:46:09,2019-10-30 11:46:32,22.652s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/button_SaveToVault""), ""Click on Save To Vault button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:46:32,2019-10-30 11:46:34,1.607s,PASSED
+"popupFromMessage = utilities.SafeActions.safeGetText(findTestObject(""Pages/Sale/popupAfterClickOn_SaveToVault""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:46:34,2019-10-30 11:46:37,3.621s,PASSED
+"saveToVaultPopUpMessage = ""Successfully Saved to Vault: Reference Number:"" + "" "" + vaultReference",Chrome 76.0.3809.100,,,2019-10-30 11:46:37,2019-10-30 11:46:37,0.001s,PASSED
+"utilities.SafeActions.verifyPopupMessage(saveToVaultPopUpMessage, popupFromMessage)",Chrome 76.0.3809.100,,,2019-10-30 11:46:37,2019-10-30 11:46:37,0.001s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/Sale/close_TextBox""), ""Click on Close"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:46:37,2019-10-30 11:46:40,2.730s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/Sale/button_ReturnToSale""), ""Click on Return To Sale"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:46:40,2019-10-30 11:46:41,1.190s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/tab_FirstPayVault""), ""First Pay Vault Tab"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:46:41,2019-10-30 11:46:46,4.352s,PASSED
+"utilities.SafeActions.safeClickwithScroll(findTestObject(""Pages/FirstPayVault/button_SearchVault""), ""Click on Search Vault"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:46:46,2019-10-30 11:46:54,7.946s,PASSED
+"utilities.SafeActions.safeClickWithoutScroll(findTestObject(""Pages/FirstPayVault/button_Search""), ""Click On Search button"", [PageLoadTime])",Chrome 76.0.3809.100,,,2019-10-30 11:46:54,2019-10-30 11:46:56,1.952s,PASSED
+"scrollToElement(findTestObject(""Pages/Transaction_Management/invoice_ForTransaction""), PageLoadTime)",Chrome 76.0.3809.100,,,2019-10-30 11:46:56,2019-10-30 11:46:57,1.920s,PASSED
+"pages.FirstPayVault.verifyInvoiceRecord(findTestObject(""Pages/FirstPayVault/footer_NextButton""), findTestObject(""Pages/FirstPayVault/page_Number""), vaultReference)",Chrome 76.0.3809.100,,,2019-10-30 11:46:57,2019-10-30 11:47:00,2.715s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-30 11:47:00,2019-10-30 11:47:05,5.131s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:47:05,2019-10-30 11:47:05,0.053s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-30 11:47:05,2019-10-30 11:47:05,0.000s,PASSED
