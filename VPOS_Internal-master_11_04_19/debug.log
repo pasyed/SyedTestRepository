@@ -1,0 +1,28 @@
+[0909/071652.209:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.214:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.214:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.214:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.214:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.214:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.214:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.214:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.214:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.217:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0909/071652.217:ERROR:exception_snapshot_win.cc(98)] thread ID 143628 not found in process
+[1030/070428.139:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1030/070428.144:ERROR:exception_snapshot_win.cc(98)] thread ID 419192 not found in process
+[1030/115734.983:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1030/115734.997:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1030/115734.997:ERROR:exception_snapshot_win.cc(98)] thread ID 436116 not found in process
+[1101/002659.465:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1101/002659.469:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1101/002659.469:ERROR:exception_snapshot_win.cc(98)] thread ID 475148 not found in process
+[1101/003746.489:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1101/003746.494:ERROR:exception_snapshot_win.cc(98)] thread ID 482836 not found in process
+[1101/035905.554:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1101/035905.559:ERROR:exception_snapshot_win.cc(98)] thread ID 468532 not found in process
+[1101/042438.628:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1101/042438.634:ERROR:exception_snapshot_win.cc(98)] thread ID 482824 not found in process
+[1101/042438.634:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1101/082053.835:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1101/082053.839:ERROR:exception_snapshot_win.cc(98)] thread ID 442656 not found in process
